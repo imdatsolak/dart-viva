@@ -1,0 +1,14 @@
+DEMORELEASE=NO
+VALIDUNTIL=19920701
+NUMBEROFLICENCES=2
+
+CFLAGS=-DDEMO_RELEASE=$(DEMORELEASE) -DVALID_UNTIL=$(VALIDUNTIL) -DNUMBER_OF_LICENCES=$(NUMBEROFLICENCES)
+
+default: $(NAME)
+
+NetdHandler.m: Makefile.preamble
+	touch NetdHandler.m
+
+vivaserverd_main.m: Makefile.preamble
+	touch vivaserverd_main.m
+

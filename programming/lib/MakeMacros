@@ -1,0 +1,14 @@
+PSWRAP = pswrap
+CC = cc -g -Wall
+
+.psw.h:
+	$(PSWRAP) $(PSWFLAGS) -a -h $*.h -o $*.c $*.psw
+.psw.o:
+	$(PSWRAP) $(PSWFLAGS) -a -h $*.h -o $*.c $*.psw
+	$(CC) $(_CFLAGS) -c $*.c -o $*.o
+
+ROOTDIR = /Net/dart/Users/Develop/Programming
+LIBDIR = $(ROOTDIR)/lib
+INCLUDEDIR = $(ROOTDIR)/include
+BINDIR = $(ROOTDIR)/bin
+

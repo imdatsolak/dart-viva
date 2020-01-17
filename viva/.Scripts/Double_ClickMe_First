@@ -1,0 +1,12 @@
+#!/bin/sh
+progname=`basename $0`
+if test -n "`echo $0 | grep /`" 
+then
+  myDir=`echo $0 |sed -e s/.$progname\$//`
+else
+  myDir=`pwd`
+fi
+cd $myDir
+/bin/csh ./.Install_viva2 2>&1 | tee $HOME/Install_viva2.log
+
+

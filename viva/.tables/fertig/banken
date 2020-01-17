@@ -1,0 +1,13 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\fmodern Ohlfs;}
+\paperw4900
+\paperh1300
+\margl120
+\margr120
+{\colortbl\red0\green0\blue0;}
+\pard\tx2880\tx3640\tx4020\tx5360\tx6720\tx8060\tx9400\tx10740\tx12080\tx13440\f0\b\i0\ul\fs32 blz	varchar(15)\
+
+\b0\ul0 kurzbezeichnung	varchar(10)\
+bezeichnung	varchar(50)
+\fc0 \
+
+}

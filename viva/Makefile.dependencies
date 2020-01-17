@@ -1,0 +1,961 @@
+AItem.o : AItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h AuftragsArtikelList.h \
+  SubItemList.h /usr/include/dart/SortList.h KundeItem.h MasterItem.h AItem.h 
+AParser.o : AParser.m /usr/include/dart/debug.h /usr/include/dart/dartlib.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h VariableHolder.h AuftragItem.h AItem.h \
+  MasterItem.h AParser.h TextParser.h 
+AbspannView.o : AbspannView.m TheApp.h ImageManager.h AbspannView.h 
+AddressItem.o : AddressItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h TableManager.h AddressItem.h MasterItem.h 
+AddressList.o : AddressList.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h AddressItem.h MasterItem.h AddressList.h \
+  SubItemList.h 
+AngebotItem.o : AngebotItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h AddressList.h SubItemList.h AngebotItemList.h \
+  MasterItemList.h AttachmentList.h AuftragsArtikelList.h DefaultsDatabase.h \
+  TheApp.h UserManager.h AngebotItem.h AItem.h MasterItem.h 
+AngebotItemList.o : AngebotItemList.m AngebotItem.h AItem.h MasterItem.h \
+  AngebotsDocument.h MasterDocument.h MasterObject.h AngebotItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h 
+AngebotPrefs.o : AngebotPrefs.m AngebotPrefs.h MasterDocumentPrefs.h \
+  MasterPrefs.h 
+AngebotsDocument.o : AngebotsDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h AddressItem.h \
+  MasterItem.h AngebotItem.h AItem.h AngebotItemList.h MasterItemList.h \
+  /usr/include/dart/SortList.h AngebotsSelector.h MasterSelector.h \
+  MasterObject.h ArtikelItemList.h ArtikelSelector.h AuftragItem.h \
+  AuftragItemList.h AuftragsArtikelDocument.h AuftragsArtikelList.h \
+  SubItemList.h AuftragsDocument.h MasterDocument.h FileItem.h \
+  AttachmentItem.h IconListView.h KundeItem.h KundeItemList.h \
+  KundenSelector.h LayoutManager.h PrintRTFItem.h PrintoutDocument.h \
+  RTFEditor.h StringManager.h TextParser.h TheApp.h AngebotsDocument.h 
+AngebotsSelector.o : AngebotsSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h AngebotsDocument.h MasterDocument.h \
+  MasterObject.h AngebotItemList.h MasterItemList.h AngebotItem.h AItem.h \
+  MasterItem.h AngebotsSelector.h MasterSelector.h 
+ArtikelDocument.o : ArtikelDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h ArtikelItem.h \
+  MasterItem.h ArtikelItemList.h MasterItemList.h \
+  /usr/include/dart/SortList.h ArtikelLieferanten.h SlaveSelector.h \
+  MasterObject.h ArtikelSelector.h MasterSelector.h ErrorManager.h FileItem.h \
+  AttachmentItem.h CommentItem.h PrintRTFItem.h IconListView.h \
+  KundeItemList.h KonditionenItemList.h KonditionenItem.h \
+  KonditionenDocument.h MasterDocument.h StueckListe.h TheApp.h UserManager.h \
+  ArtikelDocument.h 
+ArtikelItem.o : ArtikelItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h ArtikelItem.h MasterItem.h ArtikelItemList.h \
+  MasterItemList.h AttachmentList.h SubItemList.h DefaultsDatabase.h \
+  TableManager.h TheApp.h UserManager.h 
+ArtikelItemList.o : ArtikelItemList.m ArtikelItem.h MasterItem.h \
+  ArtikelDocument.h MasterDocument.h MasterObject.h ArtikelItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h 
+ArtikelLieferanten.o : ArtikelLieferanten.m /usr/include/dart/debug.h \
+  /usr/include/dart/HeadButton.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/PaletteView.h \
+  /usr/include/dart/NiftyMatrix.h /usr/include/dart/ColumnBrowserCell.h \
+  ArtikelDocument.h MasterDocument.h MasterObject.h ArtikelLieferanten.h \
+  SlaveSelector.h ErrorManager.h KundeItem.h MasterItem.h KundeItemList.h \
+  MasterItemList.h KundenDocument.h StringManager.h TheApp.h 
+ArtikelPrefs.o : ArtikelPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h DefaultsDatabase.h \
+  TheApp.h MasterDocument.h MasterObject.h ArtikelItem.h MasterItem.h \
+  ArtikelPrefs.h MasterPrefs.h 
+ArtikelSelector.o : ArtikelSelector.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h TheApp.h ArtikelItem.h MasterItem.h \
+  ArtikelItemList.h MasterItemList.h ArtikelDocument.h MasterDocument.h \
+  MasterObject.h ArtikelSelector.h MasterSelector.h 
+AttachmentItem.o : AttachmentItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h ImageManager.h AttachmentItem.h 
+AttachmentList.o : AttachmentList.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h FileItem.h AttachmentItem.h \
+  AttachmentList.h SubItemList.h 
+AuftragItem.o : AuftragItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h AddressList.h SubItemList.h AttachmentList.h \
+  AuftragItemList.h MasterItemList.h AuftragsArtikelList.h DefaultsDatabase.h \
+  TheApp.h UserManager.h AuftragItem.h AItem.h MasterItem.h 
+AuftragItemList.o : AuftragItemList.m AuftragItem.h AItem.h MasterItem.h \
+  AuftragsDocument.h MasterDocument.h MasterObject.h AuftragItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h 
+AuftragPrefs.o : AuftragPrefs.m AuftragPrefs.h MasterDocumentPrefs.h \
+  MasterPrefs.h 
+AuftragsArtikelDocument.o : AuftragsArtikelDocument.m \
+  /usr/include/dart/ColumnBrowserCell.h /usr/include/dart/NiftyMatrix.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/debug.h AngebotItem.h AItem.h \
+  MasterItem.h AngebotsDocument.h MasterDocument.h MasterObject.h \
+  ArtikelItemList.h MasterItemList.h /usr/include/dart/SortList.h \
+  AuftragsArtikelItem.h AuftragsArtikelList.h SubItemList.h \
+  AuftragsDocument.h ImageManager.h TheApp.h AuftragsArtikelDocument.h 
+AuftragsArtikelItem.o : AuftragsArtikelItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h ArtikelItem.h MasterItem.h AuftragsArtikelItem.h 
+AuftragsArtikelList.o : AuftragsArtikelList.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h ArtikelItem.h \
+  MasterItem.h ArtikelItemList.h MasterItemList.h AuftragsArtikelItem.h \
+  KonditionenItem.h KundeItem.h TheApp.h AuftragsArtikelList.h SubItemList.h 
+AuftragsDocument.o : AuftragsDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/debug.h AddressItem.h MasterItem.h AngebotItem.h AItem.h \
+  AngebotItemList.h MasterItemList.h /usr/include/dart/SortList.h \
+  AngebotsDocument.h MasterDocument.h MasterObject.h ArtikelItemList.h \
+  ArtikelSelector.h MasterSelector.h AuftragItem.h AuftragItemList.h \
+  AuftragsArtikelDocument.h AuftragsArtikelList.h SubItemList.h \
+  AuftragsSelector.h ErrorManager.h FileItem.h AttachmentItem.h \
+  IconListView.h KundeItem.h KundeItemList.h KundenSelector.h LayoutManager.h \
+  LieferscheinDocument.h LieferscheinItem.h PrintRTFItem.h PrintoutDocument.h \
+  RTFEditor.h RechnungItem.h RechnungsDocument.h StringManager.h TextParser.h \
+  TheApp.h AuftragsDocument.h 
+AuftragsSelector.o : AuftragsSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h AuftragsDocument.h MasterDocument.h \
+  MasterObject.h AuftragItemList.h MasterItemList.h AuftragItem.h AItem.h \
+  MasterItem.h AuftragsSelector.h MasterSelector.h 
+BankItem.o : BankItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  BankItemList.h MasterItemList.h BankItem.h MasterItem.h 
+BankItemList.o : BankItemList.m BankItem.h MasterItem.h BankenDocument.h \
+  MasterDocument.h MasterObject.h BankItemList.h MasterItemList.h \
+  /usr/include/dart/SortList.h 
+BankVerbindungen.o : BankVerbindungen.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/PaletteView.h \
+  BankVerbindungen.h SlaveSelector.h MasterObject.h ErrorManager.h \
+  KundeItem.h MasterItem.h KundeItemList.h MasterItemList.h KundenDocument.h \
+  MasterDocument.h StringManager.h TheApp.h 
+BankenDocument.o : BankenDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h BankItem.h \
+  MasterItem.h BankItemList.h MasterItemList.h /usr/include/dart/SortList.h \
+  BankenSelector.h MasterSelector.h MasterObject.h BankenDocument.h \
+  MasterDocument.h 
+BankenSelector.o : BankenSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h BankItem.h MasterItem.h BankItemList.h \
+  MasterItemList.h BankenDocument.h MasterDocument.h MasterObject.h \
+  BankenSelector.h MasterSelector.h 
+BenutzerDocument.o : BenutzerDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h UserManager.h \
+  IconListView.h FileItem.h AttachmentItem.h BenutzerItem.h MasterItem.h \
+  BenutzerItemList.h MasterItemList.h /usr/include/dart/SortList.h \
+  BenutzerSelector.h MasterSelector.h MasterObject.h BenutzerDocument.h \
+  MasterDocument.h 
+BenutzerItem.o : BenutzerItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h TheApp.h AttachmentList.h SubItemList.h \
+  BenutzerItemList.h MasterItemList.h BenutzerItem.h MasterItem.h 
+BenutzerItemList.o : BenutzerItemList.m BenutzerItem.h MasterItem.h \
+  BenutzerDocument.h MasterDocument.h MasterObject.h BenutzerItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h 
+BenutzerSelector.o : BenutzerSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  BenutzerItem.h MasterItem.h BenutzerItemList.h MasterItemList.h \
+  BenutzerDocument.h MasterDocument.h MasterObject.h BenutzerSelector.h \
+  MasterSelector.h 
+BestellPrefs.o : BestellPrefs.m BestellPrefs.h MasterDocumentPrefs.h \
+  MasterPrefs.h 
+BestellungItem.o : BestellungItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h AddressList.h SubItemList.h AttachmentList.h \
+  AuftragsArtikelList.h BestellungItemList.h MasterItemList.h \
+  DefaultsDatabase.h TheApp.h UserManager.h BestellungItem.h AItem.h \
+  MasterItem.h 
+BestellungItemList.o : BestellungItemList.m BestellungItem.h AItem.h \
+  MasterItem.h BestellungsDocument.h MasterDocument.h MasterObject.h \
+  BestellungItemList.h MasterItemList.h /usr/include/dart/SortList.h 
+BestellungsDocument.o : BestellungsDocument.m \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h AddressItem.h MasterItem.h AngebotItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h ArtikelItemList.h \
+  ArtikelSelector.h MasterSelector.h MasterObject.h AuftragItemList.h \
+  AuftragsArtikelDocument.h AuftragsArtikelList.h SubItemList.h \
+  BestellungItem.h AItem.h BestellungItemList.h BestellungsSelector.h \
+  FileItem.h AttachmentItem.h IconListView.h KundeItem.h KundeItemList.h \
+  KundenSelector.h LayoutManager.h PrintRTFItem.h PrintoutDocument.h \
+  RTFEditor.h MasterDocument.h StringManager.h TextParser.h TheApp.h \
+  BestellungsDocument.h 
+BestellungsSelector.o : BestellungsSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h BestellungsDocument.h MasterDocument.h \
+  MasterObject.h BestellungItemList.h MasterItemList.h BestellungItem.h \
+  AItem.h MasterItem.h BestellungsSelector.h MasterSelector.h 
+CommentItem.o : CommentItem.m CommentItem.h PrintRTFItem.h AttachmentItem.h 
+CustomPopupButton.o : CustomPopupButton.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/SortList.h StringManager.h \
+  TableManager.h TableEditor.h TheApp.h CustomPopupButton.h 
+DPasteBoard.o : DPasteBoard.m /usr/include/dart/PaletteView.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h MasterItemList.h /usr/include/dart/SortList.h \
+  DefaultsDatabase.h TheApp.h DPasteBoard.h MasterDocument.h MasterObject.h 
+DartPageLayout.o : DartPageLayout.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h DefaultsDatabase.h DartPageLayout.h 
+DartPrintPanel.o : DartPrintPanel.m DartPrintPanel.h 
+DefaultsDatabase.o : DefaultsDatabase.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/debug.h UserManager.h \
+  TheApp.h DefaultsDatabase.h 
+Dumper.o : Dumper.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/ColumnBrowserCell.h \
+  /usr/include/dart/Localizer.h TheApp.h ErrorManager.h Dumper.h \
+  MasterDocument.h MasterObject.h 
+ErrorManager.o : ErrorManager.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/Localizer.h StringManager.h \
+  TheApp.h ErrorManager.h 
+ExportManager.o : ExportManager.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h Timer.h TheApp.h StringManager.h \
+  DefaultsDatabase.h ExportManager.h 
+ExportPrefs.o : ExportPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h DefaultsDatabase.h \
+  StringManager.h VivaObjectTypes.m TheApp.h ExportPrefs.h MasterPrefs.h 
+FileItem.o : FileItem.m /usr/include/dart/debug.h \
+  /usr/include/dart/dartlib.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h SoundPlayer.h \
+  RTFEditor.h MasterDocument.h MasterObject.h ImageManager.h FileItem.h \
+  AttachmentItem.h 
+IconListView.o : IconListView.m /usr/include/dart/debug.h \
+  /usr/include/dart/ColumnBrowserCell.h /usr/include/dart/PaletteView.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h FileItem.h AttachmentItem.h CommentItem.h \
+  PrintRTFItem.h IconListView.h 
+ImageManager.o : ImageManager.m /usr/include/dart/Localizer.h TheApp.h \
+  ImageManager.h 
+InfoPanelManager.o : InfoPanelManager.m InfoPanelManager.h 
+KonditionenDocument.o : KonditionenDocument.m \
+  /usr/include/dart/ColumnBrowserCell.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h ErrorManager.h \
+  KonditionenItem.h MasterItem.h KonditionenItemList.h MasterItemList.h \
+  /usr/include/dart/SortList.h KonditionenSelector.h MasterSelector.h \
+  MasterObject.h StringManager.h SubkonditionenItem.h SubkonditionenList.h \
+  SubItemList.h TableManager.h TheApp.h KonditionenDocument.h \
+  MasterDocument.h 
+KonditionenItem.o : KonditionenItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h SubkonditionenList.h SubItemList.h \
+  KonditionenItemList.h MasterItemList.h TheApp.h KonditionenItem.h \
+  MasterItem.h 
+KonditionenItemList.o : KonditionenItemList.m KonditionenItem.h \
+  MasterItem.h KonditionenDocument.h MasterDocument.h MasterObject.h \
+  KonditionenItemList.h MasterItemList.h /usr/include/dart/SortList.h 
+KonditionenSelector.o : KonditionenSelector.m \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  KonditionenItem.h MasterItem.h KonditionenItemList.h MasterItemList.h \
+  KonditionenDocument.h MasterDocument.h MasterObject.h KonditionenSelector.h \
+  MasterSelector.h 
+KundeItem.o : KundeItem.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h AddressItem.h \
+  MasterItem.h AddressList.h SubItemList.h AttachmentList.h \
+  DefaultsDatabase.h KundeItemList.h MasterItemList.h TableManager.h TheApp.h \
+  UserManager.h KundeItem.h 
+KundeItemList.o : KundeItemList.m KundeItem.h MasterItem.h KundenDocument.h \
+  MasterDocument.h MasterObject.h KundeItemList.h MasterItemList.h \
+  /usr/include/dart/SortList.h 
+KundenDocument.o : KundenDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h AddressItem.h \
+  MasterItem.h BankItemList.h MasterItemList.h /usr/include/dart/SortList.h \
+  BankVerbindungen.h SlaveSelector.h MasterObject.h FileItem.h \
+  AttachmentItem.h IconListView.h KundeItem.h KundeItemList.h \
+  KundenKontoDocument.h MasterDocument.h KundenSelector.h MasterSelector.h \
+  TheApp.h UserManager.h KundenDocument.h 
+KundenKontoDocument.o : KundenKontoDocument.m \
+  /usr/include/dart/ColumnBrowserCell.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h ErrorManager.h \
+  StringManager.h TheApp.h KundenSelector.h MasterSelector.h MasterObject.h \
+  ZahlungBuchungsController.h ZahlungItem.h ZahlungsList.h SubItemList.h \
+  /usr/include/dart/SortList.h KundenKontoDocument.h MasterDocument.h 
+KundenPrefs.o : KundenPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h DefaultsDatabase.h \
+  TheApp.h MasterDocument.h MasterObject.h AddressItem.h MasterItem.h \
+  KundeItem.h KundenPrefs.h MasterPrefs.h 
+KundenSelector.o : KundenSelector.m /usr/include/dart/Integer.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  KundeItem.h MasterItem.h KundeItemList.h MasterItemList.h KundenDocument.h \
+  MasterDocument.h MasterObject.h KundenSelector.h MasterSelector.h 
+LagerArtikelSelector.o : LagerArtikelSelector.m \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/PaletteView.h TheApp.h ArtikelItem.h MasterItem.h \
+  ArtikelItemList.h MasterItemList.h ArtikelDocument.h MasterDocument.h \
+  MasterObject.h LagerItemList.h LagerArtikelSelector.h SlaveSelector.h 
+LagerChecker.o : LagerChecker.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h TheApp.h LagerChecker.h 
+LagerDocument.o : LagerDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/PaletteView.h ArtikelItem.h MasterItem.h \
+  ArtikelItemList.h MasterItemList.h /usr/include/dart/SortList.h \
+  AuftragsArtikelItem.h BestellungItem.h AItem.h BestellungItemList.h \
+  LagerArtikelSelector.h SlaveSelector.h MasterObject.h LagerChecker.h \
+  LagerItem.h LagerItemList.h LagerSelector.h MasterSelector.h \
+  LagerUmbuchController.h StringManager.h LagerVorgangsSelector.h TheApp.h \
+  UserManager.h LagerDocument.h MasterDocument.h 
+LagerItem.o : LagerItem.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h AddressItem.h \
+  MasterItem.h ArtikelItem.h LagerChecker.h LagerItemList.h MasterItemList.h \
+  TableManager.h TheApp.h UserManager.h LagerItem.h 
+LagerItemList.o : LagerItemList.m LagerItem.h MasterItem.h LagerDocument.h \
+  MasterDocument.h MasterObject.h LagerItemList.h MasterItemList.h \
+  /usr/include/dart/SortList.h 
+LagerSelector.o : LagerSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  LagerItem.h MasterItem.h LagerItemList.h MasterItemList.h LagerDocument.h \
+  MasterDocument.h MasterObject.h LagerSelector.h MasterSelector.h 
+LagerUmbuchController.o : LagerUmbuchController.m \
+  /usr/include/dart/PaletteView.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/Query.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/ColumnBrowserCell.h /usr/include/dart/Localizer.h \
+  TheApp.h StringManager.h ImageManager.h ErrorManager.h UserManager.h \
+  Timer.h LagerDocument.h MasterDocument.h MasterObject.h LagerItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h LagerVorgangsSelector.h \
+  MasterSelector.h LagerItem.h MasterItem.h ArtikelItemList.h ArtikelItem.h \
+  LagerChecker.h LagerUmbuchController.h 
+LagerVorgangsItemList.o : LagerVorgangsItemList.m LagerVorgangsItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h 
+LagerVorgangsSelector.o : LagerVorgangsSelector.m \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  LagerVorgangsItemList.h MasterItemList.h LagerVorgangsSelector.h \
+  MasterSelector.h MasterObject.h 
+LayoutDocument.o : LayoutDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/PaletteView.h TheApp.h StringManager.h LayoutItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h LayoutItem.h MasterItem.h \
+  LayoutDocument.h RTFEditor.h MasterDocument.h MasterObject.h 
+LayoutItem.o : LayoutItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h AttachmentList.h SubItemList.h LayoutItemList.h \
+  MasterItemList.h PrintRTFItem.h AttachmentItem.h TheApp.h UserManager.h \
+  LayoutItem.h MasterItem.h 
+LayoutItemList.o : LayoutItemList.m LayoutItem.h MasterItem.h \
+  LayoutDocument.h RTFEditor.h MasterDocument.h MasterObject.h \
+  LayoutItemList.h MasterItemList.h /usr/include/dart/SortList.h 
+LayoutManager.o : LayoutManager.m /usr/include/dart/String.h \
+  /usr/include/dart/FieldValue.h TheApp.h StringManager.h DefaultsDatabase.h \
+  LayoutItem.h MasterItem.h PrintRTFItem.h AttachmentItem.h LayoutManager.h 
+LayoutSelector.o : LayoutSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h LayoutItem.h MasterItem.h \
+  LayoutItemList.h MasterItemList.h LayoutDocument.h RTFEditor.h \
+  MasterDocument.h MasterObject.h LayoutSelector.h MasterSelector.h 
+LieferscheinAttachItem.o : LieferscheinAttachItem.m TheApp.h ImageManager.h \
+  LieferscheinDocument.h MasterDocument.h MasterObject.h \
+  LieferscheinAttachItem.h AttachmentItem.h 
+LieferscheinDocument.o : LieferscheinDocument.m \
+  /usr/include/dart/ColumnBrowserCell.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h AuftragsArtikelItem.h \
+  AuftragsArtikelList.h SubItemList.h /usr/include/dart/SortList.h \
+  ErrorManager.h FileItem.h AttachmentItem.h IconListView.h LayoutManager.h \
+  LieferscheinItem.h MasterItem.h LieferscheinSelector.h MasterSelector.h \
+  MasterObject.h PrintRTFItem.h PrintoutDocument.h RTFEditor.h \
+  MasterDocument.h SeriennummernItem.h SeriennummernList.h StringManager.h \
+  TextParser.h LagerVorgangsSelector.h TheApp.h LieferscheinDocument.h 
+LieferscheinItem.o : LieferscheinItem.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h AddressList.h \
+  SubItemList.h ArtikelItem.h MasterItem.h AttachmentList.h \
+  AuftragsArtikelItem.h AuftragsArtikelList.h DefaultsDatabase.h \
+  LagerChecker.h LayoutManager.h LieferscheinItemList.h MasterItemList.h \
+  PrintRTFItem.h AttachmentItem.h SeriennummernList.h StringManager.h \
+  TextParser.h TheApp.h UserManager.h LieferscheinItem.h 
+LieferscheinItemList.o : LieferscheinItemList.m LieferscheinItem.h \
+  MasterItem.h LieferscheinDocument.h MasterDocument.h MasterObject.h \
+  LieferscheinItemList.h MasterItemList.h /usr/include/dart/SortList.h 
+LieferscheinPrefs.o : LieferscheinPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/PaletteView.h CustomPopupButton.h DefaultsDatabase.h \
+  LayoutItemList.h MasterItemList.h /usr/include/dart/SortList.h TheApp.h \
+  LieferscheinPrefs.h MasterDocumentPrefs.h MasterPrefs.h 
+LieferscheinSelector.o : LieferscheinSelector.m \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h \
+  LieferscheinDocument.h MasterDocument.h MasterObject.h \
+  LieferscheinItemList.h MasterItemList.h LieferscheinItem.h MasterItem.h \
+  LieferscheinSelector.h MasterSelector.h 
+MahnungRTFItem.o : MahnungRTFItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h AttachmentList.h \
+  SubItemList.h /usr/include/dart/SortList.h ImageManager.h LayoutManager.h \
+  RechnungItem.h MasterItem.h TextParser.h TheApp.h MahnungRTFItem.h \
+  PrintRTFItem.h AttachmentItem.h 
+MasterDocument.o : MasterDocument.m /usr/include/dart/Localizer.h \
+  /usr/include/dart/PaletteView.h /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h AttachmentList.h SubItemList.h \
+  /usr/include/dart/SortList.h DPasteBoard.h MasterDocument.h MasterObject.h \
+  DefaultsDatabase.h ErrorManager.h ImageManager.h MasterItem.h CommentItem.h \
+  PrintRTFItem.h AttachmentItem.h FileItem.h PrintoutDocument.h RTFEditor.h \
+  StringManager.h IconListView.h TheApp.h UserManager.h 
+MasterDocumentPrefs.o : MasterDocumentPrefs.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/PaletteView.h UserManager.h \
+  DefaultsDatabase.h TheApp.h LayoutDocument.h RTFEditor.h MasterDocument.h \
+  MasterObject.h LayoutItemList.h MasterItemList.h MasterItem.h \
+  MasterDocumentPrefs.h MasterPrefs.h 
+MasterItem.o : MasterItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/debug.h DefaultsDatabase.h \
+  ImageManager.h MasterItemList.h StringManager.h TheApp.h MasterItem.h 
+MasterItemList.o : MasterItemList.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h \
+  StringManager.h ImageManager.h MasterDocument.h MasterObject.h MasterItem.h \
+  MasterItemList.h /usr/include/dart/SortList.h 
+MasterObject.o : MasterObject.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/PaletteView.h FileItem.h \
+  AttachmentItem.h ImageManager.h TheApp.h MasterObject.h 
+MasterPrefs.o : MasterPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/Localizer.h /usr/include/dart/PaletteView.h \
+  ImageManager.h TheApp.h MasterPrefs.h 
+MasterSelector.o : MasterSelector.m /usr/include/dart/debug.h \
+  /usr/include/dart/PaletteView.h /usr/include/dart/HeadButton.h \
+  /usr/include/dart/Localizer.h /usr/include/dart/ColumnBrowserCell.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h Timer.h \
+  UserManager.h DefaultsDatabase.h ExportManager.h ImageManager.h \
+  StringManager.h TheApp.h MasterDocument.h MasterObject.h MasterSelector.h 
+MasterWindow.o : MasterWindow.m MasterWindow.h 
+NetworkManager.o : NetworkManager.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/NetworkListener.h \
+  /usr/include/dart/NetworkSpeaker.h StringManager.h ErrorManager.h TheApp.h \
+  NetworkManager.h 
+PasswordPrefs.o : PasswordPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h TheApp.h StringManager.h ErrorManager.h \
+  PasswordPrefs.h MasterPrefs.h 
+PictCell.o : PictCell.m TheApp.h PictCell.h 
+PreferencesManager.o : PreferencesManager.m TheApp.h PreferencesManager.h \
+  MasterDocument.h MasterObject.h 
+PrintRTFItem.o : PrintRTFItem.m /usr/include/dart/dartlib.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  SoundPlayer.h ImageManager.h PrintoutDocument.h RTFEditor.h \
+  MasterDocument.h MasterObject.h PrintRTFItem.h AttachmentItem.h 
+PrintoutDocument.o : PrintoutDocument.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/Localizer.h TheApp.h ErrorManager.h StringManager.h \
+  PrintRTFItem.h AttachmentItem.h PrintoutDocument.h RTFEditor.h \
+  MasterDocument.h MasterObject.h 
+ProtectedValueCell.o : ProtectedValueCell.m /usr/include/dart/debug.h \
+  /usr/include/dart/String.h /usr/include/dart/FieldValue.h \
+  ProtectedValueCell.h 
+RTFEditor.o : RTFEditor.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/Localizer.h cUtils.h TheApp.h DefaultsDatabase.h \
+  TextFinder.h FileItem.h AttachmentItem.h TextParser.h ErrorManager.h \
+  StringManager.h MasterItemList.h RTFEditor.h MasterDocument.h \
+  MasterObject.h 
+RechnungItem.o : RechnungItem.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h DefaultsDatabase.h AddressList.h \
+  SubItemList.h AttachmentList.h AuftragItem.h AItem.h MasterItem.h \
+  AuftragsArtikelItem.h AuftragsArtikelList.h RechnungItemList.h \
+  MasterItemList.h StringManager.h TheApp.h ZahlungItem.h ZahlungsList.h \
+  RechnungItem.h 
+RechnungItemList.o : RechnungItemList.m RechnungItem.h MasterItem.h \
+  RechnungsDocument.h MasterDocument.h MasterObject.h RechnungItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h 
+RechnungPrefs.o : RechnungPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/PaletteView.h DefaultsDatabase.h TheApp.h \
+  LayoutItemList.h MasterItemList.h /usr/include/dart/SortList.h \
+  RechnungPrefs.h MasterDocumentPrefs.h MasterPrefs.h 
+RechnungsAttachItem.o : RechnungsAttachItem.m TheApp.h ImageManager.h \
+  RechnungsDocument.h MasterDocument.h MasterObject.h RechnungsAttachItem.h \
+  AttachmentItem.h 
+RechnungsDocument.o : RechnungsDocument.m \
+  /usr/include/dart/ColumnBrowserCell.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h ErrorManager.h \
+  FileItem.h AttachmentItem.h IconListView.h LayoutManager.h MahnungRTFItem.h \
+  PrintRTFItem.h PrintoutDocument.h RTFEditor.h MasterDocument.h \
+  MasterObject.h RechnungItem.h MasterItem.h RechnungsSelector.h \
+  MasterSelector.h StringManager.h TextParser.h TheApp.h \
+  ZahlungBuchungsController.h ZahlungItem.h RechnungsDocument.h 
+RechnungsSelector.o : RechnungsSelector.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h RechnungsDocument.h MasterDocument.h \
+  MasterObject.h RechnungItemList.h MasterItemList.h RechnungItem.h \
+  MasterItem.h RechnungsSelector.h MasterSelector.h 
+ScrollingSound.o : ScrollingSound.m ScrollingSound.h 
+SeriennummernItem.o : SeriennummernItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h SeriennummernItem.h 
+SeriennummernList.o : SeriennummernList.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h SeriennummernItem.h SeriennummernList.h \
+  SubItemList.h 
+SlaveSelector.o : SlaveSelector.m /usr/include/dart/PaletteView.h \
+  /usr/include/dart/NiftyMatrix.h /usr/include/dart/HeadButton.h \
+  /usr/include/dart/Localizer.h /usr/include/dart/ColumnBrowserCell.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h Timer.h \
+  UserManager.h ImageManager.h StringManager.h TheApp.h MasterDocument.h \
+  MasterObject.h SlaveSelector.h 
+SoundPlayer.o : SoundPlayer.m SoundPlayer.h TheApp.h ImageManager.h \
+  StringManager.h 
+StringManager.o : StringManager.m /usr/include/dart/debug.h \
+  /usr/include/dart/Localizer.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h \
+  StringManager.h 
+StueckListe.o : StueckListe.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/PaletteView.h TheApp.h \
+  ErrorManager.h StringManager.h ArtikelItem.h MasterItem.h ArtikelItemList.h \
+  MasterItemList.h ArtikelDocument.h MasterDocument.h MasterObject.h \
+  StueckListe.h SlaveSelector.h 
+SubItemList.o : SubItemList.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h TheApp.h \
+  SubItemList.h 
+SubkonditionenItem.o : SubkonditionenItem.m /usr/include/dart/debug.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h SubkonditionenItem.h \
+  MasterItem.h 
+SubkonditionenList.o : SubkonditionenList.m /usr/include/dart/debug.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h \
+  SubkonditionenItem.h MasterItem.h SubkonditionenList.h SubItemList.h 
+TableEditor.o : TableEditor.m /usr/include/dart/ColumnBrowserCell.h \
+  /usr/include/dart/dartlib.h /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/Localizer.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/smartkit/SmarterFields.h \
+  /usr/include/dart/smartkit/SmarterTFCell.h TheApp.h ErrorManager.h \
+  TableEditor.h 
+TableManager.o : TableManager.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h CustomPopupButton.h TheApp.h TableManager.h 
+TextFinder.o : TextFinder.m /usr/include/dart/Localizer.h TheApp.h cUtils.h \
+  TextFinder.h 
+TextParser.o : TextParser.m /usr/include/dart/debug.h \
+  /usr/include/dart/dartlib.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/Localizer.h cUtils.h \
+  TheApp.h StringManager.h VariableHolder.h TextParser.h AParser.h 
+TheApp.o : TheApp.m /usr/include/dart/DateField.h \
+  /usr/include/dart/HeadButton.h /usr/include/dart/Localizer.h \
+  /usr/include/dart/PaletteView.h /usr/include/dart/dartlib.h \
+  /usr/include/dart/debug.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/smartkit/SmarterFields.h \
+  /usr/include/dart/smartkit/SmarterTFCell.h VivaObjectTypes.m AbspannView.h \
+  DPasteBoard.h MasterDocument.h MasterObject.h DartPageLayout.h \
+  DefaultsDatabase.h ErrorManager.h ImageManager.h InfoPanelManager.h \
+  NetworkManager.h PictCell.h PreferencesManager.h ProtectedValueCell.h \
+  StringManager.h TableManager.h UserManager.h AngebotsSelector.h \
+  MasterSelector.h ArtikelSelector.h AuftragsSelector.h BankenSelector.h \
+  BenutzerSelector.h BestellungsSelector.h KonditionenSelector.h \
+  KundenSelector.h LagerSelector.h LagerUmbuchController.h LayoutManager.h \
+  LayoutSelector.h LieferscheinSelector.h RechnungsSelector.h \
+  LagerVorgangsSelector.h VariablenManager.h VariablenPanel.h \
+  Zugriffsrechte.h Dumper.h KundenDocument.h BankenDocument.h \
+  ArtikelDocument.h KonditionenDocument.h LagerDocument.h BenutzerDocument.h \
+  AngebotsDocument.h AuftragsDocument.h BestellungsDocument.h \
+  RechnungsDocument.h LieferscheinDocument.h LayoutDocument.h RTFEditor.h \
+  TheApp.h 
+Timer.o : Timer.m /usr/include/dart/TimerView.h \
+  /usr/include/dart/Localizer.h TheApp.h Timer.h 
+UserManager.o : UserManager.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/Localizer.h StringManager.h \
+  ErrorManager.h TheApp.h UserManager.h 
+VariableHolder.o : VariableHolder.m /usr/include/dart/String.h \
+  /usr/include/dart/FieldValue.h VariableHolder.h 
+VariablenManager.o : VariablenManager.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h TheApp.h PictCell.h UserManager.h FileItem.h \
+  AttachmentItem.h VariablenManager.h MasterDocument.h MasterObject.h 
+VariablenPanel.o : VariablenPanel.m /usr/include/dart/debug.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h TheApp.h \
+  StringManager.h UserManager.h VariablenManager.h MasterDocument.h \
+  MasterObject.h VariablenPanel.h 
+VivaPrefs.o : VivaPrefs.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h DefaultsDatabase.h \
+  TheApp.h VivaPrefs.h MasterPrefs.h 
+ZahlungBuchungsController.o : ZahlungBuchungsController.m \
+  /usr/include/dart/Localizer.h /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h ErrorManager.h \
+  MasterDocument.h MasterObject.h StringManager.h TheApp.h RechnungItemList.h \
+  MasterItemList.h /usr/include/dart/SortList.h ZahlungItem.h \
+  ZahlungBuchungsController.h 
+ZahlungItem.o : ZahlungItem.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h ZahlungItem.h 
+ZahlungsList.o : ZahlungsList.m /usr/include/dart/querykit.h \
+  /usr/include/dart/QueryString.h /usr/include/dart/QueryResultRow.h \
+  /usr/include/dart/QueryResult.h /usr/include/dart/SortList.h \
+  /usr/include/dart/Query.h /usr/include/dart/BulkQuery.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h TheApp.h ZahlungItem.h ZahlungsList.h \
+  SubItemList.h 
+Zugriffsrechte.o : Zugriffsrechte.m /usr/include/dart/fieldvaluekit.h \
+  /usr/include/dart/FieldValue.h /usr/include/dart/NullValue.h \
+  /usr/include/dart/String.h /usr/include/dart/Integer.h \
+  /usr/include/dart/Double.h /usr/include/dart/Date.h \
+  /usr/include/dart/querykit.h /usr/include/dart/QueryString.h \
+  /usr/include/dart/QueryResultRow.h /usr/include/dart/QueryResult.h \
+  /usr/include/dart/SortList.h /usr/include/dart/Query.h \
+  /usr/include/dart/BulkQuery.h /usr/include/dart/debug.h TheApp.h \
+  ArtikelDocument.h MasterDocument.h MasterObject.h KundenDocument.h \
+  BestellungsDocument.h AngebotsDocument.h AuftragsDocument.h \
+  BankenDocument.h LagerDocument.h KonditionenDocument.h RechnungsDocument.h \
+  LieferscheinDocument.h LayoutDocument.h RTFEditor.h Zugriffsrechte.h 
+Viva_main.o : Viva_main.m /usr/include/dart/Localizer.h TheApp.h 
+cUtils.o : cUtils.m cUtils.h 

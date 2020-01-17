@@ -1,0 +1,41 @@
+"DPasteBoard"				=	"VivaAblage";
+
+"AngebotsDocument"			=	"AngebotItem";
+"ArtikelDocument"			=	"ArtikelItem";
+"AuftragsDocument"			=	"AuftragItem";
+"BankenDocument"			=	"BankItem";
+"BenutzerDocument"			=	"BenutzerItem";
+"BestellungsDocument"		=	"BestellungItem";
+"KonditionenDocument"		=	"KonditionenItem";
+"KundenDocument"			=	"KundeItem";
+"KundenKontoDocument"		=	"KundenKonto";
+"LagerDocument"				=	"LagerItem";
+"LayoutDocument"			=	"LayoutItem";
+"LieferscheinDocument"		=	"LieferscheinItem";
+"RechnungsDocument"			=	"RechnungItem";
+
+"AngebotsSelector"			=	"AngebotItemList";
+"ArtikelSelector"			=	"ArtikelItemList";
+"AuftragsSelector"			=	"AuftragItemList";
+"BankenSelector"			=	"BankItemList";
+"BenutzerSelector"			=	"BenutzerItemList";
+"BestellungsSelector"		=	"BestellungItemList";
+"KonditionenSelector"		=	"KonditionenItemList";
+"KundenSelector"			=	"KundeItemList";
+"LagerSelector"				=	"LagerItemList";
+"LayoutSelector"			=	"LayoutItemList";
+"LieferscheinSelector"		=	"LieferscheinItemList";
+"RechnungsSelector"			=	"RechnungItemList";
+
+"ArtikelLieferanten"		=	"KundeItemList";
+"StueckListe"				=	"ArtikelItemList";
+"PrintoutDocument"			=	"vivaRTF";
+"RTFEditor"					=	"vivaRTF";
+
+"ZahlungBuchungsController"	=	"ZahlungBuchungItem";
+"SoundPlayer"				=	"SoundItem";
+"VariablenManager"			=	"VariablenItem";
+"Zugriffsrechte"			=	"ZugriffsrechteItem";
+"PreferencesManager"		=	"PreferencesItem";
+"LagerUmbuchController"		=	"LagerUmbuchItem";
+"Dumper"					=	"Dumper";

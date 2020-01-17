@@ -1,0 +1,18 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\fmodern Ohlfs;}
+\paperw5060
+\paperh2540
+\margl120
+\margr120
+\pard\tx2880\tx4020\tx4120\tx5360\tx6720\tx8060\tx9400\tx10740\tx12080\tx13440\f0\b\i0\ul\fs32 kdnr	varchar(15)\
+
+\b0\ul0 buchungsnr	int\
+datum	datetime\
+betrag	float\
+
+\b\ul\gray333 rechnr	varchar(15)\
+
+\b0\ul0\gray0 bemerkung	varchar(50)\
+
+\i \
+
+}

@@ -1,0 +1,94 @@
+#!/bin/csh 
+echo "            ============================================"
+echo "               viva\! Release 2a Installation script"
+echo "             Copyright (c) 1992 by d'ART Software GmbH"
+echo "                      Written by Imdat Solak"
+echo "                       All rights reserved\!"
+echo "            --------------------------------------------"
+echo "            viva\! is a Trademark of d'ART Software GmbH"
+echo "                       All rights reserved\!"
+echo "            ============================================"
+echo "                    #include <sys/disclaimer.h>"
+echo " "
+echo " "
+echo "Installing viva\!2 into /tmp Directory...."
+echo "On Errors please refer to the log files "
+echo "'/tmp/Install_Errors' and '~/Install_viva2.log' "
+echo " "
+echo " "
+echo -n "Copying viva.tar.Z to /tmp/Viva2.app..."
+mkdir /tmp/Viva2.app >&/tmp/Install_Errors
+if ($status > 0) then
+	echo " "
+	echo "      Error on creating folder /tmp/Viva2.app"
+	exit 1
+endif
+cp viva.tar.Z /tmp/Viva2.app >&/tmp/Install_Errors
+if ($status > 0) then
+	echo " "
+	echo "      Error on copying viva.tar.Z to /tmp/Viva2.app"
+	exit 1
+endif
+cp prepareviva /tmp/Viva2.app >&/tmp/Install_Errors
+if ($status > 0) then
+	echo " "
+	echo "      Error on copying file 'prepareviva' to /tmp/Viva2.app"
+	exit 1
+endif
+echo "done"
+echo -n "Exploding viva.tar.Z..."
+cd /tmp/Viva2.app
+uncompress viva.tar.Z >&/tmp/Install_Errors
+if ($status > 0) then
+	echo " "
+	echo "      Error on exploding (uncompressing) viva.tar.Z"
+	exit 1
+endif
+echo "done"
+echo -n "Un-.tar-ing viva.tar..."
+tar xf viva.tar >&/tmp/Install_Errors
+if ($status > 0) then
+	echo " "
+	echo "      Error on 'un-.tar-ing viva.tar"
+	exit 1
+endif
+echo "done"
+echo -n "Removing viva.tar from .app Directory..."
+rm viva.tar >&/tmp/Install_Errors
+if ($status == 0) then
+	echo "done"
+else
+	echo " "
+	echo "Error on removing viva.tar. Please remove it manually..."
+endif
+echo -n "Renaming files..."
+mv Viva Viva2 >&/tmp/Install_Errors
+if ($status > 0) then
+	echo " "
+	echo "      Error on renaming files. Please check file Viva2.app/Viva..."
+	exit 1
+endif
+echo "done"
+echo -n "Postinstall process is being started..."
+chmod 700 prepareviva >&/tmp/Install_Errors
+if ($status > 0) then
+	echo " "
+	echo "      Error on changing execute-permission on 'prepareviva'"
+	exit 1
+endif
+echo "done"
+/bin/sh ./prepareviva
+if ($status > 0) then
+	echo " "
+	echo "      Error on starting postinstall process. Please check file 'Viva2.app/prepareviva'"
+	exit 1
+endif
+echo " "
+echo " "
+echo "Finished Installing viva\!2."
+echo "Please move the .app folder (Viva2.app) "
+echo "to the desired location (like /LocalApps)..."
+echo " "
+echo "For further installations- and updates please"
+echo "refer to the README.rtf-file on the viva\!2-disk\!"
+echo " "

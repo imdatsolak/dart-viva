@@ -1,0 +1,8 @@
+sp_addumpdevice "disk",vivaDBDev,"/tmp/viva2DBBackup.dsqldmp",2
+go
+load database viva2DB from vivaDBDev
+go
+sp_dropdevice vivaDBDev
+go
+quit
+

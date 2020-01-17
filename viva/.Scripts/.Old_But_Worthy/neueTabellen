@@ -1,0 +1,58 @@
+{\rtf0\ansi{\fonttbl\f0\fmodern Ohlfs;}
+\paperw5640
+\paperh6260
+\margl120
+\margr120
+{\colortbl\red0\green0\blue0;}
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\f0\b0\i0\ul0\fs20\fc0  adressen        dbo             user table             \
+ angebot         dbo             user table             \
+ artikellieferan dbo             user table             \
+ attachments     dbo             user table             \
+ auftrag         dbo             user table             \
+ auftragsartikel dbo             user table             \
+ benutzer        dbo             user table             \
+ benutzerprivile dbo             user table             \
+ bestellung      dbo             user table             \
+ bindata         dbo             user table             \
+ doof            dbo             user table             \
+ janein          dbo             user table             \
+ konditionen     dbo             user table             \
+ kundenkonto     dbo             user table             \
+ lager           dbo             user table             \
+ lagerartikel    dbo             user table             \
+ lagervorgang    dbo             user table             \
+ layout          dbo             user table             \
+ layoutkategorie dbo             user table             \
+ lieferschein    dbo             user table             \
+ maxangebot      dbo             user table             \
+ maxauftrag      dbo             user table             \
+ maxbestellung   dbo             user table             \
+ maxbindataid    dbo             user table             \
+ maxbuchung      dbo             user table             \
+ maxlayout       dbo             user table             \
+ maxlieferschein dbo             user table             \
+ maxrechnung     dbo             user table             \
+ preferences     dbo             user table             \
+ rechnung        dbo             user table             \
+ seriennummern   dbo             user table             \
+ stuecklisten    dbo             user table             \
+ subkonditionen  dbo             user table             \
+ variablen       dbo             user table             \
+ vivadumps       dbo             user table             \
+ zugriffe        dbo             user table             \
+ zugriffsrechte  dbo             user table             \
+- abteilungen     dbo             user table             \
+- artikel         dbo             user table             \
+- artikelkategori dbo             user table             \
+- banken          dbo             user table             \
+- kunden          dbo             user table             \
+- kundeneinstufun dbo             user table             \
+- kundeneinstufun dbo             user table             \
+- kundengroesse   dbo             user table             \
+- kundenkategorie dbo             user table             \
+- laender         dbo             user table             \
+- mengeneinheiten dbo             user table             \
+- mwstsaetze      dbo             user table             \
+- sammelrechnunge dbo             user table             \
+
+}

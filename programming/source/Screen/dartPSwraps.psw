@@ -1,0 +1,323 @@
+ defineps setrotatedfont(char *fontname; float fontsize) 
+	-60 rotate
+	/fontname findfont [1 0 0 -1 0 0] makefont fontsize scalefont setfont
+endps
+
+defineps unrotatefont ()
+	60 rotate
+endps
+
+defineps setflippedfont(char *fontname; float fontsize)
+	% set font name to "fontname" and size to "fontsize" and flip the font
+	/fontname findfont [1 0 0 1 0 0] makefont fontsize scalefont setfont
+endps
+
+defineps initDrag(float mouseDownX, mouseDownY, offsetX, offsetY, imageW,
+		  imageH | int *iWindow, *bgWindow, *niWindow, *igstate,
+		  *bggstate, *nigstate, *gWindow, *ggstate)
+
+  % compute the image window's starting origin
+  /currentX mouseDownX offsetX sub def
+  /currentY mouseDownY offsetY sub def
+  
+  % create a window to hold the image sover the background and save its gstate
+  /newImageWindow 50.0 0.0 imageW imageH Retained window def
+  newImageWindow windowdeviceround 
+  /newImageGs gstate def
+  
+  % create a window to hold the old background and save its gstate
+  /backgroundWindow 100.0 0.0 imageW imageH Retained window def
+  backgroundWindow windowdeviceround 
+  /backgroundGs gstate def
+  
+  % get the bits under the imagewindow's imminent location (using the 
+  % set autofill false trick)
+  /grabWindow currentX currentY imageW imageH Nonretained window def
+  false grabWindow setautofill
+  Above 0 grabWindow orderwindow
+  grabWindow windowdeviceround /grabGstate gstate def
+  
+  % copy the bits taken from the grabwindow into the bgImage window
+  backgroundGs setgstate
+  0.0 0.0 imageW imageH grabGstate 0.0 0.0 Copy composite
+    
+  % remove the grabwindow from the window list;  note: since the grab window's
+  % nonretained, ordering it out causes it to forget its current image;  the
+  % next time we order it into the window list, it'll do the screen grab trick
+  % again
+  Out 0 grabWindow orderwindow
+  
+  % create the window the user will actually drag around
+  /imageWindow currentX currentY imageW imageH Retained window def
+  imageWindow windowdeviceround 
+  /imageGstate gstate def
+  
+  % the backgroundWindow and imageWindow contain the same images at the start
+  0.0 0.0 imageW imageH backgroundGs 0.0 0.0 Copy composite
+  
+  % bring the imageWindow onscreen (above the window the user clicked upon)
+  Above currentX currentY Above 0 findwindow pop 3 1 roll pop pop
+  dup currentwindowlevel /windowLevel exch def
+  windowLevel imageWindow setwindowlevel
+  imageWindow orderwindow
+  
+  % put the background and grab windows in the same tier
+  windowLevel backgroundWindow setwindowlevel
+  windowLevel grabWindow setwindowlevel
+  
+  % pass the window numbers back to the Transparent Window
+  imageWindow iWindow
+  backgroundWindow bgWindow
+  newImageWindow niWindow
+  
+  % this routine places an object in the first available spot in the UserArray
+  /mydefineuserobject { %def
+      /uoindex UserObjects length def
+      uoindex 1 sub -1 0 { %for
+          dup UserObjects exch get null eq
+	    { /uoindex exch def exit } { pop } ifelse
+      } for
+      uoindex exch defineuserobject uoindex
+  } bind def
+  
+  % place the gstates in the UserArray and pass the user object numbers back
+  % to the TransWindow object
+  imageGstate mydefineuserobject igstate
+  backgroundGs mydefineuserobject bggstate
+  newImageGs mydefineuserobject nigstate
+  grabGstate mydefineuserobject ggstate
+  
+  grabWindow gWindow
+  
+endps
+
+
+
+defineps dragWindow(int imageWindow, newImageWindow, grabWindow, winUnderMouse,
+		    prevWinUnderMouse;  userobject imageGstate, oldBgGs,
+		    newImageGs, bitmapGstate, grabGstate;
+		    float mouseDownX, mouseDownY, offsetX, offsetY, imageW,
+		    imageH | boolean *mouseup; int *underwindow;
+		    float *newMouseX, *newMouseY)
+
+  /winchanged winUnderMouse 0 ne prevWinUnderMouse 0 ne or def
+  /windowUM winUnderMouse def
+  /prevwindowUM prevWinUnderMouse def
+  
+  /lastX mouseDownX def
+  /lastY mouseDownY def
+  
+  { %loop
+  
+      % get the current mouse location
+      /currentX 0 currentmouse /currentY exch def def
+      
+      % change the image window's contents if the mouse moved or the
+      % window in back of the imagewindow has changed its image
+      lastX currentX eq lastY currentY eq and not winchanged or { %ifelse
+      
+	  % compute the image window's new location
+	  /imageX currentX offsetX sub def
+	  /imageY currentY offsetY sub def
+      
+	  % move the grab window to the new location and grab screen bits under
+	  % that window's position by bringing it into the window list
+	  imageX imageY grabWindow movewindow
+	  Above imageWindow grabWindow orderwindow
+	  
+	  % setup to draw into the image buffer
+	  imageX imageY newImageWindow movewindow
+	  newImageGs setgstate
+
+	  winchanged { %ifelse
+	  
+	      % the window(s) under the image window changed its contents;
+	      % since the screen grab trick above can't capture the bits below
+	      % the image window, we need to do our own screen grab
+	      
+	      /saveobj save def
+	      
+	      % fill the window with the gray background (workspace window)
+	      .333 setgray 0.0 0.0 imageW imageH rectfill
+	      
+	      % get a list of the windows on screen
+	      0 countscreenlist array 0 screenlist /warray exch def
+	      0 countscreenlist 1 sub -1 0 { %for
+	      
+	          warray exch get /awindow exch def
+		  awindow imageWindow eq { exit } if
+		  imageX imageY gsave awindow windowdeviceround screentobase
+		    imageW imageH gstate grestore 0.0 0.0 Copy composite
+		  
+	      } for
+	      
+	      currentdict /awindow undef
+	      currentdict /warray undef
+
+	      saveobj restore
+	      /winchanged false def
+		
+	  }{ %else
+	      % copy the bits taken from the grabwindow into the cache
+	      0.0 0.0 imageW imageH grabGstate 0 0 Copy composite
+	    
+	      % take the background image from the last drag, shift it over the
+	      % same amount the mouse moved and copy an bits still remaining
+	      % into the new background image (giving us the complete image
+	      % under the image window's new location)
+	      0.0 0.0 imageW imageH oldBgGs
+		lastX currentX sub lastY currentY sub Copy composite
+	  
+	  } ifelse
+	    
+	  % save the complete background image for next time
+	  oldBgGs setgstate 0.0 0.0 imageW imageH newImageGs 0 0 Copy composite
+      
+	  % composite the image window's image over the background
+	  newImageGs setgstate
+	  0.0 0.0 imageW imageH bitmapGstate 0 0 Sover composite
+	  
+	  % save the current point for next time
+	  /lastX currentX def
+	  /lastY currentY def
+    
+	  % flush new drawing to the screen (these windows are or were
+	  % previously under the imagewindow and their images changed;  their
+	  % flushWindow was disabled so we could flush just before bringing
+	  % the new image window's image on screen)
+	  windowUM 0 ne { %if
+	      gsave windowUM windowdeviceround flushgraphics grestore
+	      /windowUM 0 def
+	  } if
+	  prevwindowUM 0 ne { %if
+	      gsave prevwindowUM windowdeviceround flushgraphics grestore
+	      /prevwindowUM 0 def
+	  } if
+	  
+	  % copy the new image to the grab window
+	  grabGstate setgstate 0.0 0.0 imageW imageH newImageGs 0.0 0.0 Copy
+	    composite 
+      
+	  % move the image window under the grabwindow
+	  imageX imageY imageWindow movewindow
+      
+	  % finally, copy the new image into the image window
+	  imageGstate setgstate
+	  0.0 0.0 imageW imageH newImageGs 0.0 0.0 Copy composite
+	
+	  % get rid of the grab window
+	  Out 0 grabWindow orderwindow
+
+	  buttondown not mouseup exit
+	  
+      }{ %else
+      
+	  buttondown not { %if
+	  
+	      % mouseup, so flush unflushed images to screen
+	      windowUM 0 ne { %if
+		  gsave windowUM windowdeviceround flushgraphics grestore
+	      } if
+	      prevwindowUM 0 ne { %if
+		  gsave prevwindowUM windowdeviceround flushgraphics grestore
+	      } if
+    
+	      true mouseup exit
+	  
+	} if
+      } ifelse
+      
+  } bind loop
+  
+  % find window below mouse location and return it if it's in our context
+  currentX currentY Below imageWindow findwindow
+  4 1 roll /windowbelow exch def pop pop { %if
+      windowbelow currentowner currentcontext eq { %ifelse
+	  windowbelow underwindow
+      }{ %else
+	  0 underwindow
+      } ifelse
+  } if
+  
+  currentX newMouseX
+  currentY newMouseY
+
+endps
+
+
+defineps miniDragWindow(int imageWindow, newImageWindow, grabWindow;
+			userobject imageGstate, oldBgGs, newImageGs,
+			bitmapGstate, grabGstate;
+			float currentX, currentY, offsetX, offsetY, imageW,
+			imageH)
+  
+    % compute the image window's new location
+    /imageX currentX offsetX sub def
+    /imageY currentY offsetY sub def
+
+    % create a window at the new location and grab screen bits under that
+    % window's position by bringing it into the window list
+    imageX imageY grabWindow movewindow
+    Above imageWindow grabWindow orderwindow
+	  
+    % setup to draw into the image buffer
+    imageX imageY newImageWindow movewindow
+    newImageGs setgstate
+
+    % copy the bits taken from the grabwindow into the cache
+    0.0 0.0 imageW imageH grabGstate 0.0 0.0 Copy composite
+    
+    % take the background image from the last drag, shift it over the
+    % same amount the mouse moved and copy an bits still remaining
+    % into the new background image (giving us the complete image
+    % under the image window's new location)
+    0.0 0.0 imageW imageH oldBgGs
+    lastX currentX sub lastY currentY sub Copy composite
+
+    % save the complete background image for next time
+    oldBgGs setgstate 0.0 0.0 imageW imageH newImageGs 0.0 0.0 Copy composite
+    
+    % composite the image window's image over the background
+    newImageGs setgstate
+    0.0 0.0 imageW imageH bitmapGstate 0.0 0.0 Sover composite
+
+    % copy the new image to the grab window
+    grabGstate setgstate 0.0 0.0 imageW imageH newImageGs 0.0 0.0 Copy
+    composite 
+    
+    % move the image window under the grabwindow
+    imageX imageY imageWindow movewindow
+    
+    % finally, copy the new image into the image window
+    imageGstate setgstate
+    0.0 0.0 imageW imageH newImageGs 0.0 0.0 Copy composite
+    
+    % get rid of the grab window
+    Out 0 grabWindow orderwindow
+	
+endps
+
+defineps PS_cleanup(int imageWin, bgWin, newImageWin, grabWin, igstate,
+		 bggstate, nigstate, ggstate)
+		 
+  % zero out the gstates
+  gsave nulldevice
+    igstate execuserobject currentgstate pop
+    bggstate execuserobject currentgstate pop
+    nigstate execuserobject currentgstate pop
+    ggstate execuserobject currentgstate pop
+  grestore  
+  % get rid of the gstates' userarray entries
+  igstate undefineuserobject
+  bggstate undefineuserobject
+  nigstate undefineuserobject
+  ggstate undefineuserobject
+
+  % destroy the image and cache windows
+  imageWin termwindow
+  bgWin termwindow
+  newImageWin termwindow
+  grabWin termwindow
+
+endps
+

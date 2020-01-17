@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if test -n "$1"
+then	echo gut
+else	echo noe
+fi
+
+#tar cfv $1

@@ -1,0 +1,15 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\fmodern Ohlfs;}
+\paperw4060
+\paperh2220
+\margl120
+\margr120
+{\colortbl\red0\green0\blue0;}
+\pard\tx1800\tx3940\tx4020\tx5360\tx6720\tx8060\tx9400\tx10740\tx12080\tx13440\f0\b0\i0\ul0\fs32\fc0 class	char(2)\
+id	varchar(15)\
+position	int\
+nr	varchar(30)\
+seriennr	varchar(50)\
+\
+\
+
+}

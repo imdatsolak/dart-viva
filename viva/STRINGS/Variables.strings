@@ -1,0 +1,62 @@
+/* ********************************************************************************** */
+/* This file is a special one: The Format for .strings file is actually "key"="value" */
+/* and the localizer would normally localize the "value"-part!!!                      */
+/* But, please, in this case you HAVE TO LOCALIZE the "key"-part. Don't touch the     */
+/* values, touch only the keys.                                                       */
+/*                                                                                    */
+/* Example:                                                                           */
+/*          Localization of                                                           */
+/*                                                                                    */
+/* "Rechnungs-Nr."="Rechnungs-Nr."                                                    */
+/*          to english would be as following:                                         */
+/*                                                                                    */
+/* "Invoice-No" = "Rechnungs-Nr."                                                     */
+/* ********************************************************************************** */
+
+"AdrName1"					=	"AdrName1";
+"AdrName2"					=	"AdrName2";
+"AdrName3"					=	"AdrName3";
+"AdrStrasse"					=	"AdrStrasse";
+"AdrPlzOrt"					=	"AdrPlzOrt";
+"AdrLand"					=	"AdrLand";
+"AdrTel"					=	"AdrTel";
+"AdrFax"					=	"AdrFax";
+"AdrTelex"					=	"AdrTelex";
+"AdrEmail"					=	"AdrEmail";
+"_Nr"					=	"_Nr";
+"_Datum"					=	"_Datum";
+"_Pos"					=	"_Pos";
+"_Beschr."					=	"_Beschr.";
+"_Vk"					=	"_Vk";
+"_MwSt"					=	"_MwSt";
+"_Anz"					=	"_Anz";
+"_ME"					=	"_ME";
+"_Rab"					=	"_Rab";
+"_Skonto"					=	"_Skonto";
+"_SkontoTage"					=	"_SkontoTage";
+"_NettoTage"					=	"_NettoTage";
+"ArtListBegin"					=	"ArtListBegin";
+"ArtListEnde"					=	"ArtListEnde";
+"ArtNr"					=	"ArtNr";
+"ArtPos"					=	"ArtPos";
+"ArtBeschr."					=	"ArtBeschr.";
+"ArtVk"					=	"ArtVk";
+"ArtMwSt"					=	"ArtMwSt";
+"ArtAnz"					=	"ArtAnz";
+"ArtME"					=	"ArtME";
+"ArtRab"					=	"ArtRab";
+"ArtNPreis"					=	"ArtNPreis";
+"ArtBPreis"					=	"ArtBPreis";
+"KundenNr"					=	"KundenNr";
+"KundenName"					=	"KundenName";
+"GesamtNetto"					=	"GesamtNetto";
+"GesamtBrutto"					=	"GesamtBrutto";
+"GesamtMwSt"					=	"GesamtMwSt";
+"Auf-Nr."					=	"Auf-Nr.";
+"Auf-Datum"					=	"Auf-Datum";
+"RechNetto"					=	"RechNetto";
+"RechMwSt"					=	"RechMwSt";
+"RechBrutto"					=	"RechBrutto";
+
+
+

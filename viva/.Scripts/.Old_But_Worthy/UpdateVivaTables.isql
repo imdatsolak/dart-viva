@@ -1,0 +1,33 @@
+use viva2DB
+go
+print 'Updating the Preferences Table....'
+go
+sp_rename preferences,prefs
+go
+create table preferences
+(
+        userid  int,
+        key     varchar(96),
+        range   int,
+        valuetype       char(1),
+        value   text
+)
+
+create unique clustered index preferencesindex on preferences(userid,key,range)
+go
+insert into preferences select * from prefs
+go
+drop table prefs
+go
+print 'Updating the User-View....'
+go
+drop view benutzerpopupview
+go
+create view benutzerpopupview(key,value) as select sysusers.suid, sysusers.name from sysusers
+go
+print 'Done updating Tables....'
+print 'Please launch viva2 and re-save the users for further access....'
+go
+quit
+go
+

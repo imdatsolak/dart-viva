@@ -1,0 +1,295 @@
+delete from artikelkategorien
+delete from kundeneinstufung
+delete from kundengroesse
+delete from kundenkategorien
+delete from laender
+delete from mengeneinheiten
+delete from mwstsaetze
+insert into artikelkategorien select * from vivaDB..artikelkategorien
+insert into kundeneinstufung select * from vivaDB..kundeneinstufungen
+insert into kundengroesse select * from vivaDB..kundengroesse
+insert into kundenkategorien select * from vivaDB..kundenkategorien
+insert into laender select * from vivaDB..laender
+insert into mengeneinheiten select * from vivaDB..mengeneinheiten
+insert into mwstsaetze select * from vivaDB..mwstsaetze
+
+
+
+insert into artikelkategorien select * from vivaDB..artikelkategorien
+insert into kundeneinstufung select * from vivaDB..kundeneinstufungen
+insert into kundengroesse select * from vivaDB..kundengroesse
+insert into kundenkategorien select * from vivaDB..kundenkategorien
+insert into laender select * from vivaDB..laender
+insert into mengeneinheiten select * from vivaDB..mengeneinheiten
+insert into mwstsaetze select * from vivaDB..mwstsaetze
+insert into sammelrechnungen select * from vivaDB..sammelrechnungen
+insert into banken select * from vivaDB..banken
+
+##########kunden
+insert into kunden select kd_nr,
+	kd_name,
+	kd_einstufung,
+	kd_kategorie,
+	kd_groesse,
+	0,
+	kd_zahlungsziel,
+	kd_kreditlimit,
+	0,
+	kd_mahnzeit1,
+	kd_mahnzeit2,
+	kd_mahnzeit3,
+	kd_skontotage,
+	kd_skontoprozent,
+	1,
+	kd_betreuernr,
+	0 from vivaDB..kunden
+insert into adressen select "KU",
+	kd_nr,
+	adr_nr,
+	adr_name1,
+	adr_name2,
+	adr_name3,
+	adr_strasse,
+	adr_plzort,
+	adr_landnr,
+	adr_tel,
+	adr_fax,
+	adr_telex,
+	adr_email from vivaDB..kundenadressen
+
+##########lieferanten
+insert into kunden select 'LF'+lfrnt_nr,
+	lfrnt_name,
+	einstufungen.key,
+	kundenkategorien.key,
+	lfrnt_groesse,
+	lfrnt_liefersperre,
+	lfrnt_zahlungsziel,
+	lfrnt_kreditlimit,
+	lfrnt_sammelrechnung,
+	lfrnt_mahnzeit1,
+	lfrnt_mahnzeit2,
+	lfrnt_mahnzeit3,
+	lfrnt_skontotage,
+	lfrnt_skontoprozent,
+	1,
+	lfrnt_betreuernr,
+	0 from vivaDB..lieferanten
+insert into adressen select "KU",
+	lfrnt_nr,
+	adr_nr,
+	adr_name1,
+	adr_name2,
+	adr_name3,
+	adr_strasse,
+	adr_plzort,
+	adr_landnr,
+	adr_tel,
+	adr_fax,
+	adr_telex,
+	adr_email from vivaDB..lieferantenadressen
+
+##########artikel
+
+insert into artikel select  art_nr,
+	art_name,
+	art_beschreibung,
+	art_kategorie,
+	1,
+	0,
+	0,
+	art_mwstsatz,
+	art_vk,
+	art_ek,
+	art_betreuernr,
+	art_mengeneinheit,
+	0,
+	0,
+	0,
+	"",
+	0 from vivaDB..artikel
+
+#########angebot
+
+insert into angebot select  ang_nr,
+	ang_datum,
+	kd_nr,
+	ang_skontotage,
+	ang_skontoprozent,
+	ang_nettotage,
+	ang_gesamtpreis,
+	ang_hatgesamtpreis,
+	convert(float,startnum)/1000,
+	ang_betreuernr,
+	ang_mwstdrucken,
+	0,
+	1,
+	0 from vivaDB..angebot, vivaDB..vivaprefs
+	where key=107
+insert into adressen select "AN",
+	ang_nr,
+	adr_nr,
+	adr_name1,
+	adr_name2,
+	adr_name3,
+	adr_strasse,
+	adr_plzort,
+	adr_landnr,
+	adr_tel,
+	adr_fax,
+	adr_telex,
+	adr_email from vivaDB..angebotsadressen
+insert into auftragsartikel select "AN",
+	ang_nr,
+	-1, /* position */
+	art_nr,
+	art_name,
+	art_vk,
+	art_mwstsatz,
+	mwstsaetze.value,
+	aua_anzahl,
+	mengeneinheiten.value,
+	aua_rabatt,
+	0,
+	convert(varchar(15),aua_rechnungsnr),
+	convert(varchar(15),aua_lieferscheinnr)
+	from vivaDB..angebotsartikel,mwstsaetze,mengeneinheiten
+	where vivaDB..angebotsartikel.art_mengeneinheit=mengeneinheiten.key
+	and vivaDB..angebotsartikel.art_mwstsatz=mwstsaetze.key
+
+##########auftrag
+
+insert into auftrag select  auf_nr,
+	auf_datum,
+	kd_nr,
+	auf_bestelldatum,
+	auf_bestellnr,
+	auf_bestelldatum,
+	auf_skontotage,
+	auf_skontoprozent,
+	auf_nettotage,
+	auf_mahnzeit1,
+	auf_mahnzeit2,
+	auf_mahnzeit3,
+	auf_gesamtpreis,
+	auf_hatgesamtpreis,
+	convert(float,startnum)/1000,
+	auf_betreuernr,
+	auf_mwstdrucken,
+	0,
+	1,
+	0,
+	0,
+	0 from vivaDB..auftrag, vivaDB..vivaprefs
+	where key=107
+insert into adressen select "AU",
+	ang_nr,
+	adr_nr,
+	adr_name1,
+	adr_name2,
+	adr_name3,
+	adr_strasse,
+	adr_plzort,
+	adr_landnr,
+	adr_tel,
+	adr_fax,
+	adr_telex,
+	adr_email from vivaDB..auftragsadressen
+insert into auftragsartikel select "AU",
+	auf_nr,
+	-1, /* position */
+	art_nr,
+	art_name,
+	art_vk,
+	art_mwstsatz,
+	mwstsaetze.value,
+	aua_anzahl,
+	mengeneinheiten.value,
+	aua_rabatt,
+	0,
+	convert(varchar(15),aua_rechnungsnr),
+	convert(varchar(15),aua_lieferscheinnr)
+	from vivaDB..auftragsartikel,mwstsaetze,mengeneinheiten
+	where vivaDB..auftragsartikel.art_mengeneinheit=mengeneinheiten.key
+	and vivaDB..auftragsartikel.art_mwstsatz=mwstsaetze.key
+
+######### rechnungen
+
+insert into rechnung select  convert(varchar(15),rech_nr),
+	auf_nr,
+	rech_datum,
+	rech_mahnstufe,
+	rech_storniert,
+	rech_betragnetto,
+	rech_betragbrutto-rech_betragnetto,
+	0,
+	0 from vivaDB..rechnungen
+insert into auftragsartikel select "RE",
+	convert(varchar(15),rech_nr),
+	-1, /* position */
+	art_nr,
+	art_name,
+	art_vk,
+	art_mwstsatz,
+	mwstsaetze.value,
+	aua_anzahl,
+	mengeneinheiten.value,
+	aua_rabatt,
+	0,
+	convert(varchar(15),rech_nr),
+	""
+	from vivaDB..auftragsartikel, vivaDB..rechnungen, vivaDB..auftrag, mwstsaetze, mengeneinheiten
+	where vivaDB..auftragsartikel.auf_nr=vivaDB..auftrag.auf_nr
+	and vivaDB..auftragsartikel.aua_rechnungsnr=vivaDB..rechnungen.rech_nr
+	and vivaDB..auftragsartikel.art_mengeneinheit=mengeneinheiten.key
+	and vivaDB..auftragsartikel.art_mwstsatz=mwstsaetze.key
+
+######### lieferscheine
+
+insert into lieferschein select convert(varchar(15),lsch_nr),
+	auf_nr,
+	lsch_datum,
+	0,
+	1,
+	0 from vivaDB..lieferscheine
+insert into auftragsartikel select "LI",
+	convert(varchar(15),lsch_nr),
+	-1, /* position */
+	art_nr,
+	art_name,
+	art_vk,
+	art_mwstsatz,
+	mwstsaetze.value,
+	aua_anzahl,
+	mengeneinheiten.value,
+	aua_rabatt,
+	0,
+	"",
+	convert(varchar(15),lsch_nr)
+	from vivaDB..auftragsartikel, vivaDB..lieferscheine, vivaDB..auftrag, mwstsaetze, mengeneinheiten
+	where vivaDB..auftragsartikel.auf_nr=vivaDB..auftrag.auf_nr
+	and vivaDB..auftragsartikel.aua_lieferscheinnr=vivaDB..lieferscheine.lsch_nr
+	and vivaDB..auftragsartikel.art_mengeneinheit=mengeneinheiten.key
+	and vivaDB..auftragsartikel.art_mwstsatz=mwstsaetze.key
+
+#########zahlungen
+
+insert into kundenkonto select kd_nr,
+	-1, /* buchungsnr */
+	rech_datum,
+	-rech_brutto,
+	convert(varchar(15),rech_nr),
+	"konvertiert (Rechnung aus viva1)"
+	from vivaDB..rechnungen, vivaDB..auftrag
+	where vivaDB..rechnungen.auf_nr=vivaDB..auftrag.auf_nr
+insert into kundenkonto select kd_nr,
+	-1, /* buchungsnr */
+	zahl_datum,
+	zahl_betrag,
+	convert(varchar(15),rech_nr),
+	"konvertiert (Zahlung aus viva1)"
+	from vivaDB..zahlungen, vivaDB..auftrag
+	where vivaDB..zahlungen.auf_nr=vivaDB..auftrag.auf_nr
+
+
+

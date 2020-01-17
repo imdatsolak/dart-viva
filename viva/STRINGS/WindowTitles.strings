@@ -1,0 +1,33 @@
+"AngebotsSelector"				=	"Angebotsliste";
+"ArtikelSelector"				=	"Artikelliste";
+"AuftragsSelector"				=	"Auftragsliste";
+"BankenSelector"				=	"Bankenliste";
+"BenutzerSelector"				=	"Benutzerliste";
+"BestellungsSelector"			=	"Bestell-Liste";
+"KonditionenSelector"			=	"Konditionsliste";
+"KundenSelector"				=	"GeschÙftspartner";
+"LagerSelector"					=	"Lagerliste";
+"LayoutSelector"				=	"Layout-/Briefliste";
+"LieferscheinSelector"			=	"Lieferscheinliste";
+"RechnungsSelector"				=	"Rechnungsliste";
+"LagerVorgangsSelector"			=	"Lagervorgangsliste";
+
+"AngebotsDocument"				=	"Angebotsdaten";
+"ArtikelDocument"				=	"Artikeldaten";
+"AuftragsDocument"				=	"Auftragsdaten";
+"BankenDocument"				=	"Bankendaten";
+"BenutzerDocument"				=	"Benutzerdaten";
+"BestellungsDocument"			=	"Bestelldaten";
+"KonditionenDocument"			=	"Konditionen";
+"KundenDocument"				=	"GeschÙftspartner";
+"LagerDocument"					=	"Lagerdaten";
+"LayoutDocument"				=	"Layout/Brief";
+"LieferscheinDocument"			=	"Lieferscheindaten";
+"RechnungsDocument"				=	"Rechnungsdaten";
+
+"StueckListe"					=	"Stöckliste";
+"KundenKontoDocument"			=	"Konto";
+"ZahlungBuchungsController"		=	"Zahlungsbuchung";
+"LagerUmbuchController"			=	"Umbuchung";
+
+"ArtikelLieferanten"			=	"Artikel-Lieferanten";

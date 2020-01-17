@@ -1,0 +1,16 @@
+NetdHandler.o : NetdHandler.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/NetworkSpeaker.h \
+  /usr/include/dart/NetworkListener.h OpensList.h NetdHandler.h 
+OpensList.o : OpensList.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h OpensList.h 
+vivaserverd_main.o : vivaserverd_main.m /usr/include/dart/debug.h \
+  /usr/include/dart/fieldvaluekit.h /usr/include/dart/FieldValue.h \
+  /usr/include/dart/NullValue.h /usr/include/dart/String.h \
+  /usr/include/dart/Integer.h /usr/include/dart/Double.h \
+  /usr/include/dart/Date.h /usr/include/dart/NetworkListener.h NetdHandler.h 

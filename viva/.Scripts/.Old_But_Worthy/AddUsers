@@ -1,0 +1,2 @@
+insert into benutzer select convert(varchar(12), master.dbo.syslogins.suid),"",0.0,0 from master.dbo.syslogins where convert(varchar(12), master.dbo.syslogins.suid) not in (select uid from benutzer)
+

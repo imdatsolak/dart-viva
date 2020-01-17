@@ -1,0 +1,151 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f2\ftech Symbol;\f3\fmodern Ohlfs;}
+\paperw12580
+\paperh12200
+\margl120
+\margr120
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\f0\b0\i0\ul0\fs24 Netinfo Datenbank auslesen (nur Maschinennamen) Version 1.0  \
+
+\b\fs16\li200 \
+\
+\
+
+\fs36 NiController\
+
+\fs16 \
+
+\pard\tx6240\b0\fs30\li1200 INHERITS FROM	Object\
+
+\fs16 \
+
+\fs30 REQUIRES HEADER FILES	LocalLibrary/dART/include/NiController.h\
+\
+DEFINED IN	LocalLibrary/dART/Objects/NiController\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\li1200 \
+\
+\
+
+\fs30 CLASS DESCRIPTION\
+
+\fs16 \
+
+\fs30\li1660 NiController gibt ein Storage-Object zuröck, welches die Namen aller zur Zeit in der Netinfo-Domain angemeldeten Machinen enthÙlt.\
+
+\fs16\li1700 \
+
+\li1200 \
+\
+
+\fs30 INSTANCE VARIABLES\
+
+\fs16 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\i\fs30\fi-4540\li6240 Inherited from Object
+\i0 	Class	isa;\
+\
+
+\i Declared in NiController
+\i0 	ni_status	status;\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\fi-4540\li6240 \
+
+\fi0\li1200 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 status 	The last error-status returned by netinfo calls.\
+\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\li1200 \
+
+\fs30 METHOD TYPES\
+
+\fs16 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 Querying Machine Names	
+\f2 - 
+\f0 machineNames\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\li1200 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 Querying Error and Status	
+\f2 - 
+\f0 (ni_status)lastStatus\
+	
+\f2 - 
+\f0 (const char *)lastError\
+
+\fs16 \
+\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\li1200 \
+\
+
+\fs30 INSTANCE METHODS\
+
+\fs16 \
+
+\b \
+
+\fs30 machineNames
+\fs32 \
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b machineNames
+\b0 \
+
+\fi0\li0 \
+
+\li1660 NiController gibt ein Storage-Object zuröck, welches die Namen aller zur Zeit in der Netinfo-Domain angemeldeten Machinen enthÙlt. Falls ein Fehler aufgetreten war, ist das Ergebnis 
+\i nil.
+\i0  Dann kann der Status mit 
+\b lastStatus
+\b0  und der Fehlertext mit 
+\b lastError
+\b0  abgefragt werden.\
+
+\li1700 \
+
+\li1200 \
+
+\b lastStatus
+\fs32 \
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0 (ni_status)
+\b lastStatus
+\b0 \
+
+\fi0\li0 \
+
+\li1700 Liefert den Status des letzten Netinfo-Calls zuröck.\
+\
+See also:  
+\b - lastError
+\b0 , Declaration of enum ni_status in netinfo/ni_prot.h\
+
+\b\fs16\fi-1020\li2720 \
+
+\b0\fs30\fi0\li1200 \
+\
+
+\b lastError
+\fs32 \
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0 (const char *)
+\b lastError
+\b0 \
+
+\fi0\li0 \
+
+\li1700 Liefert den Fehlertext des letzten Netinfo-Calls zuröck.\
+\
+See also:  
+\b - lastStatus
+\b0 \
+
+\b\fs16\fi-1020\li2720 \
+
+\b0\fs30\fi0\li1200 \
+\
+
+}

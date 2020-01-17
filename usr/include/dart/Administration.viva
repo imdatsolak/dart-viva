@@ -1,0 +1,15 @@
+//---------------------------------------------------
+//  Status descriptions for the Viva! Application   -
+//     Copyright (c) 1991,92 d'ART Software GmbH    -
+// Last Make with following data was on: 24.02.1992 -
+//  Created by Stefan Krause & Imdat Solak 1991,92  -
+//---------------------------------------------------
+
+#define DEMO_RELEASE          NO
+#define VALID_UNTIL           920103
+#define NUMBER_OF_LICENCES    5
+#define VERSION_MAJOR         1
+#define VERSION_MINOR         0
+#define BETA_RELEASE          NO
+#define ALPHA_RELEASE         NO
+#define FINAL_RELEASE         YES

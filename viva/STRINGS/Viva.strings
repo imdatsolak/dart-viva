@@ -1,0 +1,121 @@
+/* These are the localization strings for the screen. We are using them internally. Everything */
+/* else should be localizable from the InterfaceBuilder!! Please refer to Printer.strings for  */
+/* the stringlist for printing.                                                                */
+
+"Exporting"						=	"Bitte warten, es wird exportiert!";
+"EXPANDPOPUP"					=	"«Hinzufögen»";
+"READONLY"						=	" (Nur Lesen)";
+"UNTITLED"						=	"Ohne Titel";
+"CANCELLED"						=	"S T O R N I E R T";
+"DELIVERED"						=	"G E L I E F E R T";
+"EnterOldPassword"				=	"Bitte geben Sie Ihr altes Kennwort ein!";
+"EnterNewPassword"				=	"Bitte geben Sie Ihr NEUES Kennwort ein!";
+"Re-EnterNewPassword"			=	"Bitte wiederholen Sie Ihr NEUES Kennwort!";
+
+"Inputted"						=	"Umgebucht aus dem Lager '%s' (%s)";
+"Outputted"						=	"Umgebucht in das Lager '%s' (%s)";
+"OrderInput"					=	"Eingeliefert gem. Bestellung Nr. '%s' vom '%s'";
+"OutputtedDS"					=	"Ausgeliefert gem. Lieferschein Nr. '%s' am '%s'";
+"CancelledDSInputted"			=	"Zuröckgebucht, weil der Lieferschein Nr. '%s' am '%s' storniert wurde!";
+"NoLayoutChosen"				=	"Sie haben in den 'Grundeinstellungen' kein Layout för dieses Dokument ausgewÙhlt!";
+"NoStoreSelected"				=	"Kein Lager ausgewÙhlt!";
+"DateFormat"					=	"DD.MM.YYYY";
+"CurrencyFormat"				=	"1.000,00";
+
+"DefaultCopyright"				=	"viva!2-Intern.";
+"MoneyUnit"						=	"DM";
+"QuantityUnit"					=	"ME";
+"PerOrderLetter"				=	"A";
+"TotalOrders"					=	"G";
+
+"CheckingArticles"				=	"CheckingArticles";
+"Comment"						=	"Bemerkung";
+"Credit"						=	"Gutschrift";
+"CreditForCancelledInvoice"		=	"Rechnung wurde storniert.";
+"InvoiceCreated"				=	"Rechnungserstellung";
+"MovingArticles"				=	"Artikel werden umgebucht¼";
+
+/* Attachment Titles */
+"OfferPrintNr"					=	"Ausdruck Angebot Nr ";
+"InvoicePrintNr"				=	"Ausdruck Rechnung Nr ";
+"DSPrintNr"						=	"Ausdruck Lieferschein Nr ";
+"OrderPrintNr"					=	"Ausdruck Bestellung Nr ";
+"InvDSMasterPrintNr"			=	"Ausdruck Auftrag Nr ";
+
+/* List titles */
+"AngebotsNr"					=	"AngebotsNr";
+"Anzahl"						=	"Anzahl";
+"ArtikelNr"						=	"ArtikelNr";
+"ArtikelNr"						=	"ArtikelNr";
+"AuftragsNr"					=	"AuftragsNr";
+"BLZ"							=	"BLZ";
+"Berechnet"						=	"Berechnet";
+"Beschreibung"					=	"Beschreibung";
+"BestDatum"						=	"BestDatum";
+"BestDauer"						=	"BestDauer";
+"Bestand"						=	"Bestand";
+"BestellNr"						=	"BestellNr";
+"Bestelldauer"					=	"Bestelldauer";
+"BestellungsNr"					=	"BestellungsNr";
+"Betr"							=	"Betr";
+"Betreuer"						=	"Betreuer";
+"Bezeichnung"					=	"Bezeichnung";
+"Bruttobetrag"					=	"Bruttobetrag";
+"Datum"							=	"Datum";
+"EK"							=	"EK";
+"EMail"							=	"EMail";
+"Einstufung"					=	"Einstufung";
+"Geliefert"						=	"Geliefert";
+"Gesamtpreis"					=	"Gesamtpreis";
+"Gewicht"						=	"Gewicht";
+"Groesse"						=	"Groesse";
+"Inhaber"						=	"Konto-Inhaber";
+"Kategorie"						=	"Kategorie";
+"Kommentar"						=	"Kommentar";
+"Konditionen"					=	"Konditionen";
+"KontoNr"						=	"KontoNr";
+"Kreditlimit"					=	"Kreditlimit";
+"KundenName"					=	"KundenName";
+"KundenNr"						=	"KundenNr";
+"Kundenname"					=	"Kundenname";
+"Kurzbezeichnung"				=	"Kurzbezeichnung";
+"Lager"							=	"Lager";
+"Lief"							=	"Lief";
+"LiefName"						=	"LiefName";
+"LiefNr"						=	"LiefNr";
+"LieferscheinNr"				=	"LieferscheinNr";
+"Liefersperre"					=	"LS?";
+"LfdNr"							=	"LfdNr";
+"MBest"							=	"MBest";
+"ME"							=	"ME";
+"MwSt"							=	"MwSt";
+"Name"							=	"Name";
+"Name1"							=	"Name1";
+"Name2"							=	"Name2";
+"Name3"							=	"Name3";
+"Nettobetrag"					=	"Nettobetrag";
+"Nr"							=	"Nr";
+"PlzOrt"						=	"PlzOrt";
+"Provision"						=	"Provision";
+"RechnungsNr"					=	"RechnungsNr";
+"SammelRechn"					=	"SammelRechn";
+"Strasse"						=	"Strasse";
+"Stueckliste"					=	"Stueckliste";
+"Telefax"						=	"Telefax";
+"Telefon"						=	"Telefon";
+"VK"							=	"VK";
+"VollerName"					=	"VollerName";
+"VorLiefDatum"					=	"VorLiefDatum";
+"ZR"							=	"ZR";
+"adacta"						=	"adacta";
+"bezahlt"						=	"bezahlt";
+"geliefert"						=	"geliefert";
+"storniert"						=	"storniert";
+"Priority"						=	"Prio.";
+
+"dbDriveCreation"				=	"die Datenbank-datei wird anlegegt.";
+"tranDriveCreation"				=	"die Datei för die Transaktionsmitschnitte wird angelegt.";
+"dbCreation"					=	"die Datenbank viva2DB und die Transaktionsmitschnitt-Tabelle wird angelegt.";
+"dbLoad"						=	"die Datenbank viva2DB wird geladen.";
+"dbFinish"						=	"es werden nicht mehr benðtigte Daten gelðscht.";
+

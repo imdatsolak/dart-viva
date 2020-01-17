@@ -1,0 +1,13 @@
+#!/bin/sh
+echo 'Geben Sie jetzt das Passwort fuer den'
+echo '"sa"-User der Sybase-Datenbank ein.'
+echo 'Vorsicht, das Passwort ist beim Eingeben sichtbar.'
+echo -n 'Passwort:'
+password=`./readpw`
+if test -n "$password"
+then
+	sapw="$password"
+else
+	sapw='null'
+fi
+(echo use viva2DB;echo go; tabledefs ../*m; echo quit;echo go) | isql -Usa -P$sapw

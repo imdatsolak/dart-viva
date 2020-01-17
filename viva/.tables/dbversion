@@ -1,0 +1,12 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\fmodern Ohlfs;}
+\paperw4500
+\paperh1320
+\margl120
+\margr120
+{\colortbl\red0\green0\blue0;}
+\pard\tx2884\tx4032\tx4188\tx5376\tx6720\tx8064\tx9408\tx10752\tx12096\tx13440\f0\b0\i0\ul0\fs32\fc0 versionmajor	int\
+versionminor	int\
+creationdate	datetime\
+\
+
+}

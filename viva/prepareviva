@@ -1,0 +1,33 @@
+#!/bin/sh
+echo Viva2 post-install script
+
+# owner of Viva2 files
+OWNER=root
+echo owner of Viva2 files: $OWNER
+
+# group of Viva2 files
+GROUP=dart
+echo group of Viva2 files: $GROUP
+
+# adjust owner and group
+echo adjust owner and group
+chown -R $OWNER.$GROUP .
+
+# adjust file permissions
+echo adjust file permissions
+chmod 644 .NetConfig.strings
+chmod 555 *.lproj
+chmod 444 *.lproj/*.dsqldmp
+chmod 444 *.lproj/*.nib
+chmod 555 *.lproj/TIFFS
+chmod 444 *.lproj/TIFFS/*
+chmod 555 *.lproj/STRINGS
+chmod 444 *.lproj/STRINGS/*
+chmod 555 *.lproj/EXTENDS
+chmod 444 *.lproj/EXTENDS/*
+chmod 555 vivaserverd/vivaserverd
+chmod 555 Viva2
+
+echo done
+# done
+

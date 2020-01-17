@@ -1,0 +1,39 @@
+{\rtf0\ansi{\fonttbl\f0\fmodern Ohlfs;}
+\paperw5660
+\paperh6220
+\margl120
+\margr120
+{\colortbl\red0\green0\blue0;}
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\f0\b0\i0\ul0\fs20\fc0  mahnungen       dbo             user table             \
++ artikelkonditio dbo             user table             \
++ artikellieferan dbo             user table             \
++ artikelseriennu dbo             user table             \
++ benutzer        dbo             user table             \
++ benutzerprivile dbo             user table             \
+- abteilungen     dbo             user table             \
+- angebot         dbo             user table             \
+- angebotsadresse dbo             user table             \
+- angebotsartikel dbo             user table             \
+- artikel         dbo             user table             \
+- artikelkategori dbo             user table             \
+- auftrag         dbo             user table             \
+- auftragsadresse dbo             user table             \
+- auftragsartikel dbo             user table             \
+- banken          dbo             user table             \
+- dbversion       dbo             user table             \
+- kunden          dbo             user table             \
+- kundenadressen  dbo             user table             \
+- kundeneinstufun dbo             user table             \
+- kundengroesse   dbo             user table             \
+- kundenkategorie dbo             user table             \
+- laender         dbo             user table             \
+- lieferanten     dbo             user table             \
+- lieferantenadre dbo             user table             \
+- lieferscheine   dbo             user table             \
+- mengeneinheiten dbo             user table             \
+- mwstsaetze      dbo             user table             \
+- rechnungen      dbo             user table             \
+- sammelrechnunge dbo             user table             \
+- zahlungen       dbo             user table             \
+
+}

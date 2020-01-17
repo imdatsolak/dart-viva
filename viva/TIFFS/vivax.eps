@@ -1,0 +1,3564 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: Adobe Illustrator(TM) 3.0.1.
+%%For: () ()
+%%Title: (/Net/dart/Users/imdat/Docs/AI_Docs/vivax.eps)
+%%CreationDate: (6/2/92) (21:52)
+%%BoundingBox: 135 -255 542 1032
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%DocumentFonts: Times-BoldItalic
+%%+ Times-Italic
+%%+ Times-Roman
+%%DocumentFiles:/private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/patrick.eps
+%%+/private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/stefan.eps
+%%+/private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/imdat.eps
+%%DocumentSuppliedResources: procset Adobe_packedarray 2.0 0
+%%+ procset Adobe_cmykcolor 1.1 0
+%%+ procset Adobe_cshow 1.1 0
+%%+ procset Adobe_customcolor 1.0 0
+%%+ procset Adobe_typography_AI3 1.0 1
+%%+ procset Adobe_IllustratorA_AI3 1.0 1
+%AI3_ColorUsage: Color
+%AI3_IncludePlacedImages
+%AI3_TemplateBox: 306 396 306 396
+%AI3_TileBox: 30 31 582 761
+%AI3_DocumentPreview: Header
+%%Template:
+%%PageOrigin:30 31
+%%AI3_PaperRect:0 792 612 0
+%%AI3_Margin:30 31 30 31
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset Adobe_packedarray 2.0 0
+%%Title: (Packed Array Operators)
+%%Version: 2.0 
+%%CreationDate: (8/2/90) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+userdict /Adobe_packedarray 5 dict dup begin put
+/initialize			% - initialize -
+{
+/packedarray where
+	{
+	pop
+	}
+	{
+	Adobe_packedarray begin
+	Adobe_packedarray
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		userdict 3 1 roll put
+		} forall
+	end
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+} def
+/packedarray		% arguments count packedarray array
+{
+array astore readonly
+} def
+/setpacking			% boolean setpacking -
+{
+pop
+} def
+/currentpacking		% - setpacking boolean
+{
+false
+} def
+currentdict readonly pop end
+%%EndResource
+Adobe_packedarray /initialize get exec
+
+%%BeginResource: procset Adobe_cmykcolor 1.1 0
+%%Title: (CMYK Color Operators)
+%%Version: 1.1 
+%%CreationDate: (1/23/89) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+currentpacking true setpacking
+userdict /Adobe_cmykcolor 4 dict dup begin put
+/initialize			% - initialize -
+{
+/setcmykcolor where
+	{
+	pop
+	}
+	{
+	userdict /Adobe_cmykcolor_vars 2 dict dup begin put
+	/_setrgbcolor
+		/setrgbcolor load def
+	/_currentrgbcolor
+		/currentrgbcolor load def
+	Adobe_cmykcolor begin
+	Adobe_cmykcolor
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		pop pop
+		} forall
+	end
+	end
+	Adobe_cmykcolor begin
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+currentdict Adobe_cmykcolor eq
+	{
+	end
+	} if
+} def
+/setcmykcolor		% cyan magenta yellow black setcmykcolor -
+{
+1 sub 4 1 roll
+3
+	{
+	3 index add neg dup 0 lt
+		{
+		pop 0
+		} if
+	3 1 roll
+	} repeat
+Adobe_cmykcolor_vars /_setrgbcolor get exec
+pop
+} def 
+/currentcmykcolor	% - currentcmykcolor cyan magenta yellow black
+{
+Adobe_cmykcolor_vars /_currentrgbcolor get exec
+3
+	{
+	1 sub neg 3 1 roll
+	} repeat
+0
+} def
+currentdict readonly pop end
+setpacking
+
+%%EndResource
+%%BeginResource: procset Adobe_cshow 1.1 0
+%%Title: (cshow Operator)
+%%Version: 1.1 
+%%CreationDate: (1/23/89) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+currentpacking true setpacking
+userdict /Adobe_cshow 3 dict dup begin put
+/initialize			% - initialize -
+{
+/cshow where
+	{
+	pop
+	}
+	{
+	userdict /Adobe_cshow_vars 1 dict dup begin put
+	/_cshow		% - _cshow proc
+		{} def
+	Adobe_cshow begin
+	Adobe_cshow
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		userdict 3 1 roll put
+		} forall
+	end
+	end
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+} def
+/cshow				% proc string cshow -
+{
+exch
+Adobe_cshow_vars
+	exch /_cshow
+	exch put
+	{
+	0 0 Adobe_cshow_vars /_cshow get exec
+	} forall
+} def
+currentdict readonly pop end
+setpacking
+
+%%EndResource
+%%BeginResource: procset Adobe_customcolor 1.0 0
+%%Title: (Custom Color Operators)
+%%Version: 1.0 
+%%CreationDate: (5/9/88) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+currentpacking true setpacking
+userdict /Adobe_customcolor 5 dict dup begin put
+/initialize			% - initialize -
+{
+/setcustomcolor where
+	{
+	pop
+	}
+	{
+	Adobe_customcolor begin
+	Adobe_customcolor
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		pop pop
+		} forall
+	end
+	Adobe_customcolor begin
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+currentdict Adobe_customcolor eq
+	{
+	end
+	} if
+} def
+/findcmykcustomcolor	% cyan magenta yellow black name findcmykcustomcolor object
+{
+5 packedarray
+}  def
+/setcustomcolor		% object tint setcustomcolor -
+{
+exch
+aload pop pop
+4
+	{
+	4 index mul 4 1 roll
+	} repeat
+5 -1 roll pop
+setcmykcolor
+} def
+/setoverprint		% boolean setoverprint -
+{
+pop
+} def
+currentdict readonly pop end
+setpacking
+
+%%EndResource
+%%BeginResource: procset Adobe_typography_AI3 1.0 1
+%%Title: (Typography Operators)
+%%Version: 1.0 
+%%CreationDate:(5/31/90) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+currentpacking true setpacking
+userdict /Adobe_typography_AI3 47 dict dup begin put
+/initialize			% - initialize -
+{
+/TZ
+ where
+	{
+	pop
+	}
+	{
+	Adobe_typography_AI3 begin
+	Adobe_typography_AI3
+		{
+		dup xcheck
+			{
+			bind
+			} if
+		pop pop
+		} forall
+	end
+	Adobe_typography_AI3 begin
+	} ifelse
+} def
+/terminate			% - terminate -
+{
+currentdict Adobe_typography_AI3 eq
+	{
+	end
+	} if
+} def
+
+% [ number value stream [ array for encoding modification ] modifyEncoding ==> [ modified array ]
+/modifyEncoding
+{
+	/_tempEncode exch ddef
+	
+	% pointer for sequential encodings
+	/_pntr 0 ddef
+	
+	{
+		% get bottom object
+		counttomark -1 roll
+
+		% is it a mark ?
+		dup type dup /marktype eq 		
+		{
+			% exit
+			pop pop exit
+		}
+		{
+			% ... object ... type ....
+
+			% insert if a nametype
+			/nametype eq
+			{
+				% insert the name at _pntr and increment pointer
+				_tempEncode /_pntr dup load dup 3 1 roll 1 add ddef 3 -1 roll
+				put
+			}
+			{
+				% reset _pntr if it's a number
+				/_pntr exch ddef					
+			}
+			ifelse
+		}
+		ifelse
+	}
+	loop	
+	
+	% return the modified encoding
+	_tempEncode
+}
+def
+
+/TE	% Set std platform encoding 	% (encoding pairs) TE -
+{
+	StandardEncoding 256 array copy modifyEncoding 
+	/_nativeEncoding exch def
+} def
+
+% re-define font
+% expected arguments
+% for 'normal fonts : 
+%	[ /_Helvetica-Bold/Helvetica-Bold direction fontScript defaultEncoding TZ
+%
+% for cartographic, pictographic, and expert fonts :
+% 	[ ... number value stream ... /_Helvetica-Bold/Helvetica-Bold 
+%	direction fontScript defaultEncoding TZ
+/TZ		
+{
+	% platform dependent coding flag
+	/_useNativeEncoding exch def
+
+	% pop fontScript & direction
+	pop pop
+	
+	% create a new dictionary with length
+	% equal to original dictionary length + 2
+	% copy all the key/value pairs except FID
+	findfont dup length 2 add dict
+	
+	begin
+	
+		% copy all the values but the FID
+		% into the new dictionary
+		mark exch
+		{
+			1 index /FID ne { def } if cleartomark mark
+		}
+		forall
+		% discard last mark
+		pop
+		
+		% define FontName
+		/FontName exch def
+		
+		% if no re-encoding stream is present
+		% then if the use platform encoding flag is true
+		% install AI platform encoding
+		% else leave the base encoding in effect
+
+		counttomark 0 eq
+		{
+			1 _useNativeEncoding eq
+			{
+				/Encoding _nativeEncoding def
+			}
+			if
+			% clean up
+			cleartomark
+		}
+		{	
+			% custom encoding to be done
+			% start off with a copy of the font's standard encoding
+			/Encoding load 256 array copy 
+			modifyEncoding /Encoding exch def
+		}
+		ifelse		
+		FontName currentdict
+	end
+	
+	% register the new font
+	definefont pop
+}
+def
+
+% text painting operators
+/tr					% string tr ax ay string 
+{
+_ax _ay 3 2 roll
+} def
+/trj				% string trj cx cy fillchar ax ay string 
+{
+_cx _cy _sp _ax _ay 6 5 roll
+} def
+
+/a0
+{
+/Tx	% text							% textString Tx -
+	{
+	dup 
+	currentpoint 3 2 roll
+	tr _psf
+	newpath moveto
+	tr _ctm _pss
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	dup
+	currentpoint 3 2 roll
+	trj _pjsf
+	newpath moveto
+	trj _ctm _pjss
+	} ddef
+	
+} def
+/a1
+{
+/Tx	% text							% textString Tx -
+	{
+	dup currentpoint 4 2 roll gsave
+	dup currentpoint 3 2 roll
+	tr _psf
+	newpath moveto
+	tr _ctm _pss
+	grestore 3 1 roll moveto tr sp
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	dup currentpoint 4 2 roll gsave
+	dup currentpoint 3 2 roll
+	trj _pjsf
+	newpath moveto
+	trj _ctm _pjss
+	grestore 3 1 roll moveto tr sp
+	} ddef
+	
+} def
+
+/e0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr _psf
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj _pjsf
+	} ddef
+} def
+
+/e1
+{
+/Tx	% text							% textString Tx -
+	{
+	dup currentpoint 4 2 roll gsave 
+	tr _psf  
+	grestore 3 1 roll moveto tr sp 
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	dup currentpoint 4 2 roll gsave 
+	trj _pjsf
+	grestore 3 1 roll moveto tr sp 
+	} ddef
+} def
+
+/i0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr sp
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj jsp
+	} ddef
+} def
+
+/i1
+{
+W N
+} def
+
+/o0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr sw rmoveto
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj swj rmoveto
+	} ddef
+} def
+
+/r0
+{
+/Tx	% text							% textString Tx -
+	{
+	tr _ctm _pss
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	trj _ctm _pjss
+	} ddef
+} def
+
+/r1
+{
+/Tx	% text							% textString Tx -
+	{
+	dup currentpoint 4 2 roll currentpoint gsave newpath moveto
+	tr _ctm _pss 
+	grestore 3 1 roll moveto tr sp 
+	} ddef
+/Tj	% justified text				% textString Tj -
+	{
+	dup currentpoint 4 2 roll currentpoint gsave newpath moveto
+	trj _ctm _pjss
+	grestore 3 1 roll moveto tr sp 
+	} ddef
+} def
+
+% font operators
+
+% Binding
+/To	% begin text 					% bindType To -
+{
+	pop _ctm currentmatrix pop
+} def
+
+/TO	% end text					% TO -
+{
+	Te _ctm setmatrix newpath
+} def
+
+% Text paths
+/Tp	% begin text path				% a b c d tx ty startPt Tp -
+{
+	pop _tm astore pop _ctm setmatrix 
+	_tDict begin /W {} def /h {} def
+} def
+
+/TP	% end text path					% TP -
+{
+	end
+	iTm 0 0 moveto
+} def
+
+% Render mode & matrix operators
+/Tr	% begin render					% render Tr - 
+{
+	_render 3 le {currentpoint newpath moveto} if
+	dup 8 eq {pop 0} {dup 9 eq {pop 1} if} ifelse
+	dup /_render exch ddef
+	_renderStart exch get load exec
+} def
+
+/iTm % internal set text matrix		% - iTm -	(uses _tm as implicit argument)
+{
+_ctm setmatrix _tm concat 0 _rise translate _hs 1 scale
+} def
+
+/Tm % set text matrix				% a b c d tx ty Tm -
+{
+_tm astore pop iTm 0 0 moveto
+} def
+
+/Td % translate text matrix 		% tx ty Td -
+{
+_mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto
+} def
+
+/Te	% end render					% - Te -
+{
+	_render -1 eq {} {_renderEnd _render get dup null ne {load exec} {pop} ifelse} ifelse
+	/_render -1 ddef
+} def
+
+
+% Attributes
+/Ta	% set alignment					% alignment Ta -
+{
+pop
+} def
+
+/Tf	% set font name and size		% fontname size Tf -
+{
+dup 1000 div /_fScl exch ddef
+exch findfont exch scalefont setfont
+} def
+
+/Tl	% set leading					% leading paragraphLeading Tl -
+{
+pop
+0 exch _leading astore pop
+} def
+
+/Tt	% set user tracking				% userTracking Tt -
+{
+pop
+} def
+
+/TW % set word spacing				% minSpace optSpace maxSpace TW -
+{
+3 npop
+} def
+
+/Tw	% set computed word spacing		% wordSpace Tw
+{
+/_cx exch ddef
+} def
+
+/TC % set character spacing			% minSpace optSpace maxSpace TC -
+{
+3 npop
+} def
+
+/Tc	% set computed char spacing 	% charSpace Tc -
+{
+/_ax exch ddef
+} def
+
+/Ts % set super/subscripting (rise)	% rise Ts -
+{
+/_rise exch ddef
+currentpoint
+iTm
+moveto
+} def
+
+/Ti	% set indentation				% firstStartIndent otherStartIndent stopIndent Ti -
+{
+3 npop
+} def
+
+/Tz % set horizontal scaling		% scalePercent Tz -
+{
+100 div /_hs exch ddef
+iTm
+} def
+
+/TA % set pairwise kerning			% autoKern TA -
+									%	autoKern = 0 -> no pair kerning
+									%			 = 1 -> automatic pair kerning
+{
+pop
+} def
+
+/Tq % set hanging quotes			% hangingQuotes Tq -
+									%	hangingQuotes 	= 0 -> no hanging quotes
+									%			 		= 1 -> hanging quotes
+{
+pop
+} def
+
+
+% Text Bodies
+/TX {pop} def
+
+%/Tx	% non-justified text			% textString Tx -
+%/Tj	% justified text				% textString Tj -
+
+/Tk	% kern							% autoKern kernValue Tk -
+									%  	autoKern = 0 -> manual kern, = 1 -> auto kern
+									%	kernValue = kern value in em/1000 space
+{
+exch pop _fScl mul neg 0 rmoveto
+} def
+/TK	% non-printing kern				% autoKern kernValue TK -
+{
+2 npop
+} def
+
+/T* % carriage return & line feed	% - T* -
+{
+_leading aload pop neg Td
+} def
+
+/T*- % carriage return & negative line feed	% - T*- -
+{
+_leading aload pop Td
+} def
+
+/T-	% print a discretionary hyphen	% - T- -
+{
+_hyphen Tx
+} def
+
+/T+	% discretionary hyphen hyphen	% - T+ -
+{} def
+
+/TR	% reset pattern matrix 			% a b c d tx ty TR -
+{
+_ctm currentmatrix pop 	
+_tm astore pop 
+iTm 0 0 moveto 
+} def
+
+/TS	% special chars					% textString justified TS -
+{
+0 eq {Tx} {Tj} ifelse
+} def
+
+currentdict readonly pop end
+setpacking
+
+%%EndResource
+
+%%BeginResource: procset Adobe_IllustratorA_AI3 1.0 1
+%%Title: (Adobe Illustrator (R) Version 3.0 Abbreviated Prolog)
+%%Version: 1.0 
+%%CreationDate: (7/22/89) ()
+%%Copyright: ((C) 1987-1990 Adobe Systems Incorporated All Rights Reserved)
+
+currentpacking true setpacking
+userdict /Adobe_IllustratorA_AI3 61 dict dup begin put
+% initialization
+/initialize				% - initialize -
+{
+% 47 vars, but leave slack of 10 entries for custom Postscript fragments
+userdict /Adobe_IllustratorA_AI3_vars 57 dict dup begin put
+
+% paint operands
+/_lp /none def
+/_pf {} def
+/_ps {} def
+/_psf {} def
+/_pss {} def
+/_pjsf {} def
+/_pjss {} def
+/_pola 0 def
+/_doClip 0 def
+
+% paint operators
+/cf	currentflat def	% - cf flatness
+
+% typography operands
+/_tm matrix def
+/_renderStart [/e0 /r0 /a0 /o0 /e1 /r1 /a1 /i0] def 
+/_renderEnd [null null null null /i1 /i1 /i1 /i1] def
+/_render -1 def
+/_rise 0 def
+/_ax 0 def			% x character spacing	(_ax, _ay, _cx, _cy follows awidthshow naming convention)
+/_ay 0 def			% y character spacing
+/_cx 0 def			% x word spacing
+/_cy 0 def			% y word spacing
+/_leading [0 0] def
+/_ctm matrix def
+/_mtx matrix def
+/_sp 16#020 def
+/_hyphen (-) def
+/_fScl 0 def
+/_cnt 0 def
+/_hs 1 def
+/_nativeEncoding 0 def
+/_useNativeEncoding 0 def
+/_tempEncode 0 def
+/_pntr 0 def
+/_tDict 2 dict def
+
+% typography operators
+/Tx {} def
+/Tj {} def
+
+% compound path operators
+/CRender {} def
+
+% printing
+/_AI3_savepage {} def
+
+% color operands
+/_gf null def
+/_cf 4 array def
+/_if null def
+/_of false def
+/_fc {} def
+/_gs null def
+/_cs 4 array def
+/_is null def
+/_os false def
+/_sc {} def
+/_i null def
+Adobe_IllustratorA_AI3 begin
+Adobe_IllustratorA_AI3
+	{
+	dup xcheck
+		{
+		bind
+		} if
+	pop pop
+	} forall
+end
+end
+Adobe_IllustratorA_AI3 begin
+Adobe_IllustratorA_AI3_vars begin
+newpath
+} def
+/terminate				% - terminate -
+{
+end
+end
+} def
+% definition operators
+/_					% - _ null
+null def
+/ddef				% key value ddef -
+{
+Adobe_IllustratorA_AI3_vars 3 1 roll put
+} def
+/xput				% key value literal xput -
+{
+dup load dup length exch maxlength eq
+	{
+	dup dup load dup
+	length 2 mul dict copy def
+	} if
+load begin def end
+} def
+/npop				% integer npop -
+{
+	{
+	pop
+	} repeat
+} def
+% marking operators
+/sw					% ax ay string sw x y 
+{
+dup length exch stringwidth
+exch 5 -1 roll 3 index 1 sub mul add
+4 1 roll 3 1 roll 1 sub mul add
+} def
+/swj				% cx cy fillchar ax ay string swj x y
+{
+dup 4 1 roll
+dup length exch stringwidth 
+exch 5 -1 roll 3 index 1 sub mul add
+4 1 roll 3 1 roll 1 sub mul add 
+6 2 roll /_cnt 0 ddef
+{1 index eq {/_cnt _cnt 1 add ddef} if} forall pop
+exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+} def
+/ss					% ax ay string matrix ss -
+{
+4 1 roll
+	{				% matrix ax ay char 0 0 {proc} -
+	2 npop 
+	(0) exch 2 copy 0 exch put pop
+	gsave
+	false charpath currentpoint
+	4 index setmatrix
+	stroke
+	grestore
+	moveto
+	2 copy rmoveto
+	} exch cshow
+3 npop
+} def
+/jss				% cx cy fillchar ax ay string matrix jss -
+{
+4 1 roll
+	{				% cx cy fillchar matrix ax ay char 0 0 {proc} -   
+	2 npop 
+	(0) exch 2 copy 0 exch put 
+	gsave
+	_sp eq 
+		{
+		exch 6 index 6 index 6 index 5 -1 roll widthshow  
+		currentpoint
+		}
+		{
+		false charpath currentpoint
+		4 index setmatrix stroke
+		}ifelse
+	grestore
+	moveto
+	2 copy rmoveto
+	} exch cshow
+6 npop
+} def
+
+% path operators
+/sp					% ax ay string sp -
+{
+	{
+	2 npop (0) exch
+	2 copy 0 exch put pop
+	false charpath
+	2 copy rmoveto
+	} exch cshow
+2 npop
+} def
+/jsp					% cx cy fillchar ax ay string jsp -
+{
+	{					% cx cy fillchar ax ay char 0 0 {proc} -
+	2 npop 
+	(0) exch 2 copy 0 exch put 
+	_sp eq 
+		{
+		exch 5 index 5 index 5 index 5 -1 roll widthshow  
+		}
+		{
+		false charpath
+		}ifelse
+	2 copy rmoveto
+	} exch cshow
+5 npop
+} def
+
+% path construction operators
+/pl				% x y pl x y
+{
+transform
+0.25 sub round 0.25 add exch
+0.25 sub round 0.25 add exch
+itransform
+} def
+/setstrokeadjust where
+	{
+	pop true setstrokeadjust
+	/c				% x1 y1 x2 y2 x3 y3 c -
+	{
+	curveto
+	} def
+	/C
+	/c load def
+	/v				% x2 y2 x3 y3 v -
+	{
+	currentpoint 6 2 roll curveto
+	} def
+	/V
+	/v load def
+	/y				% x1 y1 x2 y2 y -
+	{
+	2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l				% x y l -
+	{
+	lineto
+	} def
+	/L
+	/l load def
+	/m				% x y m -
+	{
+	moveto
+	} def
+	}
+	{%else
+	/c
+	{
+	pl curveto
+	} def
+	/C
+	/c load def
+	/v
+	{
+	currentpoint 6 2 roll pl curveto
+	} def
+	/V
+	/v load def
+	/y
+	{
+	pl 2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l
+	{
+	pl lineto
+	} def
+	/L
+	/l load def
+	/m
+	{
+	pl moveto
+	} def
+	}ifelse
+
+% graphic state operators
+/d					% array phase d -
+{
+setdash
+} def
+/cf	{} def			% - cf flatness
+/i					% flatness i -
+{
+dup 0 eq
+	{
+	pop cf
+	} if
+setflat
+} def
+/j					% linejoin j -
+{
+setlinejoin
+} def
+/J					% linecap J -
+{
+setlinecap
+} def
+/M					% miterlimit M -
+{
+setmiterlimit
+} def
+/w					% linewidth w -
+{
+setlinewidth
+} def
+
+% path painting operators
+/H					% - H -
+{} def
+/h					% - h -
+{
+closepath
+} def
+/N					% - N -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq {clip /_doClip 0 ddef} if 
+	newpath
+	} 
+	{
+	/CRender {N} ddef
+	}ifelse
+} def
+/n					% - n -
+{N} def
+/F					% - F -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq 
+		{
+		gsave _pf grestore clip newpath /_lp /none ddef _fc 
+		/_doClip 0 ddef
+		}
+		{
+		_pf
+		}ifelse
+	} 
+	{
+	/CRender {F} ddef
+	}ifelse
+} def
+/f					% - f -
+{
+closepath
+F
+} def
+/S					% - S -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq 
+		{
+		gsave _ps grestore clip newpath /_lp /none ddef _sc 
+		/_doClip 0 ddef
+		}
+		{
+		_ps
+		}ifelse
+	} 
+	{
+	/CRender {S} ddef
+	}ifelse
+} def
+/s					% - s -
+{
+closepath
+S
+} def
+/B					% - B -
+{
+_pola 0 eq 
+	{
+	_doClip 1 eq 	% F clears _doClip
+	gsave F grestore 
+		{
+		gsave S grestore clip newpath /_lp /none ddef _sc
+		/_doClip 0 ddef
+		} 
+		{
+		S
+		}ifelse
+	}
+	{
+	/CRender {B} ddef
+	}ifelse
+} def
+/b					% - b -
+{
+closepath
+B
+} def
+/W					% - W -
+{
+/_doClip 1 ddef
+} def
+/*					% - [string] * -
+{
+count 0 ne 
+	{
+	dup type (stringtype) eq {pop} if
+	} if 
+_pola 0 eq {newpath} if
+} def
+
+% group operators
+/u					% - u -
+{} def
+/U					% - U -
+{} def
+/q					% - q -
+{
+_pola 0 eq {gsave} if
+} def
+/Q					% - Q -
+{
+_pola 0 eq {grestore} if
+} def
+/*u					% - *u -
+{
+_pola 1 add /_pola exch ddef
+} def
+/*U					% - *U -
+{
+_pola 1 sub /_pola exch ddef 
+_pola 0 eq {CRender} if
+} def
+/D					% polarized D -
+{pop} def
+/*w					% - *w -
+{} def
+/*W					% - *W -
+{} def
+
+% place operators
+/`					% matrix llx lly urx ury string ` -
+{
+/_i save ddef
+6 1 roll 4 npop
+concat
+userdict begin
+/showpage {} def
+false setoverprint
+pop
+} def
+/~					% - ~ -
+{
+end
+_i restore
+} def
+
+% color operators
+/O					% flag O -
+{
+0 ne
+/_of exch ddef
+/_lp /none ddef
+} def
+/R					% flag R -
+{
+0 ne
+/_os exch ddef
+/_lp /none ddef
+} def
+/g					% gray g -
+{
+/_gf exch ddef
+/_fc
+{ 
+_lp /fill ne
+	{
+	_of setoverprint
+	_gf setgray
+	/_lp /fill ddef
+	} if
+} ddef
+/_pf
+{
+_fc
+fill
+} ddef
+/_psf
+{
+_fc
+ashow
+} ddef
+/_pjsf
+{
+_fc
+awidthshow
+} ddef
+/_lp /none ddef
+} def
+/G					% gray G -
+{
+/_gs exch ddef
+/_sc
+{
+_lp /stroke ne
+	{
+	_os setoverprint
+	_gs setgray
+	/_lp /stroke ddef
+	} if
+} ddef
+/_ps
+{
+_sc
+stroke
+} ddef
+/_pss
+{
+_sc
+ss
+} ddef
+/_pjss
+{
+_sc
+jss
+} ddef
+/_lp /none ddef
+} def
+/k					% cyan magenta yellow black k -
+{
+_cf astore pop
+/_fc
+{
+_lp /fill ne
+	{
+	_of setoverprint
+	_cf aload pop setcmykcolor
+	/_lp /fill ddef
+	} if
+} ddef
+/_pf
+{
+_fc
+fill
+} ddef
+/_psf
+{
+_fc
+ashow
+} ddef
+/_pjsf
+{
+_fc
+awidthshow
+} ddef
+/_lp /none ddef
+} def
+/K					% cyan magenta yellow black K -
+{
+_cs astore pop
+/_sc
+{
+_lp /stroke ne
+	{
+	_os setoverprint
+	_cs aload pop setcmykcolor
+	/_lp /stroke ddef
+	} if
+} ddef
+/_ps
+{
+_sc
+stroke
+} ddef
+/_pss
+{
+_sc
+ss
+} ddef
+/_pjss
+{
+_sc
+jss
+} ddef
+/_lp /none ddef
+} def
+/x					% cyan magenta yellow black name gray x -
+{
+/_gf exch ddef
+findcmykcustomcolor
+/_if exch ddef
+/_fc
+{ 
+_lp /fill ne
+	{
+	_of setoverprint
+	_if _gf 1 exch sub setcustomcolor
+	/_lp /fill ddef
+	} if
+} ddef
+/_pf
+{
+_fc
+fill
+} ddef
+/_psf
+{
+_fc
+ashow
+} ddef
+/_pjsf
+{
+_fc
+awidthshow
+} ddef
+/_lp /none ddef
+} def
+/X					% cyan magenta yellow black name gray X -
+{
+/_gs exch ddef
+findcmykcustomcolor
+/_is exch ddef
+/_sc
+{
+_lp /stroke ne
+	{
+	_os setoverprint
+	_is _gs 1 exch sub setcustomcolor
+	/_lp /stroke ddef
+	} if
+} ddef
+/_ps
+{
+_sc
+stroke
+} ddef
+/_pss
+{
+_sc
+ss
+} ddef
+/_pjss
+{
+_sc
+jss
+} ddef
+/_lp /none ddef
+} def
+
+% locked object operator
+/A					% value A -
+{
+pop
+} def
+
+currentdict readonly pop end
+setpacking
+
+% annotate page operator
+/annotatepage
+{
+} def
+%%EndResource
+%AI3-Grid.0 18 18 3 0 0 0 3
+%%EndProlog
+%%BeginSetup
+%%IncludeFont: Times-BoldItalic
+%%IncludeFont: Times-Italic
+%%IncludeFont: Times-Roman
+Adobe_cmykcolor /initialize get exec
+
+Adobe_cshow /initialize get exec
+
+Adobe_customcolor /initialize get exec
+
+Adobe_typography_AI3 /initialize get exec
+
+
+Adobe_IllustratorA_AI3 /initialize get exec
+
+[
+129/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex
+/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/mu/multiply
+/divide/copyright 176/registered 181/brokenbar 190/logicalnot 
+192/onesuperior 201/twosuperior 204/threesuperior 209/plusminus
+/onequarter/onehalf/threequarters/agrave/aacute/acircumflex
+/atilde/adieresis/aring/ccedilla/egrave/eacute/ecircumflex
+/edieresis/igrave 226/iacute 228/icircumflex/idieresis/eth/ntilde 
+236/ograve/oacute/ocircumflex/otilde/odieresis 242/ugrave/uacute
+/ucircumflex 246/udieresis/yacute 252/thorn/ydieresis
+TE
+%AI3_BeginEncoding: _Times-BoldItalic Times-BoldItalic
+[/_Times-BoldItalic/Times-BoldItalic 0 0 1 TZ
+%AI3_EndEncoding
+%AI3_BeginEncoding: _Times-Italic Times-Italic
+[/_Times-Italic/Times-Italic 0 0 1 TZ
+%AI3_EndEncoding
+%AI3_BeginEncoding: _Times-Roman Times-Roman
+[/_Times-Roman/Times-Roman 0 0 1 TZ
+%AI3_EndEncoding
+%%EndSetup
+0 A
+0 To
+1 0 0 1 349.2439 789.0362 0 Tp
+TP
+-38.9998 0 Td
+0 Tr
+0 O
+0.6667 g
+0 i 0 J 0 j 1 w 4 M []0 d
+%AI3_Note:
+0 D
+/_Times-Roman 12 Tf
+0 Ts
+100 Tz
+0 Tt
+0 TA
+0 0 5 TC
+100 100 200 TW
+0 0 0 Ti
+1 Ta
+0 Tq
+0 0 Tl
+0 Tc
+0 Tw
+(Programming\274) Tx 
+/_Times-Roman 24 Tf
+(\r) Tx 
+-4.2448 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(Imdat Solak\r) Tx 
+-46.5743 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(It's all in my head \261 after Frei*enet\)\r) Tx 
+89.819 -21.5 Td
+/_Times-Italic 18 Tf
+(\r) Tx 
+-50.7505 -21.5 Td
+(Stefan Krause\r) Tx 
+7.5931 -14.5 Td
+/_Times-Italic 12 Tf
+(\(Definitly June\274\)\r) Tx 
+43.1574 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-26.4958 -14.5 Td
+/_Times-Roman 12 Tf
+(Icons by\274\r) Tx 
+-23.7414 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(Patrick Exner\r) Tx 
+0.4138 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(I still don't like'em\)\r) Tx 
+49.8234 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-38.4835 -14.5 Td
+/_Times-Roman 12 Tf
+(HardWare by\274\r) Tx 
+7.3479 -30 Td
+/_Times-Italic 24 Tf
+30 0 Tl
+(NeXT) Tx 
+/_Times-Italic 10 Tf
+10 Ts
+(\260) Tx 
+/_Times-Italic 24 Tf
+0 Ts
+(\r) Tx 
+31.1356 -29 Td
+0 0 Tl
+(\r) Tx 
+-38.8257 -14.5 Td
+/_Times-Roman 12 Tf
+(FoodWare by\274\r) Tx 
+-7.4159 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(McDon**ds \r) Tx 
+1.7461 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(with CurrySauce\)\r) Tx 
+44.4954 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-40.4875 -14.5 Td
+/_Times-Roman 12 Tf
+(DrinkWare by\274\r) Tx 
+5.4961 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(Frei*enet\r) Tx 
+-13.8361 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(without headaches\)\r) Tx 
+48.8275 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-29.8318 -20 Td
+/_Times-Roman 12 Tf
+20 0 Tl
+(Thanks to\274\r) Tx 
+-6.012 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(F. Wichmann \r) Tx 
+-25.4875 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Gimme what I want!\272\) \r) Tx 
+25.3319 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Lorenz Drews \r) Tx 
+-13.8301 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252I wanna have it!\272\)\r) Tx 
+2.4962 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(J\366rgen Tschierske \r) Tx 
+-36.8279 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252When will viva! 2 be shippin'?\272\)\r) Tx 
+45.8339 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Wilfried Beeck \r) Tx 
+-6.996 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Ihr H\331nger!!!\272\) \r) Tx 
+1.7766 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Manu Saliho) Tx 0 -40 Tk 
+/_Times-BoldItalic 14 Tf
+(g) Tx 0 360 Tk 
+/_Times-Roman 14 Tf
+(\306) Tx 0 -20 Tk 
+/_Times-BoldItalic 14 Tf
+(l) Tx 0 -80 Tk 
+/_Times-BoldItalic 12 Tf
+(u \r) Tx 
+-6.9424 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Damn' invoices!\272\)\r) Tx 
+3.1436 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Bettina Herrmann \r) Tx 
+-55.9915 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252viva! 1.0 still doesn't ) Tx 
+/_Times-BoldItalic 12 Tf
+(do what I mean) Tx 
+/_Times-Italic 12 Tf
+(!\272\)\r) Tx 
+61.6614 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Thomas Ludwig \r) Tx 
+-19.8175 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Great, great, great!!\272\) \r) Tx 
+61.4933 -14.5 Td
+(\r) Tx 
+-14.6639 -14.5 Td
+/_Times-Roman 12 Tf
+(and\274\r) Tx 
+-28.1695 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(InterfaceBuilder \r) Tx 
+-63.3174 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Best thing ever happened to computers!\272\)\r) Tx 
+69.3112 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(SmarterFields \r) Tx 
+-83.975 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Best thing ever happened to InterfaceBuilder!\272\)\r) Tx 
+56.8251 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(gawk, gcc, gdb, grep, f*ck\r) Tx 
+-12.8456 -14.5 Td
+0 0 Tl
+( ) Tx 
+/_Times-Italic 12 Tf
+(\(\252Best shell scripts for UNIX\272\)\r) Tx 
+76.8351 -30 Td
+30 0 Tl
+(\r) Tx 
+-55.3315 -14.5 Td
+/_Times-Roman 12 Tf
+0 0 Tl
+(and last but not least\274\r) Tx 
+55.3315 -17 Td
+/_Times-BoldItalic 14 Tf
+(\r) Tx 
+-140.398 -17 Td
+(Edit ) Tx 
+/_Times-Italic 14 Tf
+(\261 Best Editor on the Planet called \252Earth\272\274\r) Tx 
+TO
+1 A
+0 To
+1 0 0 1 339 797 0 Tp
+TP
+-38.9998 0 Td
+0 Tr
+0 g
+/_Times-Roman 12 Tf
+(Programming\274) Tx 
+/_Times-Roman 24 Tf
+(\r) Tx 
+-4.2448 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(Imdat Solak\r) Tx 
+-46.5743 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(It's all in my head \261 after Frei*enet\)\r) Tx 
+89.819 -21.5 Td
+/_Times-Italic 18 Tf
+(\r) Tx 
+-50.7505 -21.5 Td
+(Stefan Krause\r) Tx 
+7.5931 -14.5 Td
+/_Times-Italic 12 Tf
+(\(Definitly June\274\)\r) Tx 
+43.1574 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-26.4958 -14.5 Td
+/_Times-Roman 12 Tf
+(Icons by\274\r) Tx 
+-23.7414 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(Patrick Exner\r) Tx 
+0.4138 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(I still don't like'em\)\r) Tx 
+49.8234 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-38.4835 -14.5 Td
+/_Times-Roman 12 Tf
+(HardWare by\274\r) Tx 
+7.3479 -30 Td
+/_Times-Italic 24 Tf
+30 0 Tl
+(NeXT) Tx 
+/_Times-Italic 10 Tf
+10 Ts
+(\260) Tx 
+/_Times-Italic 24 Tf
+0 Ts
+(\r) Tx 
+31.1356 -29 Td
+0 0 Tl
+(\r) Tx 
+-38.8257 -14.5 Td
+/_Times-Roman 12 Tf
+(FoodWare by\274\r) Tx 
+-7.4159 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(McDon**ds \r) Tx 
+1.7461 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(with CurrySauce\)\r) Tx 
+44.4954 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-40.4875 -14.5 Td
+/_Times-Roman 12 Tf
+(DrinkWare by\274\r) Tx 
+5.4961 -30 Td
+/_Times-Italic 18 Tf
+30 0 Tl
+(Frei*enet\r) Tx 
+-13.8361 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(without headaches\)\r) Tx 
+48.8275 -29 Td
+/_Times-Italic 24 Tf
+(\r) Tx 
+-29.8318 -20 Td
+/_Times-Roman 12 Tf
+20 0 Tl
+(Thanks to\274\r) Tx 
+-6.012 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(F. Wichmann \r) Tx 
+-25.4875 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Gimme what I want!\272\) \r) Tx 
+25.3319 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Lorenz Drews \r) Tx 
+-13.8301 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252I wanna have it!\272\)\r) Tx 
+2.4962 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(J\366rgen Tschierske \r) Tx 
+-36.8279 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252When will viva! 2 be shippin'?\272\)\r) Tx 
+45.8339 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Wilfried Beeck \r) Tx 
+-6.996 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Ihr H\331nger!!!\272\) \r) Tx 
+1.7766 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Manu Saliho) Tx 0 -40 Tk 
+/_Times-BoldItalic 14 Tf
+(g) Tx 0 360 Tk 
+/_Times-Roman 14 Tf
+(\306) Tx 0 -20 Tk 
+/_Times-BoldItalic 14 Tf
+(l) Tx 0 -80 Tk 
+/_Times-BoldItalic 12 Tf
+(u \r) Tx 
+-6.9424 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Damn' invoices!\272\)\r) Tx 
+3.1436 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Bettina Herrmann \r) Tx 
+-55.9915 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252viva! 1.0 still doesn't ) Tx 
+/_Times-BoldItalic 12 Tf
+(do what I mean) Tx 
+/_Times-Italic 12 Tf
+(!\272\)\r) Tx 
+61.6614 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(Thomas Ludwig \r) Tx 
+-19.8175 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Great, great, great!!\272\) \r) Tx 
+61.4933 -14.5 Td
+(\r) Tx 
+-14.6639 -14.5 Td
+/_Times-Roman 12 Tf
+(and\274\r) Tx 
+-28.1695 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(InterfaceBuilder \r) Tx 
+-63.3174 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Best thing ever happened to computers!\272\)\r) Tx 
+69.3112 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(SmarterFields \r) Tx 
+-83.975 -14.5 Td
+/_Times-Italic 12 Tf
+0 0 Tl
+(\(\252Best thing ever happened to InterfaceBuilder!\272\)\r) Tx 
+56.8251 -30 Td
+/_Times-BoldItalic 12 Tf
+30 0 Tl
+(gawk, gcc, gdb, grep, f*ck\r) Tx 
+-12.8456 -14.5 Td
+0 0 Tl
+( ) Tx 
+/_Times-Italic 12 Tf
+(\(\252Best shell scripts for UNIX\272\)\r) Tx 
+76.8351 -30 Td
+30 0 Tl
+(\r) Tx 
+-55.3315 -14.5 Td
+/_Times-Roman 12 Tf
+0 0 Tl
+(and last but not least\274\r) Tx 
+55.3315 -17 Td
+/_Times-BoldItalic 14 Tf
+(\r) Tx 
+-140.398 -17 Td
+(Edit ) Tx 
+/_Times-Italic 14 Tf
+(\261 Best Editor on the Planet called \252Earth\272\274\r) Tx 
+TO
+0 A
+u
+1 g
+314.7333 893.5991 m
+280.8381 1020.0973 L
+157.215 986.9726 L
+191.1101 860.4744 L
+314.7333 893.5991 L
+f
+U
+u
+0.9683 g
+0.9834 w
+314.4709 893.7469 m
+191.2599 860.7326 L
+157.4778 986.8091 L
+280.6887 1019.8233 L
+314.4709 893.7469 L
+f
+0.9365 g
+0.9668 w
+314.2086 893.8946 m
+191.4097 860.9908 L
+157.7406 986.6455 L
+280.5394 1019.5493 L
+314.2086 893.8946 L
+f
+0.9048 g
+0.9501 w
+313.9463 894.0423 m
+191.5595 861.2489 L
+158.0034 986.4819 L
+280.3901 1019.2753 L
+313.9463 894.0423 L
+f
+0.873 g
+0.9335 w
+313.6839 894.19 m
+191.7093 861.5071 L
+158.2662 986.3183 L
+280.2407 1019.0013 L
+313.6839 894.19 L
+f
+0.8413 g
+0.9169 w
+313.4216 894.3377 m
+191.8591 861.7652 L
+158.5291 986.1547 L
+280.0914 1018.7273 L
+313.4216 894.3377 L
+f
+0.8095 g
+0.9003 w
+313.1593 894.4855 m
+192.0089 862.0234 L
+158.7919 985.9912 L
+279.9421 1018.4533 L
+313.1593 894.4855 L
+f
+0.7778 g
+0.8836 w
+312.8969 894.6332 m
+192.1588 862.2815 L
+159.0547 985.8276 L
+279.7928 1018.1793 L
+312.8969 894.6332 L
+f
+0.746 g
+0.867 w
+312.6346 894.7809 m
+192.3086 862.5397 L
+159.3175 985.664 L
+279.6434 1017.9053 L
+312.6346 894.7809 L
+f
+0.7143 g
+0.8504 w
+312.3723 894.9286 m
+192.4584 862.7979 L
+159.5803 985.5004 L
+279.4941 1017.6313 L
+312.3723 894.9286 L
+f
+0.6826 g
+0.8338 w
+312.1099 895.0764 m
+192.6082 863.056 L
+159.8432 985.3368 L
+279.3448 1017.3572 L
+312.1099 895.0764 L
+f
+0.6508 g
+0.8172 w
+311.8476 895.2241 m
+192.758 863.3142 L
+160.106 985.1733 L
+279.1954 1017.0832 L
+311.8476 895.2241 L
+f
+0.6191 g
+0.8005 w
+311.5852 895.3718 m
+192.9078 863.5723 L
+160.3688 985.0097 L
+279.0461 1016.8092 L
+311.5852 895.3718 L
+f
+0.5873 g
+0.7839 w
+311.3229 895.5195 m
+193.0576 863.8305 L
+160.6316 984.8461 L
+278.8968 1016.5352 L
+311.3229 895.5195 L
+f
+0.5556 g
+0.7673 w
+311.0606 895.6672 m
+193.2074 864.0886 L
+160.8944 984.6825 L
+278.7474 1016.2612 L
+311.0606 895.6672 L
+f
+0.5238 g
+0.7507 w
+310.7983 895.815 m
+193.3572 864.3468 L
+161.1573 984.5189 L
+278.5981 1015.9872 L
+310.7983 895.815 L
+f
+0.4921 g
+0.7341 w
+310.5359 895.9627 m
+193.5071 864.605 L
+161.4201 984.3554 L
+278.4488 1015.7132 L
+310.5359 895.9627 L
+f
+0.4603 g
+0.7174 w
+310.2736 896.1104 m
+193.6569 864.8631 L
+161.6829 984.1918 L
+278.2994 1015.4391 L
+310.2736 896.1104 L
+f
+0.4286 g
+0.7008 w
+310.0112 896.2581 m
+193.8067 865.1213 L
+161.9457 984.0282 L
+278.1501 1015.1651 L
+310.0112 896.2581 L
+f
+0.3968 g
+0.6842 w
+309.7489 896.4058 m
+193.9565 865.3794 L
+162.2085 983.8647 L
+278.0008 1014.8911 L
+309.7489 896.4058 L
+f
+0.3651 g
+0.6676 w
+309.4866 896.5536 m
+194.1063 865.6376 L
+162.4714 983.7011 L
+277.8514 1014.6171 L
+309.4866 896.5536 L
+f
+U
+u
+0.3334 g
+0.651 w
+309.2247 896.701 m
+277.7024 1014.3435 L
+162.7338 983.5377 L
+194.2559 865.8953 L
+309.2247 896.701 L
+f
+U
+u
+0.6667 g
+0.35 w
+303.7024 902.0061 m
+269.8073 1028.5039 L
+146.1844 995.3793 L
+180.0795 868.8815 L
+303.7024 902.0061 L
+f
+U
+u
+0 g
+300.8274 901.2357 m
+300.057 904.1107 L
+182.1832 872.5265 L
+182.9535 869.6515 L
+300.8274 901.2357 L
+f
+1 g
+268.4728 1021.9846 m
+267.7024 1024.8596 L
+149.8286 993.2753 L
+150.599 990.4004 L
+268.4728 1021.9846 L
+f
+U
+u
+0 g
+300.8274 901.2357 m
+303.7024 902.0061 L
+270.5774 1025.6299 L
+267.7024 1024.8596 L
+300.8274 901.2357 L
+f
+1 g
+182.1832 872.5265 m
+185.0581 873.2968 L
+153.4739 991.1707 L
+150.599 990.4004 L
+182.1832 872.5265 L
+f
+U
+u
+0.3334 g
+300.057 904.1107 m
+299.2867 906.9857 L
+184.2878 876.1718 L
+185.0581 873.2968 L
+300.057 904.1107 L
+f
+U
+296.4117 906.2154 m
+299.2867 906.9857 L
+268.4728 1021.9846 L
+265.5978 1021.2142 L
+296.4117 906.2154 L
+f
+1 g
+289.8914 907.5496 m
+292.7664 908.32 L
+279.6705 957.1943 L
+276.7955 956.4241 L
+289.8914 907.5496 L
+f
+185.6221 882.6921 m
+186.3925 879.8172 L
+289.8914 907.5496 L
+289.1211 910.4246 L
+185.6221 882.6921 L
+f
+231.6215 895.0177 m
+234.4965 895.788 L
+217.5489 959.0373 L
+214.6739 958.2669 L
+231.6215 895.0177 L
+f
+0 g
+239.4761 900.2037 m
+242.3511 900.974 L
+216.1593 998.723 L
+213.2843 997.9526 L
+239.4761 900.2037 L
+f
+1 g
+266.781 993.7989 m
+269.6559 994.5693 L
+263.4932 1017.5689 L
+260.6183 1016.7985 L
+266.781 993.7989 L
+f
+216.7785 961.9123 m
+216.0082 964.7872 L
+167.1338 951.6914 L
+167.9041 948.8164 L
+216.7785 961.9123 L
+f
+205.9937 1002.1617 m
+203.1188 1001.3914 L
+213.1332 964.0169 L
+216.0082 964.7872 L
+205.9937 1002.1617 L
+f
+209.4879 966.1215 m
+208.7175 968.9965 L
+188.5929 963.6041 L
+189.3632 960.7291 L
+209.4879 966.1215 L
+f
+207.9472 971.8715 m
+207.1768 974.7464 L
+187.0522 969.3541 L
+187.8226 966.4791 L
+207.9472 971.8715 L
+f
+206.4065 977.6214 m
+205.6361 980.4964 L
+185.5115 975.104 L
+186.2819 972.229 L
+206.4065 977.6214 L
+f
+204.8658 983.3714 m
+204.0955 986.2463 L
+183.9708 980.854 L
+184.7412 977.979 L
+204.8658 983.3714 L
+f
+203.3251 989.1213 m
+202.5548 991.9963 L
+182.4301 986.604 L
+183.2005 983.7289 L
+203.3251 989.1213 L
+f
+0 g
+268.5279 975.7784 m
+267.7575 978.6535 L
+227.5081 967.8686 L
+228.2785 964.9936 L
+268.5279 975.7784 L
+f
+259.2837 1010.2782 m
+258.5134 1013.1531 L
+212.514 1000.8277 L
+213.2843 997.9526 L
+259.2837 1010.2782 L
+f
+175.1945 944.6071 m
+172.3196 943.8367 L
+187.7265 886.3374 L
+190.6015 887.1078 L
+175.1945 944.6071 L
+f
+181.7149 943.2728 m
+178.8399 942.5025 L
+192.7061 890.7531 L
+195.5811 891.5234 L
+181.7149 943.2728 L
+f
+280.8535 929.7788 m
+280.0831 932.6538 L
+239.8337 921.869 L
+240.604 918.994 L
+280.8535 929.7788 L
+f
+1 g
+212.5691 954.6215 m
+211.7987 957.4965 L
+171.5492 946.7117 L
+172.3196 943.8367 L
+212.5691 954.6215 L
+f
+0 g
+161.535 984.0862 m
+158.66 983.3159 L
+166.3634 954.5663 L
+169.2384 955.3367 L
+161.535 984.0862 L
+f
+1 g
+198.9095 994.1007 m
+198.1391 996.9757 L
+157.8896 986.1909 L
+158.66 983.3159 L
+198.9095 994.1007 L
+f
+0 g
+227.2056 899.997 m
+226.4353 902.8719 L
+194.8108 894.3982 L
+195.5811 891.5232 L
+227.2056 899.997 L
+f
+184.9476 965.7088 m
+184.1772 968.5837 L
+172.6776 965.5024 L
+173.4479 962.6274 L
+184.9476 965.7088 L
+f
+183.4069 971.4587 m
+182.6366 974.3336 L
+174.0118 972.0227 L
+174.7822 969.1477 L
+183.4069 971.4587 L
+f
+181.8662 977.2087 m
+181.0959 980.0836 L
+169.5962 977.0023 L
+170.3665 974.1273 L
+181.8662 977.2087 L
+f
+180.3255 982.9586 m
+179.5552 985.8335 L
+168.0555 982.7522 L
+168.8258 979.8773 L
+180.3255 982.9586 L
+f
+186.4883 959.9588 m
+185.718 962.8337 L
+177.0932 960.5228 L
+177.8636 957.6478 L
+186.4883 959.9588 L
+f
+283.935 918.2792 m
+283.1647 921.1542 L
+274.54 918.8432 L
+275.3103 915.9682 L
+283.935 918.2792 L
+f
+0.3334 g
+212.0052 945.226 m
+209.1302 944.4557 L
+220.6854 901.3312 L
+223.5603 902.1016 L
+212.0052 945.226 L
+f
+207.0256 940.8104 m
+204.1506 940.04 L
+214.9354 899.7905 L
+217.8104 900.5609 L
+207.0256 940.8104 L
+f
+208.2088 913.3948 m
+205.3338 912.6245 L
+209.1855 898.2498 L
+212.0605 899.0202 L
+208.2088 913.3948 L
+f
+200.9181 917.6041 m
+198.0431 916.8338 L
+203.4355 896.7091 L
+206.3105 897.4795 L
+200.9181 917.6041 L
+f
+189.7757 936.1883 m
+186.9007 935.4179 L
+197.6856 895.1685 L
+200.5605 895.9388 L
+189.7757 936.1883 L
+f
+261.2375 979.9878 m
+260.4671 982.8627 L
+254.7174 981.3221 L
+255.4878 978.4472 L
+261.2375 979.9878 L
+f
+269.8622 982.2987 m
+269.0919 985.1737 L
+263.3421 983.6331 L
+264.1124 980.7581 L
+269.8622 982.2987 L
+f
+252.6127 977.6768 m
+251.8424 980.5518 L
+248.9676 979.7815 L
+249.738 976.9065 L
+252.6127 977.6768 L
+f
+246.863 976.1361 m
+246.0927 979.0111 L
+234.593 975.9298 L
+235.3633 973.0548 L
+246.863 976.1361 L
+f
+232.4884 972.2844 m
+231.718 975.1594 L
+225.9683 973.6188 L
+226.7386 970.7438 L
+232.4884 972.2844 L
+f
+235.9273 982.4501 m
+235.1569 985.3251 L
+223.6572 982.2437 L
+224.4276 979.3688 L
+235.9273 982.4501 L
+f
+234.3866 988.2 m
+233.6162 991.075 L
+222.1165 987.9936 L
+222.8869 985.1187 L
+234.3866 988.2 L
+f
+227.096 992.4093 m
+226.3256 995.2843 L
+220.5758 993.7436 L
+221.3462 990.8687 L
+227.096 992.4093 L
+f
+261.8014 989.3831 m
+261.031 992.258 L
+252.4064 989.9471 L
+253.1767 987.072 L
+261.8014 989.3831 L
+f
+260.2607 995.133 m
+259.4904 998.0079 L
+256.6156 997.2377 L
+257.3859 994.3627 L
+260.2607 995.133 L
+f
+254.511 993.5924 m
+253.7406 996.4673 L
+250.8659 995.697 L
+251.6362 992.8221 L
+254.511 993.5924 L
+f
+258.72 1000.883 m
+257.9497 1003.7579 L
+252.1999 1002.2173 L
+252.9703 999.3423 L
+258.72 1000.883 L
+f
+279.726 910.9886 m
+278.9556 913.8636 L
+273.2059 912.3229 L
+273.9762 909.448 L
+279.726 910.9886 L
+f
+271.1013 908.6776 m
+270.3309 911.5526 L
+267.4562 910.7823 L
+268.2265 907.9073 L
+271.1013 908.6776 L
+f
+265.3516 907.137 m
+264.5812 910.012 L
+255.9565 907.701 L
+256.7268 904.826 L
+265.3516 907.137 L
+f
+253.8519 904.0557 m
+253.0815 906.9306 L
+247.3317 905.3899 L
+248.1021 902.515 L
+253.8519 904.0557 L
+f
+282.3943 924.0291 m
+281.624 926.9041 L
+275.8743 925.3635 L
+276.6446 922.4885 L
+282.3943 924.0291 L
+f
+273.7696 921.7182 m
+272.9992 924.5931 L
+270.1245 923.8228 L
+270.8948 920.9479 L
+273.7696 921.7182 L
+f
+279.3128 935.5288 m
+278.5424 938.4038 L
+272.7927 936.8631 L
+273.5631 933.9881 L
+279.3128 935.5288 L
+f
+270.6878 933.2177 m
+269.9175 936.0927 L
+264.1677 934.552 L
+264.9381 931.6771 L
+270.6878 933.2177 L
+f
+277.7721 941.2787 m
+277.0018 944.1537 L
+271.252 942.6131 L
+272.0223 939.7381 L
+277.7721 941.2787 L
+f
+269.1472 938.9677 m
+268.3768 941.8426 L
+262.6271 940.302 L
+263.3975 937.4271 L
+269.1472 938.9677 L
+f
+276.2314 947.0287 m
+275.4611 949.9037 L
+269.7113 948.363 L
+270.4816 945.488 L
+276.2314 947.0287 L
+f
+267.6065 944.7176 m
+266.8361 947.5926 L
+261.0864 946.0519 L
+261.8567 943.177 L
+267.6065 944.7176 L
+f
+274.6907 952.7786 m
+273.9204 955.6536 L
+268.1706 954.113 L
+268.9409 951.238 L
+274.6907 952.7786 L
+f
+266.0658 950.4676 m
+265.2954 953.3425 L
+259.5457 951.8019 L
+260.316 948.927 L
+266.0658 950.4676 L
+f
+273.15 958.5286 m
+272.3797 961.4036 L
+266.6299 959.8629 L
+267.4002 956.9879 L
+273.15 958.5286 L
+f
+264.5251 956.2176 m
+263.7547 959.0925 L
+258.005 957.5519 L
+258.7753 954.6769 L
+264.5251 956.2176 L
+f
+271.6093 964.2785 m
+270.839 967.1535 L
+265.0892 965.6128 L
+265.8596 962.7379 L
+271.6093 964.2785 L
+f
+262.9844 961.9675 m
+262.214 964.8424 L
+256.4643 963.3018 L
+257.2346 960.4269 L
+262.9844 961.9675 L
+f
+270.0686 970.0285 m
+269.2982 972.9035 L
+263.5485 971.3628 L
+264.3189 968.4879 L
+270.0686 970.0285 L
+f
+261.4437 967.7175 m
+260.6733 970.5924 L
+252.0486 968.2815 L
+252.819 965.4064 L
+261.4437 967.7175 L
+f
+256.313 929.366 m
+255.5426 932.241 L
+246.9179 929.93 L
+247.6883 927.055 L
+256.313 929.366 L
+f
+244.813 926.2846 m
+244.0427 929.1595 L
+238.293 927.6189 L
+239.0633 924.744 L
+244.813 926.2846 L
+f
+254.7723 935.1159 m
+254.0019 937.9909 L
+245.3772 935.6799 L
+246.1476 932.8049 L
+254.7723 935.1159 L
+f
+243.2723 932.0346 m
+242.502 934.9095 L
+236.7523 933.3689 L
+237.5226 930.4939 L
+243.2723 932.0346 L
+f
+253.2315 940.8659 m
+252.4613 943.7409 L
+243.8365 941.4299 L
+244.6069 938.5549 L
+253.2315 940.8659 L
+f
+241.7316 937.7845 m
+240.9613 940.6594 L
+235.2116 939.1188 L
+235.9819 936.2438 L
+241.7316 937.7845 L
+f
+251.6908 946.6158 m
+250.9206 949.4908 L
+242.2958 947.1798 L
+243.0662 944.3049 L
+251.6908 946.6158 L
+f
+240.1909 943.5345 m
+239.4206 946.4094 L
+233.6709 944.8688 L
+234.4412 941.9938 L
+240.1909 943.5345 L
+f
+247.2752 951.5954 m
+246.5048 954.4704 L
+240.7551 952.9298 L
+241.5255 950.0548 L
+247.2752 951.5954 L
+f
+238.6502 949.2844 m
+237.8799 952.1593 L
+232.1302 950.6187 L
+232.9005 947.7438 L
+238.6502 949.2844 L
+f
+248.6094 958.1157 m
+247.8391 960.9907 L
+239.2144 958.6797 L
+239.9848 955.8048 L
+248.6094 958.1157 L
+f
+237.1096 955.0344 m
+236.3392 957.9093 L
+230.5895 956.3687 L
+231.3598 953.4937 L
+237.1096 955.0344 L
+f
+244.1938 963.0954 m
+243.4235 965.9703 L
+237.6737 964.4297 L
+238.4441 961.5547 L
+244.1938 963.0954 L
+f
+235.5689 960.7843 m
+234.7985 963.6593 L
+229.0488 962.1186 L
+229.8191 959.2437 L
+235.5689 960.7843 L
+f
+262.0631 930.9067 m
+261.2928 933.7817 L
+258.418 933.0114 L
+259.1884 930.1365 L
+262.0631 930.9067 L
+f
+260.5224 936.6567 m
+259.7521 939.5317 L
+256.8773 938.7614 L
+257.6477 935.8864 L
+260.5224 936.6567 L
+f
+249.944 964.6361 m
+249.1736 967.5111 L
+246.2989 966.7408 L
+247.0692 963.8658 L
+249.944 964.6361 L
+f
+u
+*u
+0 R
+1 G
+5 w
+166.987 927.4912 m
+167.5513 928.3589 167.5429 931.0682 167.923 932.923 c
+168.0759 933.8412 170.6461 936.4435 171.0933 936.5633 c
+171.8367 936.7625 172.5387 935.0371 172.6981 934.4424 c
+173.1166 932.8807 173.7502 929.6223 173.7762 929.2303 c
+174.0984 928.9176 174.7114 926.9299 175.2896 924.7723 c
+176.2264 921.2764 176.8843 918.8215 177.4696 918.4212 c
+177.8085 917.1568 178.146 917.0867 178.5921 917.2062 c
+179.9313 917.5651 181.593 925.346 181.6711 926.244 c
+182.3883 928.0298 182.2041 929.0169 182.6285 930.4067 c
+182.8961 934.4649 183.5011 935.1854 182.9338 939.976 c
+183.0039 940.3135 183.735 942.3428 185.0743 942.7017 c
+185.5203 942.8212 185.9523 942.6985 186.1518 941.9539 c
+186.4508 940.8383 186.8974 936.4934 186.1635 935.6593 c
+186.5083 934.0778 186.5013 931.1259 185.6309 929.6165 c
+186.0668 925.9062 184.5556 924.7044 184.9343 923.2913 c
+183.4362 919.0628 183.9853 916.4193 181.4295 912.8646 c
+180.7288 910.127 179.509 909.3221 178.2447 908.9832 c
+175.4185 908.2259 173.2713 911.4764 172.6536 913.7816 c
+172.5341 914.2276 172.4343 914.5999 172.4784 915.3294 c
+171.8979 915.4123 171.4408 915.9285 169.8263 921.953 c
+168.6357 921.6339 166.713 916.0167 166.1182 915.8572 c
+165.796 916.1699 L
+165.7901 916.4871 165.7502 916.6358 165.6705 916.9331 c
+165.5111 917.5278 164.9756 918.3417 164.6367 919.6061 c
+164.4375 920.3495 166.8407 925.0591 166.987 927.4912 c
+s
+186.9671 920.1683 m
+188.0255 922.7645 189.0126 922.9488 189.3864 925.1219 c
+191.0364 926.9995 190.8861 928.1551 191.3322 928.2746 c
+192.0756 928.4738 192.833 925.6477 193.2052 925.7474 c
+193.923 923.0689 191.9831 922.8677 189.522 919.2593 c
+188.086 918.0765 187.4578 916.553 186.7132 916.3535 c
+186.1185 916.1941 185.8551 916.2828 185.7155 916.8038 c
+185.536 917.4735 186.383 919.3743 186.9671 920.1683 c
+s
+*U
+*u
+189.4077 927.1214 m
+190.2694 928.0689 190.7181 930.262 191.7888 931.0283 c
+192.0357 931.8912 193.6135 935.8225 194.6834 936.5873 c
+194.8517 937.7479 195.0693 938.125 195.6732 938.8452 c
+197.6072 939.3635 198.8026 939.3651 200.6203 937.9386 c
+201.0174 937.6461 202.7632 933.8099 203.3414 931.6523 c
+204.1705 931.237 204.9479 928.3359 207.0306 928.8941 c
+207.9227 929.1331 208.4527 929.8336 209.5427 930.5234 c
+209.8302 931.2392 210.3685 932.499 211.7322 933.6612 c
+212.1306 932.1744 212.4008 930.5716 212.7992 929.0848 c
+213.0982 927.9691 208.595 922.4571 206.5872 921.919 c
+206.0663 921.7794 204.2213 921.5234 204.1475 921.5037 c
+202.9214 922.2116 201.1711 921.9019 198.8244 925.8969 c
+196.5066 927.1102 196.8453 929.1146 195.1349 928.6562 c
+194.3165 928.437 192.4307 925.0606 192.2927 924.3862 c
+191.3316 923.8099 191.2244 922.426 190.6497 922.1917 c
+190.3674 922.3557 190.2676 922.728 190.1481 923.174 c
+189.9686 923.8436 189.4538 926.6545 189.4077 927.1214 c
+s
+199.3956 961.8468 m
+199.6547 960.8798 200.0845 957.4878 199.5954 956.639 c
+199.8626 952.9638 197.4876 952.0073 196.3735 950.513 c
+193.696 949.7955 193.3037 949.7706 192.9755 950.4004 c
+192.5129 951.2326 192.027 951.2617 191.7079 952.4523 c
+191.0701 954.8325 192.3112 957.637 194.2498 959.0324 c
+194.2431 960.5463 196.5525 962.0423 197.742 962.3611 c
+198.709 962.6203 198.8687 962.0244 199.3956 961.8468 c
+s
+*U
+*u
+213.6988 940.0092 m
+214.2631 940.8769 214.2547 943.5863 214.6348 945.4411 c
+214.7877 946.3592 217.3579 948.9615 217.8051 949.0814 c
+218.5485 949.2806 219.2505 947.5552 219.4099 946.9604 c
+219.8284 945.3987 220.462 942.1403 220.488 941.7483 c
+220.8102 941.4356 221.4232 939.4479 222.0014 937.2903 c
+222.9382 933.7945 223.5961 931.3395 224.1814 930.9392 c
+224.5203 929.6749 224.8578 929.6047 225.3038 929.7243 c
+226.6431 930.0831 228.3048 937.864 228.3829 938.762 c
+229.1001 940.5478 228.9159 941.5349 229.3403 942.9248 c
+229.6079 946.983 230.2129 947.7034 229.6456 952.4941 c
+229.7157 952.8316 230.4468 954.8608 231.7861 955.2197 c
+232.2321 955.3392 232.664 955.2166 232.8636 954.472 c
+233.1625 953.3563 233.6092 949.0114 232.8753 948.1773 c
+233.2201 946.5958 233.2131 943.6439 232.3427 942.1345 c
+232.7786 938.4243 231.2674 937.2224 231.6461 935.8094 c
+230.148 931.5808 230.6971 928.9373 228.1412 925.3826 c
+227.4406 922.6451 226.2208 921.8401 224.9565 921.5013 c
+222.1303 920.7439 219.9831 923.9944 219.3654 926.2996 c
+219.2459 926.7456 219.1461 927.1179 219.1902 927.8475 c
+218.6097 927.9303 218.1526 928.4465 216.5381 934.471 c
+215.3475 934.152 213.4248 928.5347 212.83 928.3753 c
+212.5078 928.6879 L
+212.5019 929.0051 212.462 929.1538 212.3823 929.4511 c
+212.223 930.0459 211.6874 930.8598 211.3485 932.1241 c
+211.1493 932.8676 213.5525 937.5772 213.6988 940.0092 c
+s
+233.6788 932.6864 m
+234.7373 935.2825 235.7244 935.4668 236.0982 937.6399 c
+237.7482 939.5176 237.5979 940.6731 238.044 940.7927 c
+238.7874 940.9919 239.5447 938.1657 239.917 938.2655 c
+240.6348 935.5869 238.6949 935.3858 236.2338 931.7774 c
+234.7978 930.5946 234.1696 929.0711 233.4251 928.8715 c
+232.8303 928.7121 232.5669 928.8009 232.4273 929.3218 c
+232.2478 929.9915 233.0948 931.8924 233.6788 932.6864 c
+s
+*U
+*u
+266.9492 948.0607 m
+267.2084 947.0937 267.5964 946.2403 267.6761 945.9429 c
+267.7357 945.7205 267.613 945.2886 267.7326 944.8425 c
+267.8123 944.5452 268.0409 944.2865 268.1605 943.8405 c
+268.3597 943.0971 267.3237 942.5007 266.7645 941.3143 c
+265.0056 939.2482 264.0493 938.3544 263.0823 938.0953 c
+262.7849 938.0156 262.2792 938.1185 262.0557 938.0586 c
+261.8332 937.999 261.3718 937.6369 260.9996 937.5372 c
+259.9588 937.2583 257.8745 937.8955 256.9949 939.0941 c
+255.4174 939.6287 255.1782 943.7895 254.1374 943.5106 c
+253.6165 943.371 252.1609 941.0673 251.8801 940.036 c
+250.6347 939.6219 250.4951 936.8742 248.4878 935.1404 c
+247.5379 932.7338 245.575 931.7285 244.6846 930.294 c
+243.6624 929.9411 243.2807 929.2816 242.6122 929.1025 c
+241.9426 928.923 240.1406 929.3963 239.5951 929.6479 c
+238.6955 930.9213 238.5559 931.4423 238.4363 931.8884 c
+238.0376 933.3764 238.5029 934.6178 238.4035 934.989 c
+238.3237 935.2863 237.6143 935.2556 237.3907 935.1956 c
+236.334 939.1386 236.0749 940.1056 237.3238 941.3964 c
+238.4975 942.6684 239.2786 945.11 240.0374 945.5518 c
+240.7484 947.6558 241.0559 948.2967 242.3037 949.5872 c
+242.6835 951.4432 245.2855 953.3363 246.4926 955.9724 c
+247.3251 956.4339 247.9241 957.4715 248.4293 958.5643 c
+250.5396 960.8037 251.8954 963.4796 254.4242 964.1573 c
+255.9121 964.5561 256.32 963.6289 257.2428 963.1585 c
+257.4791 961.3873 256.6131 959.5616 255.1161 958.6021 c
+254.6874 956.3339 253.2452 955.4694 252.1958 953.434 c
+251.9888 952.4223 251.2948 951.4395 250.3247 950.3024 c
+249.954 949.0073 249.1574 947.5177 248.3639 946.9061 c
+248.039 945.1451 246.0775 942.9455 245.3851 940.7673 c
+245.4359 939.9829 244.8259 939.581 245.0653 938.6878 c
+246.5532 939.0865 246.953 940.8676 248.5191 942.1644 c
+248.637 942.9136 249.938 945.4946 251.7615 947.0197 c
+252.379 949.1779 254.2026 950.703 254.9653 952.0241 c
+255.8724 952.5069 256.8197 952.8398 257.3406 952.9794 c
+258.6788 953.338 258.6469 950.7785 259.6108 950.1597 c
+259.8499 949.2676 259.6522 948.8156 260.0309 947.4025 c
+260.4495 945.8408 261.8751 944.3884 263.5856 944.8468 c
+264.9987 945.2254 264.9829 946.1786 265.5027 946.3179 c
+266.459 947.2116 266.2949 948.1238 266.6671 948.2236 C
+266.9492 948.0607 l
+s
+*U
+*u
+282.2575 939.7268 m
+282.5364 938.686 L
+282.7159 938.0164 282.2407 937.411 281.0501 937.0919 c
+279.8606 936.7731 279.5531 936.1323 276.6531 935.3552 c
+275.9835 935.1757 274.6854 937.936 274.526 938.5308 c
+274.6392 939.5975 276.4796 943.4385 277.5953 943.7376 c
+277.8927 943.8172 278.4334 943.8831 278.8995 943.9277 c
+280.5559 944.2926 281.4189 944.0457 281.8377 942.4828 c
+282.0369 941.7394 281.919 940.9901 282.2575 939.7268 c
+s
+276.4359 982.5727 m
+277.2733 979.4481 276.6026 975.9996 277.7785 971.6117 c
+278.277 969.7515 277.6095 963.9122 278.6918 959.5783 c
+278.2431 957.3851 278.7828 954.182 279.361 952.0244 c
+278.9414 950.3171 277.1152 946.7183 275.8508 946.3795 c
+275.5534 946.2998 275.236 946.295 274.937 947.4107 c
+274.7576 948.0803 274.5307 950.4112 274.1919 951.6755 c
+274.0921 952.0478 273.7151 952.2655 273.4559 953.2325 c
+273.0374 954.7943 272.962 955.9699 273.0984 957.8397 c
+271.5435 963.6418 272.2621 964.2333 271.1458 968.3988 c
+271.4581 968.7221 271.2955 971.7077 270.6179 974.2364 c
+270.4983 974.6825 270.279 975.5008 269.9557 975.8132 c
+268.6913 975.4743 268.5915 975.8466 268.472 976.2927 c
+268.1331 977.5571 268.1784 981.5556 267.3811 984.5305 c
+267.0347 987.3074 267.0832 988.9152 269.3437 989.9991 c
+270.3029 991.7719 271.9623 994.2092 273.4503 994.608 c
+274.566 994.9069 274.8484 994.743 275.3666 992.8089 c
+275.9248 990.7263 275.3796 986.5145 276.4359 982.5727 c
+s
+*U
+U
+*u
+0 O
+0 g
+1 w
+166.987 927.4912 m
+167.5513 928.3589 167.5429 931.0682 167.923 932.923 c
+168.0759 933.8412 170.6461 936.4435 171.0933 936.5633 c
+171.8367 936.7625 172.5387 935.0371 172.6981 934.4424 c
+173.1166 932.8807 173.7502 929.6223 173.7762 929.2303 c
+174.0984 928.9176 174.7114 926.9299 175.2896 924.7723 c
+176.2264 921.2764 176.8843 918.8215 177.4696 918.4212 c
+177.8085 917.1568 178.146 917.0867 178.5921 917.2062 c
+179.9313 917.5651 181.593 925.346 181.6711 926.244 c
+182.3883 928.0298 182.2041 929.0169 182.6285 930.4067 c
+182.8961 934.4649 183.5011 935.1854 182.9338 939.976 c
+183.0039 940.3135 183.735 942.3428 185.0743 942.7017 c
+185.5203 942.8212 185.9523 942.6985 186.1518 941.9539 c
+186.4508 940.8383 186.8974 936.4934 186.1635 935.6593 c
+186.5083 934.0778 186.5013 931.1259 185.6309 929.6165 c
+186.0668 925.9062 184.5556 924.7044 184.9343 923.2913 c
+183.4362 919.0628 183.9853 916.4193 181.4295 912.8646 c
+180.7288 910.127 179.509 909.3221 178.2447 908.9832 c
+175.4185 908.2259 173.2713 911.4764 172.6536 913.7816 c
+172.5341 914.2276 172.4343 914.5999 172.4784 915.3294 c
+171.8979 915.4123 171.4408 915.9285 169.8263 921.953 c
+168.6357 921.6339 166.713 916.0167 166.1182 915.8572 c
+165.796 916.1699 L
+165.7901 916.4871 165.7502 916.6358 165.6705 916.9331 c
+165.5111 917.5278 164.9756 918.3417 164.6367 919.6061 c
+164.4375 920.3495 166.8407 925.0591 166.987 927.4912 c
+f
+186.9671 920.1683 m
+188.0255 922.7645 189.0126 922.9488 189.3864 925.1219 c
+191.0364 926.9995 190.8861 928.1551 191.3322 928.2746 c
+192.0756 928.4738 192.833 925.6477 193.2052 925.7474 c
+193.923 923.0689 191.9831 922.8677 189.522 919.2593 c
+188.086 918.0765 187.4578 916.553 186.7132 916.3535 c
+186.1185 916.1941 185.8551 916.2828 185.7155 916.8038 c
+185.536 917.4735 186.383 919.3743 186.9671 920.1683 c
+f
+*U
+*u
+189.4077 927.1214 m
+190.2694 928.0689 190.7181 930.262 191.7888 931.0283 c
+192.0357 931.8912 193.6135 935.8225 194.6834 936.5873 c
+194.8517 937.7479 195.0693 938.125 195.6732 938.8452 c
+197.6072 939.3635 198.8026 939.3651 200.6203 937.9386 c
+201.0174 937.6461 202.7632 933.8099 203.3414 931.6523 c
+204.1705 931.237 204.9479 928.3359 207.0306 928.8941 c
+207.9227 929.1331 208.4527 929.8336 209.5427 930.5234 c
+209.8302 931.2392 210.3685 932.499 211.7322 933.6612 c
+212.1306 932.1744 212.4008 930.5716 212.7992 929.0848 c
+213.0982 927.9691 208.595 922.4571 206.5872 921.919 c
+206.0663 921.7794 204.2213 921.5234 204.1475 921.5037 c
+202.9214 922.2116 201.1711 921.9019 198.8244 925.8969 c
+196.5066 927.1102 196.8453 929.1146 195.1349 928.6562 c
+194.3165 928.437 192.4307 925.0606 192.2927 924.3862 c
+191.3316 923.8099 191.2244 922.426 190.6497 922.1917 c
+190.3674 922.3557 190.2676 922.728 190.1481 923.174 c
+189.9686 923.8436 189.4538 926.6545 189.4077 927.1214 c
+f
+199.3956 961.8468 m
+199.6547 960.8798 200.0845 957.4878 199.5954 956.639 c
+199.8626 952.9638 197.4876 952.0073 196.3735 950.513 c
+193.696 949.7955 193.3037 949.7706 192.9755 950.4004 c
+192.5129 951.2326 192.027 951.2617 191.7079 952.4523 c
+191.0701 954.8325 192.3112 957.637 194.2498 959.0324 c
+194.2431 960.5463 196.5525 962.0423 197.742 962.3611 c
+198.709 962.6203 198.8687 962.0244 199.3956 961.8468 c
+f
+*U
+*u
+213.6988 940.0092 m
+214.2631 940.8769 214.2547 943.5863 214.6348 945.4411 c
+214.7877 946.3592 217.3579 948.9615 217.8051 949.0814 c
+218.5485 949.2806 219.2505 947.5552 219.4099 946.9604 c
+219.8284 945.3987 220.462 942.1403 220.488 941.7483 c
+220.8102 941.4356 221.4232 939.4479 222.0014 937.2903 c
+222.9382 933.7945 223.5961 931.3395 224.1814 930.9392 c
+224.5203 929.6749 224.8578 929.6047 225.3038 929.7243 c
+226.6431 930.0831 228.3048 937.864 228.3829 938.762 c
+229.1001 940.5478 228.9159 941.5349 229.3403 942.9248 c
+229.6079 946.983 230.2129 947.7034 229.6456 952.4941 c
+229.7157 952.8316 230.4468 954.8608 231.7861 955.2197 c
+232.2321 955.3392 232.664 955.2166 232.8636 954.472 c
+233.1625 953.3563 233.6092 949.0114 232.8753 948.1773 c
+233.2201 946.5958 233.2131 943.6439 232.3427 942.1345 c
+232.7786 938.4243 231.2674 937.2224 231.6461 935.8094 c
+230.148 931.5808 230.6971 928.9373 228.1412 925.3826 c
+227.4406 922.6451 226.2208 921.8401 224.9565 921.5013 c
+222.1303 920.7439 219.9831 923.9944 219.3654 926.2996 c
+219.2459 926.7456 219.1461 927.1179 219.1902 927.8475 c
+218.6097 927.9303 218.1526 928.4465 216.5381 934.471 c
+215.3475 934.152 213.4248 928.5347 212.83 928.3753 c
+212.5078 928.6879 L
+212.5019 929.0051 212.462 929.1538 212.3823 929.4511 c
+212.223 930.0459 211.6874 930.8598 211.3485 932.1241 c
+211.1493 932.8676 213.5525 937.5772 213.6988 940.0092 c
+f
+233.6788 932.6864 m
+234.7373 935.2825 235.7244 935.4668 236.0982 937.6399 c
+237.7482 939.5176 237.5979 940.6731 238.044 940.7927 c
+238.7874 940.9919 239.5447 938.1657 239.917 938.2655 c
+240.6348 935.5869 238.6949 935.3858 236.2338 931.7774 c
+234.7978 930.5946 234.1696 929.0711 233.4251 928.8715 c
+232.8303 928.7121 232.5669 928.8009 232.4273 929.3218 c
+232.2478 929.9915 233.0948 931.8924 233.6788 932.6864 c
+f
+*U
+*u
+266.9492 948.0607 m
+267.2084 947.0937 267.5964 946.2403 267.6761 945.9429 c
+267.7357 945.7205 267.613 945.2886 267.7326 944.8425 c
+267.8123 944.5452 268.0409 944.2865 268.1605 943.8405 c
+268.3597 943.0971 267.3237 942.5007 266.7645 941.3143 c
+265.0056 939.2482 264.0493 938.3544 263.0823 938.0953 c
+262.7849 938.0156 262.2792 938.1185 262.0557 938.0586 c
+261.8332 937.999 261.3718 937.6369 260.9996 937.5372 c
+259.9588 937.2583 257.8745 937.8955 256.9949 939.0941 c
+255.4174 939.6287 255.1782 943.7895 254.1374 943.5106 c
+253.6165 943.371 252.1609 941.0673 251.8801 940.036 c
+250.6347 939.6219 250.4951 936.8742 248.4878 935.1404 c
+247.5379 932.7338 245.575 931.7285 244.6846 930.294 c
+243.6624 929.9411 243.2807 929.2816 242.6122 929.1025 c
+241.9426 928.923 240.1406 929.3963 239.5951 929.6479 c
+238.6955 930.9213 238.5559 931.4423 238.4363 931.8884 c
+238.0376 933.3764 238.5029 934.6178 238.4035 934.989 c
+238.3237 935.2863 237.6143 935.2556 237.3907 935.1956 c
+236.334 939.1386 236.0749 940.1056 237.3238 941.3964 c
+238.4975 942.6684 239.2786 945.11 240.0374 945.5518 c
+240.7484 947.6558 241.0559 948.2967 242.3037 949.5872 c
+242.6835 951.4432 245.2855 953.3363 246.4926 955.9724 c
+247.3251 956.4339 247.9241 957.4715 248.4293 958.5643 c
+250.5396 960.8037 251.8954 963.4796 254.4242 964.1573 c
+255.9121 964.5561 256.32 963.6289 257.2428 963.1585 c
+257.4791 961.3873 256.6131 959.5616 255.1161 958.6021 c
+254.6874 956.3339 253.2452 955.4694 252.1958 953.434 c
+251.9888 952.4223 251.2948 951.4395 250.3247 950.3024 c
+249.954 949.0073 249.1574 947.5177 248.3639 946.9061 c
+248.039 945.1451 246.0775 942.9455 245.3851 940.7673 c
+245.4359 939.9829 244.8259 939.581 245.0653 938.6878 c
+246.5532 939.0865 246.953 940.8676 248.5191 942.1644 c
+248.637 942.9136 249.938 945.4946 251.7615 947.0197 c
+252.379 949.1779 254.2026 950.703 254.9653 952.0241 c
+255.8724 952.5069 256.8197 952.8398 257.3406 952.9794 c
+258.6788 953.338 258.6469 950.7785 259.6108 950.1597 c
+259.8499 949.2676 259.6522 948.8156 260.0309 947.4025 c
+260.4495 945.8408 261.8751 944.3884 263.5856 944.8468 c
+264.9987 945.2254 264.9829 946.1786 265.5027 946.3179 c
+266.459 947.2116 266.2949 948.1238 266.6671 948.2236 C
+266.9492 948.0607 l
+f
+*U
+*u
+282.2575 939.7268 m
+282.5364 938.686 L
+282.7159 938.0164 282.2407 937.411 281.0501 937.0919 c
+279.8606 936.7731 279.5531 936.1323 276.6531 935.3552 c
+275.9835 935.1757 274.6854 937.936 274.526 938.5308 c
+274.6392 939.5975 276.4796 943.4385 277.5953 943.7376 c
+277.8927 943.8172 278.4334 943.8831 278.8995 943.9277 c
+280.5559 944.2926 281.4189 944.0457 281.8377 942.4828 c
+282.0369 941.7394 281.919 940.9901 282.2575 939.7268 c
+f
+276.4359 982.5727 m
+277.2733 979.4481 276.6026 975.9996 277.7785 971.6117 c
+278.277 969.7515 277.6095 963.9122 278.6918 959.5783 c
+278.2431 957.3851 278.7828 954.182 279.361 952.0244 c
+278.9414 950.3171 277.1152 946.7183 275.8508 946.3795 c
+275.5534 946.2998 275.236 946.295 274.937 947.4107 c
+274.7576 948.0803 274.5307 950.4112 274.1919 951.6755 c
+274.0921 952.0478 273.7151 952.2655 273.4559 953.2325 c
+273.0374 954.7943 272.962 955.9699 273.0984 957.8397 c
+271.5435 963.6418 272.2621 964.2333 271.1458 968.3988 c
+271.4581 968.7221 271.2955 971.7077 270.6179 974.2364 c
+270.4983 974.6825 270.279 975.5008 269.9557 975.8132 c
+268.6913 975.4743 268.5915 975.8466 268.472 976.2927 c
+268.1331 977.5571 268.1784 981.5556 267.3811 984.5305 c
+267.0347 987.3074 267.0832 988.9152 269.3437 989.9991 c
+270.3029 991.7719 271.9623 994.2092 273.4503 994.608 c
+274.566 994.9069 274.8484 994.743 275.3666 992.8089 c
+275.9248 990.7263 275.3796 986.5145 276.4359 982.5727 c
+f
+*U
+u
+540.9797 811.3998 m
+540.9797 818.6002 L
+136.0203 818.6002 L
+136.0203 811.3998 L
+540.9797 811.3998 L
+n
+336 815 m
+N
+U
+0 O
+0.6667 g
+269.5 1031.5 m
+F
+[1 0 0 1 225 767] 0 0 64 64
+(/private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/imdat.eps)`
+%%BeginDocument: /private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/imdat.eps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: vivax.ai    __    /private/Net/dart/Users/imdat/Mailboxes/Active.mbox/Kein_Betreff_3.attach
+%%Creator: Adobe_Illustrator
+%%CreationDate: Tue Jun  2 21:51:12 1992
+%%For: imdat
+%%DocumentFonts: (atend)
+%%Pages: 0 1
+%%BoundingBox: 0 0 64 64
+%%EndComments
+
+%%BeginDocument: /usr/lib/NextStep/printPackage.ps
+%!PS-Adobe-2.0
+%%Title: Printing Package
+%%EndComments
+%Version: 2.0
+%Copyright: 1988, NeXT, Inc.
+
+/__NXdef{1 index where{pop pop pop}{def}ifelse}bind def
+/__NXbdef{1 index where{pop pop pop}{bind def}ifelse}bind def
+/UserObjects 10 array __NXdef
+/defineuserobject{
+	exch dup 1 add dup UserObjects length gt{
+		array dup 0 UserObjects putinterval
+		/UserObjects exch def
+	}{pop}ifelse UserObjects exch 3 -1 roll put
+}__NXbdef
+/undefineuserobject{UserObjects exch null put}__NXbdef
+/execuserobject{UserObjects exch get exec}__NXbdef
+/__NXRectPath{4 2 roll moveto 1 index 0 rlineto
+0 exch rlineto neg 0 rlineto closepath}__NXbdef
+/__NXProcessRectArgs{
+	1 index type /arraytype eq{
+		exch 0 4 2 index length 1 sub{
+			dup 3 add 1 exch{1 index exch get exch}for
+			5 1 roll 5 index exec
+		}for pop pop
+	}{exec}ifelse
+}__NXbdef
+/rectfill{gsave newpath {__NXRectPath fill} __NXProcessRectArgs grestore}__NXbdef
+/rectclip{newpath {__NXRectPath} __NXProcessRectArgs clip newpath}__NXbdef
+/rectstroke{
+	gsave newpath dup type /arraytype eq{dup length 6 eq}{false}ifelse{
+		{gsave __NXRectPath null concat stroke grestore}
+		dup length array cvx copy dup 2 4 -1 roll put __NXProcessRectArgs
+	}{{__NXRectPath stroke} __NXProcessRectArgs}ifelse grestore
+}__NXbdef
+/xyshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index 2 mul 1 add get add exch
+		3 index	3 index 2 mul get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/xshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		exch 3 index 3 index get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/yshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index get add moveto pop
+	}for pop pop
+}__NXbdef
+/arct{arcto pop pop pop pop}__NXbdef
+/setbbox{pop pop pop pop}__NXbdef
+/ucache{}__NXbdef
+/ucachestatus{mark 0 0 0 0 0}__NXbdef
+/setucacheparams{cleartomark}__NXbdef
+/uappend{systemdict begin cvx exec end}__NXbdef
+/ueofill{gsave newpath uappend eofill grestore}__NXbdef
+/ufill{gsave newpath uappend fill grestore}__NXbdef
+/ustroke{
+	gsave newpath dup length 6 eq
+	{exch uappend concat}{uappend}ifelse
+	stroke grestore
+}__NXbdef
+/__NXustrokepathMatrix dup where {pop pop}{matrix def}ifelse
+/ustrokepath{
+	newpath dup length 6 eq{
+		exch uappend __NXustrokepathMatrix currentmatrix exch concat
+		strokepath setmatrix
+	}{uappend strokepath}ifelse
+} __NXbdef
+/upath{
+	[exch {/ucache cvx}if pathbbox /setbbox cvx
+	 {/moveto cvx}{/lineto cvx}{/curveto cvx}{/closepath cvx}pathforall]cvx
+} __NXbdef
+/setstrokeadjust{pop}__NXbdef
+/currentstrokeadjust{false}__NXbdef
+/selectfont{exch findfont exch
+dup type /arraytype eq {makefont}{scalefont}ifelse setfont}__NXbdef
+/_NXCombineArrays{
+	counttomark dup 2 add index dup length 3 -1 roll {
+		2 index length sub dup 4 1 roll 1 index exch 4 -1 roll putinterval exch
+	}repeat pop pop pop
+}__NXbdef
+/setcmykcolor{
+	1.0 exch sub dup dup 6 -1 roll
+	sub dup 0 lt{pop 0}if 5 1 roll
+	4 -1 roll sub dup 0 lt{pop 0}if 3 1 roll
+	exch sub dup 0 lt{pop 0}if setrgbcolor
+}__NXbdef
+/currentcmykcolor{currentrgbcolor 3{1.0 exch sub 3 1 roll}repeat 0}__NXbdef
+/flushgraphics{}def
+/setwindowtype{pop pop}def
+/currentwindowtype{pop 0}def
+/setalpha{pop}def
+/currentalpha{1.0}def
+/hidecursor{}def
+/obscurecursor{}def
+/revealcursor{}def
+/setcursor{4 {pop}repeat}bind def
+/showcursor{}def
+/NextStepEncoding where not{
+/NextStepEncoding StandardEncoding 256 array copy def
+0 [129/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/Ccedilla/Egrave
+/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/Ugrave/Uacute
+/Ucircumflex/Udieresis/Yacute/Thorn/mu/multiply/divide/copyright
+176/registered 181/brokenbar 190/logicalnot 192/onesuperior 201/twosuperior
+204/threesuperior 209/plusminus/onequarter/onehalf/threequarters/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave 226/iacute 228/icircumflex/idieresis/eth
+/ntilde 236/ograve/oacute/ocircumflex/otilde/odieresis 242/ugrave/uacute
+/ucircumflex 246/udieresis/yacute 252/thorn/ydieresis]
+{dup type /nametype eq
+ {NextStepEncoding 2 index 2 index put pop 1 add}{exch pop}ifelse
+}forall pop
+/NextStepEncoding NextStepEncoding readonly def   
+/_NXfstr 128 string dup 0 (_NX) putinterval def   
+/findfont{
+ % Because we can never let NextStepEncoding get into
+ % SharedFontDirectory, we cannot reencode a font to NextStepEncoding
+ % if we are in shared mode.  So if currentshared is true,
+ % we call the normal findfont and return that
+ /currentshared where {pop currentshared} {false} ifelse
+ {//findfont exec}
+ {dup _NXfstr 3 125 getinterval cvs length 3 add _NXfstr 0 3 -1 roll
+  getinterval cvn exch FontDirectory 2 index known 
+  {pop FontDirectory exch get}
+  {//findfont exec dup /Encoding get StandardEncoding eq
+   {	dup length dict exch
+	{1 index /FID ne {2 index 3 1 roll put}{pop pop}ifelse}forall
+	 dup /Encoding NextStepEncoding put definefont
+	}{exch pop} ifelse
+   }ifelse
+ }ifelse
+}bind def
+}{pop}ifelse
+/_NXProcArray 5 array __NXdef
+/_NXChannels 0 __NXdef
+/_NXTotalBytes 0 __NXdef
+/_NXDoImageOp{
+	1 index{dup}{1}ifelse /_NXChannels exch store
+	_NXChannels 2 add 2 roll _NXProcArray 0 _NXChannels getinterval astore pop
+	5 index 4 index mul 2 index{1 sub 8 idiv 1 add mul}{mul 1 sub 8 idiv 1 add}ifelse
+	4 index mul /_NXTotalBytes exch store pop exch pop
+	gsave matrix invertmatrix concat 0.5 setgray 0 0 4 2 roll rectfill grestore
+	{	0 1 _NXChannels 1 sub{
+			_NXProcArray exch get exec
+			length _NXTotalBytes exch sub /_NXTotalBytes exch store}for
+		_NXTotalBytes 0 le{exit}if
+	}loop /_NXProcArray 5 array def
+}__NXbdef
+/colorimage{_NXDoImageOp}__NXbdef
+/alphaimage{1 add _NXDoImageOp}def
+%%EndDocument
+
+gsave
+317 -721 translate
+ /__NXbasematrix matrix currentmatrix def
+grestore
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+0 0 64 64 rectclip
+0 0 64 64 rectclip
+gsave
+<181819100f0f090a090c08090303030a0a0b0b08080a08090807070b0909070406060607110d0d0f100e0d0b0c0a08070a0b080a0a090d0a0c0907070707060a0a0a0a08090b0c0a0c0a0b0906060605060c0a0a070607100f0f09070a0b0809100a0b1210111c1b191c1816120d0f1613140807050c0d0b150f0e1c1a171e1b1725221b211e1b23211c24211a181510110c0d0b070a0b0b0b0707070c0d0b0c0b0c0f080a110b0f0c0c0e08080d0a0b0a47552d7d816a85807384806b847d6916141812111608090a0a0a090a09080a09080909080c0b0b0b0a09120e110808080a0d0a110f0e0c0a0a0e0c0b0e0d0c0a0708090a050504050706060605040807060b0b0c0808080c0b09130f0f100f0e110f110a0a090d0e0a090a0912120f13110f19170d1e1712241c1a1816150b0b0a0d0d0a0e110c1318132c30253230242c2324312a292c2523322f27352e271c1615120e0e0e0d0a0a0a090a0a0a0a0c0a080a0a0e0e0d110f100505070f0e0c3b3d3051523f6b7766867c6f867d6c180e11070a070708070807080706060807060706060606070d0a0c0b080a0809080808070b0b080d0a090908070908080d0a0b0808070a09070a0a0a0d0e0c090a080a0a090a08080f0d0b0707050b0a070a0d091213110e0e0c1513120e0d0915160e27241f25211d211a170f0c0a0b0e0b120f110a07082b271e2f2121301e1c3b30282b1f1c2b261a3235252e2c2435352a16110f0c0b0a0505050606050909090806080808080b0b0c0c0c0c070b0a0f11132d2f303f403a75725a88776c17101a0d0b0a0908070b0b0c0706070706050706060605070808080605040707060a0b0b0605050a08080a09070d0a0e0909080c0d0c0d0a0a0c0d0d0a0b080d0c0c0b0a0b0a0a080d0d090d0d0a0b0b0b0a0a0713120f12141115150e181711221c182d1e1528211c17120c120f0a1616130e0f0d08090539382b3f3a3835351b59493e413b2a3831241a1513302422453c2f4d3d3f1612120706070c0b0d0707080b0b0d0a090a0c0a090807080e0d0e0808090f100a2d3c21787f69817a6c15181e12120e0909080b0a0906050408070807070a08060607070609080a0707080807070808070605060704060605040a09090c0a0a090709110e0d110e0f090a090f0d0b0c0c0a0c0a090c0a0a100d100d0e0918120f12121019181217181327271d211f1519121014120d131113181a1b1e19170a0a053d3c2b241c136c555935291e47453054474137302518130b302b243933262a2318100c0c0f0d0f0807080d0e0f0809070c0b0b090b09070705070805080b0a282e1e817f6f867c6f110d0c0908070a08070a070a0b08090705060b0a0b0a09090a070a0a0a090706060808050c0908110d0e0d0d0e0a0a090908070b0b091111100c0b0a0c0a0c0d0c0c0d0e0b0c0d0b0a0807110f0f0f0f0b15181215150f1a161515160f2a251d3125211c161126231a11110f12100f2626241a1a15191b154b4b4926241848462f5b523d3f31285d4545332c254544351c1a132b28212b2b251b13160c09090d0e0c0809080b0b0b0a0a0a0b09090a0a090c0c0a050606090f0b78756f88776f0c0b0e0c0b0a0a09070f0c0d0c080a0906060606050606060405030707070a0a090909070d090a0a07080606060a0a091a17160c0b0a0b0a080909080d0e0c0a08060c0b0c0c0a0a0a0a090f1112151816121415191a121c1c102f1c1332271e1e140f1c1311241b1318110d0b0a0a1a1d1736392c2d2a22383020473b214c4033564e3b58472f624836412e25453f3551503d453b322b211c1b171712110f0c0a0d0a0b090806050b0b0b060705060606090a0b090909111814616f5d75735e0e0a0c070706070807090b090f10120807060808070a09090606060806070d0b0d0a0b090808070a0906090a0a090a0a0b0a09181a12120e0a1212140d100b0d0c0d0e0a0c0e0b0a0f0c0a12130d161611232122110e0a1e1e15120d0d11111011120f2b2120322d2418120f262420322f2e21181438392a443830554639514337635247866a587253426a54505548424640385349415b45422f272512100e0e0a080b090a0908090b090a0c0e0c0507060b0b0a0606053038272328298981731413120a0a080606050809090e0e0d0909090b0a080c0a0b0a080a0706070c08070c09090a09090e0d0b0c0a080e0d0b0d0a0b1315111113100c0b0a0c0d0b100e0e0d0a0a0f0a0c110f0b1e1816251d1c160e0a1f1517190f0f2d241a4b3e2d4533213021162b1f161b19102b30263631262c2e2442352b55443340342f5645434e412b5a493476514c865d4c6d4b3c54453a44433436302b2c272112120f16151a0f0e0f0706060706060a0a0b090908050406090a0a070a062c33306771550d0b0f0706050706050707060907080d0b0b100a0b0a08070907090c0808100c0a0e0e0d0a0a070a0a0a0f0d0c0e0d0d0d0d0c15120d171210130f0c0e0c0d0c0d0a0e0f0a151111110c0a1713121e1e19323122382b233f2d212621112b2c202d211c241e1516130e1c19132b28211f1917564f3f4b4734564137614a44615042725f4467553d735e4869514e7c5f5667564b46382d3a332a2a251d1d18151516150d0f0c0c0b0a0b08090c0d090203030908080404030b0c085a695b838577100e0f080a090909080a09080e0a090606060606050707060a09080a06060d0a08181714110c0d19131112130e272221140b0b100c0d0f0c0b0b0c0a0d100b0d0f0a0a0a09191715332e27383024281a12281c0f4034264c352b3723163e302a3028221817111c1a141a1c14282b1a504931725b47654f3e65514452433b3f3619756246775c4b423724726252675849584d43665d533e362b3226221e18181e1b1c13110e0b0c0a06070607070709090b0304020907070103037d897b837b6d0e0d0c0e090a0808070707080b0a0b0708070b0b0a0505050404040e0e0c1a191215110c0e0b0a090a0615151214100f11100d0b0a0a12110d120e0e221d1a2b271b614e3a654a27693e21513822564136513e2b553f2d6450396b583a6a5130755b46513a2e2e24162621124e4b39534632644a386b4d3e634e3d50413c38381e6f5c4586625972514d5e4a46544c414a443c4c423a3732302e2a27261e1e11110d111012070707080a070808090707070605040809061d271c8083758877700709080706060907060a09090405050909060606060607070b0a0b11100e1c18120f0c0a0e0c0b0b0a070504040b0b0b15151211130c18181526201841382b584b3d5239244d2e204d31275a4a306652395f4d3b926a51956c4c956a488159396f50386646325d3c273c3125413e274438256552425b482f554739453739534a3a6f624c775b4776553f76584d4a3c2a4940324c3d38382e2c23231c1718121613131711110908080b0a0c070606090608080504070a057c9d80867d6c857772120c0f0a0a0a0809070706070807090807060706060d0b0b0a0a0919151516140e1a17132e2426271f1c271a1d1e1515231a15221b162118172e221c372f224c3c355c433861442c805843916650865942895b3f995f40995e458e5f43835a3d714638583c26553f2a3f2d26222118201c12271f1827241e2b2a2225242226261c413d3537312865563f6b5347614a4456464152433e4c392c2b26201716150f130f1417130c0e0f0808070c0c0a0707060b0b0a050807536b6185846c85806716110a0d0c0c0f0f0d0909090a0a080c0c0b0505030d0c090b08090a080516110e21191632261e281d153020152b2115281e1a1e150e3f2e224c3b245a472e58452c5a482f624b32644d32735630775a337f5e4170503c715335755437634e38654a394432243d2b26301f1c1a14131314111512130e0d0e11100c09090912120d14140e24232236342b534a3a615146584c4a413a394c4a403328211c15141716181111110f0f110a0d0a0405030706080708070a0e087f7d6a80726d857775251c180e0f0d1112100708080809070908070806080f0d0e0b08080f0a091a15112922183b2a212d211a27211b211c13382d24382d2138321e312c1d21181118130d27241a382d1c35251a543d2f674c326d55386d4e38714d2f6d4e315f46305c3f2b553f2a3a3022181110181a0f1012120f0f0c0d0c090c0b0a100f0e0e0e0e13130d24221d342f262826213a352d423a324335305649403d2c27251b1913161211130f0c0c0b0607060506050a0b0b0c0c0a0b0e0867765881776d8d7876625a3e0e0a090a07090907080b09080503060b09080604050e0a09100f0e1d1e172b241a2b24192b1f1a30261d33281c271c18170f0a0806030f0d0e080a090d0b0a110f0a1b181418151038302741372656402c63442f5f3c2e5539315339304e382b483129321d1c1e161511120f13131014121113110e1618131c191a1c18131c1b16232324181a102523172f3027414a3f5d53445041373f37342722201612130c0f0b1214110504060608080707070a0909010302647f6c837f7686787394868d0505020b0b080706070606040908060403040808070d0c0d0d0d08312a201f161426231c29261f1d1a1120171317130e0e0b0d0d0b0c0c0c0b08080a080709110c0d110e0d15100d16150f2b2523402c27402c1c413020422c244132214a3a263d291d362a1d2218151d131a1a13121c1a1519181827281f242118271c1c3121212b1e202b1f242a24222f2f262f2e1f433f2d5846333b2a21160f0a130f0d0d0d0b0d0f0b070908070908090a0b080706050a038a8e95857b708c7b728a926f787762110b110a0a0a0c0a0a0b0a0a0a080708080906070516150f372c212b1c182116121e1a121513101c161315130e1a1715281c2439282b30261d1c19131e18151b16161a13151c17192b201c292016432e21533626644030593f334d312e3f26251f1310180f0c130f09110d0913110c121210120d102015151f16141c17127c55554f222c3b221e382b222b2421413c3856474a332f2d16161519151a0a0b0c0a0e0b0707070a0a0a090908030403030a0178714c907b7b8c7b72897a696b56660e0e0f0808070d0d0c0e0f0e0a0b0c040405050504211e18261e122c1d1319100d1c1b181a1612180f0a20140e27191828201d261f1e251d1d261a1c1c15131c1813170e0f120d0c15120e271e1538241a502d234624163921115838223e2221291617271a1a1a110c16120f12121316141326251a241f1a2b222220171e120e111c18153f382c302e2a2c272437382e4c4a3d44382b1e1e191211130b07090d0c0b0b0a080f100e06080707060607070584908473726c817c71857366443a3f0e090b0b080a0c0a0a0705060807070705050f0a092621162c21151f1511241c1b1e1c151816131b17121c1314211313170b0c24201a28271e25201f18110f0f0a061c15131e1711211a1217130a271c0f32271a5c424066464040241f321e192518151915110e0d0a110f1214120e0d0b0b0e0c090f100e0c0c0d201e1e2116180a08082e2a1e312b21695e5d887b813c2734341f182018181d15160f080a120a0e0c0a0a0d0a0c0808090c0e090307027b7177867c718d807685886a2724210a060a0808070b0a0a0b070808070a0305030d09061e1d152a2318271a131c140c211c15160e0d19131313110d16160d19160f0f090a0c0a0a0f0e0d130e0a1c1211150f0e1813101f1b16271e18231815241612190f0b25190f38251a24120c2a1e1c1c180e211c18120f0e13110b110e0d110f0f0f0f0e0d0d0c1c1d1c634f5a1816121816123431253d3031534c4b1c15143729254d383b27211c0a080a0a0c0e0d0e0b0d0e0e0e0d0e090a073b4a33817d5c887770897871867a6d5649530f0c120e0d0f0c0d0b0a080709090a0404050d0e092122162a241a170f0d1613131a141319150d1c191309090b110c0c0e0c0a0d0c0a0e0d0f110f0c10110d13121112100c1c1b141f1d1814100f191312241a12885946a2654b3f1c1e361d1c1a110e2117122314161c100b110c09120e0a140c0b12110e1917151a161119161130261b382a25382f2d463a304f4442322e2c4c3d3330231f2d2820201b1913131907080b0c0d0d0b0b0901040173787a7d7b7a867c6f887b6f918a76715f630b090e110f0f0b0b0a0a0a090908070a0a090c0d0b211615412b271e13132b1f1e211a1a1c19121a16100b0a09110f0d110e101d14121e1716231c191c151215110f15110e110e0d16130e231c15211b115d4e3d9062459b624c9f5f55391a1c2e191a2418190f0c0c0f0e0e141110140f0b1814111a1613211a182118141e181618130d27231b3c362a443c2b47362b3a282131201d3024201b16160a09080c0c0c0a080a0a0709070a05243327817c7d8a776a8e766d8c7a7688846d908a7b584f3c16120a0d0b0a0f0b0a0507070a090a1c1b162c23124a3a334f2d272f1a1a301a1b271513271d1916120f18160e1816111e1a16211a132316111a151315131114110e1e15122b1615321e182c1c0f5e482c885f449f6c5598635d5d372333231a3a2a2434251e271c1a241c1d13120e151211110e0b16150f110e0d1c16172a201c312825342b243d2b1e4c3828412f2658453163533e2b21180a090b0807070908071313102c30264d4b4a58504b837a7384807a86807d8583698c7d787675712021121312100a07070606060706050504033025182e1e172d1e1b34291a3d2d1d382116271c13291d1d19131114100d16130e18131118111225201e2e2b23352723281d162b221a39261a261d0d5147308d634d916451b0767a582f2d503023462d233c2725493326422a1d4127243a2724382a253b2e2538271e442721542d2a3f2c23392d243f3127523c38321a1a635d3e5548343e33290c08070a090910100f121812242b271d16152b29217a7b71837f7886807d8a8c698a89658672541c11100a0a0b0d0d0d050604090b0a0504051b1513322c202e252236201f3a241e37241836241c4f39284a30214b312754392b4937244530214e30294a2c2838241c301e1736221b2c1c195844365f41297b5131ae714fae6b5bac636c3d231a433b2b4b3026502b214928233d261a42241a563029563325592f1c63302458302b432e23543b30533f354f4338232411534f43594a49443d3c110d110506051b1e162c2c243a372c22201b212518838d6a867c7286787686836d8e897d30291f1912110a09060c0b0d0a08070706060706061a1913231f1436251a3e262130201a35241b4b301e53321c613826633e315837295c392d5a33275a332746271f36231937271a39261c241a0e634d3c64462a7d583aa67a5da06c5ea96b64804647512f3052362a4b302c4f322d4b301e553d2c4b3024633e315e37276238295a372c5d483f5c4c3e5e483d513d3e4e3f3551514754535043414418140f0c0d0a111812383e3a534c522d24281e1e1689856f807a75897c738c85708981772f221c1c151517181112130e0d0c0c0606060a0907241d1b37252239261a2b1d2027221e33271d4f372858341a6236275331295c392f664138532d2755332b53302b492b29482921381c144f422b6d493884523d83512e9b6b45a77058aa736a92664d3f2b1656443850392b5037255a3a305c3c305c392a65382b6b3e2b65422e644130664a34694d3e6243412f1a13413f35454637564e4554424812100c0c0e0a161a1b3c414351484f2e2123221f1880846f857b7c81787297856da0896743382b140e10241c1e241612140e0f0c0b0e0809062e2b21373425322b1e241a16351e20412d1c5e422c5f3a2b65372b6d3d2a724730613b2b5d382c5a38204d2f1b482b213c1e1a170a094e3b267d583a85583c9162429c704dac725ea26d5ba0715f9861594327254b36245b3a265e3a2e673c357747387544337247346642356546386d483c65433e55373655453f5149404c47394f473c4b3b3d110f0e0b0c0b1c2317302c2b5b52533b2e293b392e918e7d7d7d71837b718d8463a9916c513f362b1b1827171b1a130f100d0a0e0c0e0b0b09281f113c261734231b2f201b2c1f1546361e523b2366452a70493176462e70412b784933693e30653c2b5c36223c281523170d544a316b4d2a865635975d3ea66d4ea77058b37c6ba96f64a6706d9b696c88584750291a3f27155a3a1c623e25704631784a31734d3f5d3d3a51352b6c4d387b5e486d584259503b4d4a3b4d44414b3c384d47471210090c0e081a1f1a5453507164625446394e493b7a7b67867c71817c6d88846f98978d5a3e3c2c1a15281c172e271f1b1b140f100c0d0c0d1b1a1731301c382a183827193c2b19453a22453b1e5f47256f4c2e6647306d482d734b2c69402859321f4b271d331b1273512d6c45266b452e7852429c6b52a26b53a26b519f6756a0715d956f678d6b6a7a5e4d976a6251262c462c2437261b5338286f4032804c3a84523d7c54487b5d4d65524067524b5b4a445948424b4138483e3538372d25211d191815272b204a473775655b3f28295d4b3b7872628873768d78768686669f856d4331243e29232e181638271e2b1a1c100c0a0a0707322e2337271e31271a362b243d2b223d2e2144301d5238225d3d2267381a713b2a5b301e3b21103b211a3424194f3c285e48305f412b52352763452a7855337c503c81534384584a8659537c5b536c54516b554e775a5455313630211c26211a241e17372c214534295b403869514e5e4a4562504a5e4e4850473a4f453e534345483a38303028232720302b2e25201c39342c7369654f48386b6a547f7f6f857c7881776c89866c9181725a423135211536201d382b241e1918140c0b15140e2c29222f2a213f2f1e39271e412c213e2b1c32241a35281e2f21153723153c2617312118231813221a121c160d3527163e2e1c4d3021452f1e352315503a27584338664c39674a316c4a3f5234314e363152463a4d3e38382626382a24342a1e1c1512272118332b2038352c4c463b58484061484e4e433f5148475147484b453d50423f3b313136302d3839323b322c47332a765d596b65554d4f4384776d80766c817a7088886c8d8c7398847c5a4244432b1d4431252b1f1c21180e1e1a102021182a241d3a2d2237272042322437261a3d2a253b2920422c24362a1c2f24201b0f112f232530271822190f2b1a1c150c0c1c161618121116130a2924124530244230244130244b3b37372a21211a111d1e1a2c2723383530302e213a33242e21212015182b2119483b335a45375d4a405b463b524c44524c4e4b4144473c3a54444436312c494c393a3b2d342e1b67553f76554e5c423f2b271c6f756f807b7f887c7889816991846691807564423b4b252253332641291c3c2f242a1f201c0f10302119372b1e382b233e2b273b251e40281c4f3822583d2c3f28211c16121b1a13251c17231717453429382c221d16130c0a0a110f0e0d0b0b0a0d072f2b1e2e26212d2721130f0b1e1c151e1d1e2b292137322d353134423d394c3c3c39272424161415110e2c2a1e49382c5a413759424458423e4e443a4c463d4b4138554c3c302b274840384d38335b453c524240422e29271a210c0d0d7280856c6c5f7c716b8c836f8c857189866c9583756b443e52372e59382a3c1f17351b1a2015131e201b262718382b24372925372b203a301e443f273e332731251c1c150e161710211c153c342741301c3a231c3120212216181d181c0e0b07171511150f0f1614111815101f1c1e1f1d1a2624242b2921454338302c2b473a325348464138313129231a13111a1712312b244b3d334b4338544d3f4d453a504541443b3843453a1e1c152f30275f544c5f4848715858674b4e100a0e1515134951507c727388776f84856d88846f84866b807f676a5b413d2c1b5538255b3f28433023271c181f1b1531271c402f21302a1d332c1c4131233f2e2b34201c1a110d211e18211e16302b223b2b223b2a1d2b20133a2f1d2b1f162214122e211e261f1d161711201e181c16161c16151b17182220244a3b3e4e433f58474150393b332e273d342e2a211e1f1a1a11100d2e2f213d362e483f3a43413747403f4c49444c3f393a36322727232c29215344386f55526c544e6b595024201c2e2f2a6a6d657878697d766989866c8883658981668c83719d8a7a553c2d6542314e2e1e613e3026160d16120d2b292429271e382f2138281e3827213b2b242416131b11131d1813211d1428241c37261d36241e342116482f214b3028513830593e384e3a2d3929242c27232622212b271d3a36284c413d4d3e3762534d534749544b484e46473834302f2b2618151016110d27281f2e2f213c3a2f443a34494139453833443c353d3a361c1c1e201d173c332b4a38305e443f523d3a5049465a5653857c7b7c716b7f787688846f89857288847186856f92886b554230523427653e345b3d2f2b191621171426231a2622182d2419332a1a3b2f24352820221013271913241d1a18160e242114342b1737291931211931221430221632241c2f2618342618382b213730252f231e2c1e1b35261e3624222c1f212b241e2a2422302621211a161c16141b15151a151414120f3a2c263c2e273e362b463e3737382e36362b423836423c3e1815150c0c0a13130a2b251d4938374e4138756b61565350786f64756a6486766d898469887f6a89846989866a917d764d33324f322159372641281b6b5e472721222822152d2b1c2f2e21241e1732281f372a242518112b211d1f180d2117111b15121617110f0e0a110908150c09160f08161109211311271816271d16291a152b1e1e261c181b130f241e18231a163429223d3331322e292b25240e0d0c1313111d18181d18153832223f3830443738413737312c24493a333f2e283a2e2f1e211c1d1a161e1e12474344030706445b3d777056806d6680757180786d897f738684778986788c836d8e8c6c8886707c6a5b8d6d5c7c675188785b8c85736653582018182b2b1a2a27182b24192b211a4033222923152b251f1a120e181512110d0d0a0905110f0b1a12132e2324382a2a2f2b1e241b1c221c171d1613181212261f1d3629232c21184a393b493c364c4c41474240433932171616211e1e332c26382722120f06493b2c48392d3a3129362e342d2c2a3c3a2f342f28272826262520090d070f0e110e0f0d3844346d7b617b765c8a80727a736c7f776d85787a85886c88847185816b848571868676888a6f7371547a735581766361615238392d262218302a23302b242c241f231e19342f1c4b3a2934271f2f241a2b21142b221a110b081713151f1b16342721493229432e1a52402a5842386149455d4e40554e3662523d4d3931675e4a473b2e211b1d28231f0d0a0c2524173c352b49362e3d2820402924493130463731352f2433322e3633303f3b3034302c16151248514a4f5546262b1c0f0f11524d497f7a6d72706373666484776d7d756f81767085846c89806c8d8472857c69887a648576674d4637736d5d444a31494b343732241b161122251c2e2b212c23182a211627221c2f2d1d403426523b2d3b29223c2b223a2a271b10121f1a12443928211c100904062927182b301361584064534d524841564e46080a050707070506050b0d0c1e1a162e2b2340342c503d394b363243311f4d3b2947362d2c271f29261d26211d23241c3130272826221a1c11312e271c1a18353e285a615e443f484c4944695e5b6a6454837c6784716b857a6a8c806d897d7a8c817692837085776272715b4b4c3a6d65467f805e5f5849504a41282b1e22211e2020172d2a212e241c271e13302a1c4a3a383a301e43351d47312446312e2f1e1a31272212100f0908070606050707070807080403030706070404050707070c0c0a1312111b1a13241f1a382d28473e3948372e56403d4a372d4f3c2758412b4238303028262e2524403634342b2c3330241e1e1749433a43493d5650506c625e696f4c655a4f655b585c524d7876697370677d6c6d86766f88816c8a867085806786887384806b817d5c75706f3e48304652374848333b402e1e1e190d110a23231a1b1b141f1f162a271c1e19112c271c3d2c1e4d38213e2c1e4538274534234327273d27212e1a1c1b14121a1812100e0d181a1615161315151311111027211b2a2623382e2e4b3b3649352b563b395f463c493b315a433d663e3853312634261a2b25232f2b26211e1c2f2e312b302a0d0d123c3b35393a235b5e4a66645859524767655a76665f6d6b6a656b6176756f867a70857b7085846c86887383816b84857186847789856f726c65342c2a6f73594e4e375e5c512827271716181715112b281d212015211f181a160e201a12312b21372c184b331c4f36264a382554362b442d23412d1c4b2e22301a192418171e1615241616231818241d1b2f29273c332b52403756433f5645435a444159454055453d5e4a395a3a30443029362b201f1d1a312b271717113b38372a24261d161a49474665634c7866617864667164628476719285896967625f5e56766f6f80727281756c88856b9086728d8a7a8884718d8470807669776f695b564a191d07393c2b18110d5047443b41334f4f4223231c201d17221d1b221c182119162f251b372718473024483624463724513b2a4e3f27432f1f4b372f4130284a372f312529332b21342d272e2b2a372f2e493f3859463a52463a5a4d3f5847415e47495d454566483e43322a3b2d2b2c2726191b161a1e162c302427271b34312b56564965614b8477788873767a6a636d676381776c776b637a716d7d7b7a78736583776780736a84806b898166868164807d64888377907f73927f6f7f78647772646962595554425d583d5453435b47422d241b28241a231a141e1719231c1c1d170e2924184134284d3b2947352448302a52342b52382851372b5e3f39593834403027382b205b4638543c335c403f664c446c4e4c6b4c43704d4c6b4d4c614644654844614638403324352f2b201f1a21221a1e1f1b2727271a1a11636c4f726f697067647b706c776f6d7b756d725f5d81706388776c7b71777f767086736c837170837a76858672847c6f86836d8683707d786c8a8673908471897264887a64817a7080786f7c7769817f656d5f4f61555b382f3127241b2a21181c1c111b19102d2b1a2a261a382b214a33214c382b513a2b5840305c4a385f3c2c5d3e2f6144406646405c3c32633e38613b36724940714e3f6f51476b4f4a674741714d45634642463832312c302a252724211e2b2c2028281e1a1c133b412b6d6b5c7f72768a787a81776c756d617d7369867a7172695f7d7169807069806f707366627a6b6d7a6c678583668c8167817d6988856b86856f83886b7f80698681727f8069807f67887d708178727f726a5459496c7665727265231f161917131c19181a1a131e2013222115272519483d2b4e3d2d4e36275637304a3425553d2c4f3927543f34523a30614139583b32624433835b4669473a6d4f4d73584f7052486750455a4139513b3827211b25221c25241f2121252b27281f201c2324166361526d6555766b5978665a7f7a6d7d7564806b6b7f76727c776c7c776b786f627c72677c72697a7170817f65837b6388846d817b6689846b85816b887f6b887d72887d7089856f847d698c806d867b757067546d624876634b271c1c1a1716161a131618110d0e08141211201d173937204e3b26583d2c65413661382b5f41325d422f5d3a2e694336633f325938316b4d497b55508a5d4f815246734f486a4f47543b373b2e29332e25181810181a153831262b252118181a3131301a151c0b070705060469706b88776f8a706c8970718c736d84716b8072707f75767f716f88736c84706985716b837f6a89806c887f6b8c8070887d72867d6c8178648a7869897c7286817281806a898572887d728a7a6f81756b6c6452322724171311191a161818181616141717111e1815241f18302a1d4d3a2b51392663402e6f483e633a3a69423c643e2f7d4b38633f2d69433f734e4c7f53487d5549624a464f41354b453c2e2a28201d1c2b2b2221241a2725240a0c0a26282440453e1a161a0d0a090b0b0a0508036770597c6b67846f6c7f6a6a836f71836f6f816d7084726f7d6a6a8072727a67628c806d897a6b88846f81806a807b6c847d698d8470857c67867d6c817a6c837f6a847d69867d6c847a6c726b62736a6b4139304238281511111818121d1c1815131216171312150d25211b30271e3d2c2746382f3d311f5036295e3f2c5e3f2c52372e5839316642384b322b554035543e3b48392e362d25302a2c302d2c1f1e1d1e1e1623211a1a1a1322211c302f31453a37070905070806100e0e080907070708727d727a7a6c7b706a7f6f66776d6478706c816f69806c6689716c7d6b648e8573837c6984806b837f6c857b6d807f677c7f64847c6489806f8c807a887f6b86806c857d728c867a78756c9488845b58503a392b1618111211102524212b2524110f0b12100b0f0c0a2d272027231d382c22382b213b2f2448352d32252456463e543f3b452f264533254a382d3e2b242d21242b2321211e1c242424181a161316134042351d1e1f2c33273733294235290604040a0a0c0a0a0a0c090a0a080a0c0d06656358816a788e6c75816d6d7b6f66786b667d6c697f6f677c6c65817c6d857d70858470808073847f738883738c81738e8372887b6f888376838375857d73867b7589817384836b867b672b271a31302b2f2325201c16120c0d25211d1e231a1313100d0d0b1d1e1215160c2221182a24191e1812372e274534294f362e4d3832342b243a312b3d30243d382e1d1c18191a151e1d1b2524222c292a312e2d1612111f2015373431382d2f3a2f360d0b0b0705050b0c0e0709070b0b0a0f0f0986757176635a7a675e7c6c65816d677d6d637c7064816d6d7f6c70857d70837c6b887c69857f6b837b71867c6f8c806d887f6b867d6a83786b857c6b8d7b6b8d787188786a80736a4b3f34262018231911312b22372b281c1816120e07231e171a16140f100d15130f161311211e181c1b1327231d2d241634281c40312b3528242c261e2c241e322c2a231e191d18181c1a16222421171813272a24181a1424241b27271e2d2820382927322b270c0c0e090a0a0807070606040a0b0a23212432362b909b947c6b6a84706d806b7283717280666c88676d846b6f89806f897d6d907f6a8c78698e7b718a786b8c7f72857d738580758a817d8478728981738d7c7592787785716b534a3d24211c15150f28291d332c24261e1c1e1d181111101312131a171618171114110c1b1b152b2823302823271e1c231f161f1e151e1a152e2a27241d1a241e1a24211c191515181816171913171a1712120f1816141e191a302d2938353034302b30302d0c0c0a09080a0a0a080909070707052b26242a2a22868d817a70847663707b6c5e84706d816b707a6a637b6b63857d70887d72887f6d85816c89806f8c8070857a6a8c8177837a6989806f847f737f7867766a616b5a517867505447331e1c1604050025221c2e2d21232216211e1820191a090808181c111816111515120e0e0b29231c382b21221712221c1b1c1e161d1a14211c1a1e1d162523212522231a1716181a121c1e161314151a16191a16112b261f342d26292423322a2c23211c1d1b190f0b0c0806070708060b0c0634301f333427929894ac97cb85697f7d6c697363647b6f708576677d6d65887f6d847167887c6a807a697f7f727f7f728484737f7f6f7d7f697c7866706b5f676154716959675e527c725a393223231d180e0c052c27192d291c272118211c1a1c18151a14110c0c071615111612121c1616181813100f0a24211c24211f2117181613121613111411101714132523211d1b161c16170b0a061c1c1529262527231e302e24302f24342f282b23202b24271812151715150a07080d0b09282a1f352b1a3c381fa2a6aaa298c6ac9bc67a737a78756c7867697f66657d6c69888076817a6f8a7a6f847c71847f73847d76847c6f7a7363837c6b7b765e7a6c53806f597a675e6d65538473694d383332291c241c171b15152b2720272115291e1e24211c12130d221e1d0b0b0716180f28261b19181524201d13110c221c1a131111131314261f1e1b16112524231616180d0a0c16120e1c1a141d1e1a1d1d1c2b27282e28272e2b292423212d27242e272113110f151513151114181115382f213a2a2639322b97b39091a2c9a2a6e6a09fcb958dae928899807677816f65847866867b69807a6988846f8d816f8d846f897d6a837f69807d6481775c897f638572658673668976698a726173674138271f2a1e1a13120e1b160e2e27182a221b2b201f2821211e180f1f1a151a18151c1c150f0f0d161310120e0d1b1c192b2d1e191a12221e1e1918181c1c1a151514140f101e1e1c1814181a14121816122c2724231e1930292828262424201d201c1c1313131213110e0f072b2a1e3d31213d2c1f3e3824b7b9c3a4a7deacacdea49dbabaadcdb7b0cbb3aecda7a6c0897f75978c80988e7a99866c9b8c7292867694837a917f6f90806f98816d9b816f97806c8d7b629c856c8d73669572613a2b1e2a261c272621141511130f0f2920182520152a1e161e18161d1c1a1d1d16181a13171a1616181415130f1a15112316122b231d25231f1615131a15161612161c181a1a15161a1a1827242126251a1f1e1b272422241f1f2d27251f1d1a1512131711141613122e2b2135301c3a30193d341e2a27169d98aaa9a3d6b1add8b1a7c6b6a3c3b9a9c6a7a3c0a3a2bda39b80a49980a69585a49480a09080a0907c9d8c719b8c75988876998577a085779d846f9b83769883788c7a6a89737145372b30261a28221a23221711151113150f271e15251a162421191e1e14201d171c1c18181512131313181615110d0d14140e181c141718111814121818151c1e1a1616131e1d1827241d241e1d24242224282426211c2f2626241e221d161a110c0e100d0a352c24392d1e4533243f33223130216b7a65a3acc9aaa0e0b4ace1a69dc0a9a6c6b3add3b0a2c6b4aac8>
+64
+64
+8
+[1 0 0 -1 0 64]
+ {} false
+3
+ colorimage
+grestore
+%%Trailer
+%%EndDocument
+~
+[1 0 0 1 393 676] 0 0 64 64
+(/private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/stefan.eps)`
+%%BeginDocument: /private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/stefan.eps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: vivax.ai    __    /private/Net/dart/Users/imdat/Mailboxes/Active.mbox/Kein_Betreff_3.attach
+%%Creator: Adobe_Illustrator
+%%CreationDate: Tue Jun  2 21:51:26 1992
+%%For: imdat
+%%DocumentFonts: (atend)
+%%Pages: 0 1
+%%BoundingBox: 0 0 64 64
+%%EndComments
+
+%%BeginDocument: /usr/lib/NextStep/printPackage.ps
+%!PS-Adobe-2.0
+%%Title: Printing Package
+%%EndComments
+%Version: 2.0
+%Copyright: 1988, NeXT, Inc.
+
+/__NXdef{1 index where{pop pop pop}{def}ifelse}bind def
+/__NXbdef{1 index where{pop pop pop}{bind def}ifelse}bind def
+/UserObjects 10 array __NXdef
+/defineuserobject{
+	exch dup 1 add dup UserObjects length gt{
+		array dup 0 UserObjects putinterval
+		/UserObjects exch def
+	}{pop}ifelse UserObjects exch 3 -1 roll put
+}__NXbdef
+/undefineuserobject{UserObjects exch null put}__NXbdef
+/execuserobject{UserObjects exch get exec}__NXbdef
+/__NXRectPath{4 2 roll moveto 1 index 0 rlineto
+0 exch rlineto neg 0 rlineto closepath}__NXbdef
+/__NXProcessRectArgs{
+	1 index type /arraytype eq{
+		exch 0 4 2 index length 1 sub{
+			dup 3 add 1 exch{1 index exch get exch}for
+			5 1 roll 5 index exec
+		}for pop pop
+	}{exec}ifelse
+}__NXbdef
+/rectfill{gsave newpath {__NXRectPath fill} __NXProcessRectArgs grestore}__NXbdef
+/rectclip{newpath {__NXRectPath} __NXProcessRectArgs clip newpath}__NXbdef
+/rectstroke{
+	gsave newpath dup type /arraytype eq{dup length 6 eq}{false}ifelse{
+		{gsave __NXRectPath null concat stroke grestore}
+		dup length array cvx copy dup 2 4 -1 roll put __NXProcessRectArgs
+	}{{__NXRectPath stroke} __NXProcessRectArgs}ifelse grestore
+}__NXbdef
+/xyshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index 2 mul 1 add get add exch
+		3 index	3 index 2 mul get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/xshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		exch 3 index 3 index get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/yshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index get add moveto pop
+	}for pop pop
+}__NXbdef
+/arct{arcto pop pop pop pop}__NXbdef
+/setbbox{pop pop pop pop}__NXbdef
+/ucache{}__NXbdef
+/ucachestatus{mark 0 0 0 0 0}__NXbdef
+/setucacheparams{cleartomark}__NXbdef
+/uappend{systemdict begin cvx exec end}__NXbdef
+/ueofill{gsave newpath uappend eofill grestore}__NXbdef
+/ufill{gsave newpath uappend fill grestore}__NXbdef
+/ustroke{
+	gsave newpath dup length 6 eq
+	{exch uappend concat}{uappend}ifelse
+	stroke grestore
+}__NXbdef
+/__NXustrokepathMatrix dup where {pop pop}{matrix def}ifelse
+/ustrokepath{
+	newpath dup length 6 eq{
+		exch uappend __NXustrokepathMatrix currentmatrix exch concat
+		strokepath setmatrix
+	}{uappend strokepath}ifelse
+} __NXbdef
+/upath{
+	[exch {/ucache cvx}if pathbbox /setbbox cvx
+	 {/moveto cvx}{/lineto cvx}{/curveto cvx}{/closepath cvx}pathforall]cvx
+} __NXbdef
+/setstrokeadjust{pop}__NXbdef
+/currentstrokeadjust{false}__NXbdef
+/selectfont{exch findfont exch
+dup type /arraytype eq {makefont}{scalefont}ifelse setfont}__NXbdef
+/_NXCombineArrays{
+	counttomark dup 2 add index dup length 3 -1 roll {
+		2 index length sub dup 4 1 roll 1 index exch 4 -1 roll putinterval exch
+	}repeat pop pop pop
+}__NXbdef
+/setcmykcolor{
+	1.0 exch sub dup dup 6 -1 roll
+	sub dup 0 lt{pop 0}if 5 1 roll
+	4 -1 roll sub dup 0 lt{pop 0}if 3 1 roll
+	exch sub dup 0 lt{pop 0}if setrgbcolor
+}__NXbdef
+/currentcmykcolor{currentrgbcolor 3{1.0 exch sub 3 1 roll}repeat 0}__NXbdef
+/flushgraphics{}def
+/setwindowtype{pop pop}def
+/currentwindowtype{pop 0}def
+/setalpha{pop}def
+/currentalpha{1.0}def
+/hidecursor{}def
+/obscurecursor{}def
+/revealcursor{}def
+/setcursor{4 {pop}repeat}bind def
+/showcursor{}def
+/NextStepEncoding where not{
+/NextStepEncoding StandardEncoding 256 array copy def
+0 [129/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/Ccedilla/Egrave
+/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/Ugrave/Uacute
+/Ucircumflex/Udieresis/Yacute/Thorn/mu/multiply/divide/copyright
+176/registered 181/brokenbar 190/logicalnot 192/onesuperior 201/twosuperior
+204/threesuperior 209/plusminus/onequarter/onehalf/threequarters/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave 226/iacute 228/icircumflex/idieresis/eth
+/ntilde 236/ograve/oacute/ocircumflex/otilde/odieresis 242/ugrave/uacute
+/ucircumflex 246/udieresis/yacute 252/thorn/ydieresis]
+{dup type /nametype eq
+ {NextStepEncoding 2 index 2 index put pop 1 add}{exch pop}ifelse
+}forall pop
+/NextStepEncoding NextStepEncoding readonly def   
+/_NXfstr 128 string dup 0 (_NX) putinterval def   
+/findfont{
+ % Because we can never let NextStepEncoding get into
+ % SharedFontDirectory, we cannot reencode a font to NextStepEncoding
+ % if we are in shared mode.  So if currentshared is true,
+ % we call the normal findfont and return that
+ /currentshared where {pop currentshared} {false} ifelse
+ {//findfont exec}
+ {dup _NXfstr 3 125 getinterval cvs length 3 add _NXfstr 0 3 -1 roll
+  getinterval cvn exch FontDirectory 2 index known 
+  {pop FontDirectory exch get}
+  {//findfont exec dup /Encoding get StandardEncoding eq
+   {	dup length dict exch
+	{1 index /FID ne {2 index 3 1 roll put}{pop pop}ifelse}forall
+	 dup /Encoding NextStepEncoding put definefont
+	}{exch pop} ifelse
+   }ifelse
+ }ifelse
+}bind def
+}{pop}ifelse
+/_NXProcArray 5 array __NXdef
+/_NXChannels 0 __NXdef
+/_NXTotalBytes 0 __NXdef
+/_NXDoImageOp{
+	1 index{dup}{1}ifelse /_NXChannels exch store
+	_NXChannels 2 add 2 roll _NXProcArray 0 _NXChannels getinterval astore pop
+	5 index 4 index mul 2 index{1 sub 8 idiv 1 add mul}{mul 1 sub 8 idiv 1 add}ifelse
+	4 index mul /_NXTotalBytes exch store pop exch pop
+	gsave matrix invertmatrix concat 0.5 setgray 0 0 4 2 roll rectfill grestore
+	{	0 1 _NXChannels 1 sub{
+			_NXProcArray exch get exec
+			length _NXTotalBytes exch sub /_NXTotalBytes exch store}for
+		_NXTotalBytes 0 le{exit}if
+	}loop /_NXProcArray 5 array def
+}__NXbdef
+/colorimage{_NXDoImageOp}__NXbdef
+/alphaimage{1 add _NXDoImageOp}def
+%%EndDocument
+
+gsave
+317 -721 translate
+ /__NXbasematrix matrix currentmatrix def
+grestore
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+0 0 64 64 rectclip
+0 0 64 64 rectclip
+gsave
+(xWv\207hv\210h\206fQ\021\021\020\000\021\000\000\000\000\000\000\000\000\000\000\000\000\020\000\000\001\021\020\000\000\021\021\021\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\0213"!\021\00423\022\021\021\001\021\000\000\000\021\021\021\021\020\000fGuwWuwWuwWuwW\205xW\206\210h\206\210gv21\021\021\000\000\000\000\000\021\000\000\000\000\000\020\001\020\021\021\021\021\021\000\021\021\021\021\021\021\000\000\000\000\000\000\000\001\000\021\001\021\000\001\000\021\021\021\000\002\0213%S!\005CD"!"\021\021\021\000\000\000\000\000\000\000\000$'twg\205xW\205wWuwW\205xWv\210h\207\210gv\021\021\020\000\000\000\000\000\000\021\020\000\021\021\020\021\022\021\021\021\020\021\021\000\021\021\021"\022"\000\001\000\020\001\001\021\021\021\021\021\020\000\001\021\021\021\021\000\005CC'TC3"T#!"\0232\000\001\020\000\000\000\021\021\020\001\007v\207h\206xg\206xW\205xWuxW\206\211h\206\210r"\001\000\000\000\000\000\000\000\000\021\021\020\021\001\021\021\001\021\021\022!2\021\021\021\0032C"!\021\021\021\021\021\021"\022"\021\021\020\021\020\0002!\021\021\006TC'c\206ECT5S3\024C"\021\020\001\001\021\000\001\021\021\006ewW\206xW\205\210h\206xg\206xW\206xg\206wr\022\021\000\000\000\000\000\000\000\000\021\001\021\021\022!\021\021\021!\025CC"\021\021\026ST2\021\021\021\021!\021\021"#2\021\021\0213!\021UB!"&cT't\227GdT%BC$BD1\021\000\000\000\021\021\020\000\0021xX\206\210g\205xg\206\210X\206xW\206\210h\206fQ\021\000\001\020\000\001\021\000\000\000\021\000\020\000\002\021\020\002!2\027d2"\021D&cu3!\021\021\021\021\022!3$C"\021\020"\021\021T'dC&S\2269d\227IduFBC&ST#2\020\001\021\000\001\021\000\000\020xX\206\210h\206\210g\206\210h\206xX\206xh\207UQ\021\000\000\000\021\000\000\021\020\000\020\001\021"\022\021"$1e8dT2!\207IuuC2"\022"\021\022!"\023BC$3T2\021T\(\2042\0242v9t\227Ic\2068dT&Sd$B"\020\000\000\001\020\021\001\021xh\205\210h\206\210h\206\210h\206xW\206\210h\2062!\021\001\000\000\000\000\000\000\000\000\020\000\0003 \000T$1e313&c\207I\204v2\021"\021\020\021\002"#%SC4Cv6TT\(d\250hc\206It\227It\226Ic\206GTT#23!\021\000\000\000\021\021\020#'\205\210h\206\211h\206\210h\226xX\206\210w\207\021\000\000\021\021\021\000\001\021\000\000\000\000\001\021"\024BT5B2\023!\207J\204\270Z\205u42""!\001\0032!\006c\20742v:\226\251i\204\250Yt\2069\203\247It\2068c\2067Td42C!\020\000\000\000\000\000\000\001\007\206\230h\206\210h\206\210h\206wW\206\210gv\021\001\021\000\000\000\000\001\020\000\000\000\000\002!"\025CS#!e7t\2079t\230I\205u%Be42\021\0042\021\027t\250R"wZ\205\230J\205\250Yt\250J\205\206It\227It\207Gce4BC!\021\021\020\000\000\001\020\000\007v\210h\206\210h\207\210h\206wW\205\210Wv\021\020\000\021\020\000\000\001\020\000\000\000\021\0232D%Be8d\226It\227Ju\227Is\230Gdv7d"\02323%R\250VSe\)\205\270[\205\270[\204\270K\205\267Zt\206GTu7Sd$2C!\021\000\000\000\000\000\000\000\006t\210h\207\211x\226\210h\207gX\206\210g\205\021\021\021\021\020\000\001\000\000\000\000\000"\0232D5Re7d\207Ht\227Z\205\250Z\205\250[\205\247XdT6S\207FS\251[\225e*\225\250[\226\271[\225\271Z\205\227GdT4BD%Ce42C3"\021\020\000\000\000\000\000\0032\211h\207\210y\207\230x\227xH\206\210gv\021\001\021\021\001\020\001\000\000\000\000\000"\0242C%Be7Te5Se7d\207Yt\250[\225\271Z\205\206UR\227It\251\\\225\271J\205\271[\226\312k\205\250Yte42"\021\021"\022!"\023"D3!!\020\000\000\000\000\000\002!wY\206\231h\206\210x\207xX\206\210fu\000\000\000\021\021\000\000\000\000\000\001\0203$2C%BeEC2#23#1T7t\227J\205\271[\225\271Xs\252y\204\272[\226\271k\246\272k\225\271YtvD22"!"\022\021!\022!\021\002\021C#""\020\000\000\000\000\000\001\020\211x\227\211x\227\211x\227wW\206\210fU\021\000\000\021\000\000\000\000\000\000\001\0202$2D%C3"!\021\022!!\022\021\021\022!D'c\227J\205\250Z\225\312k\226\271[\225\271it\251Z\205\207D2\021\001\020\001\002\021D%Ce6ST2\0214#2!\020\000\000\000\000\000\000\000\210i\207\211i\227\230y\207wH\226\210fd\021\021\020\021\001\020\000\000\000\000\001\0202\0243C#""\022!C$2C"!\021\020\000\000\000\0003\027c\227J\205\250Z\205\251Z\204\250Z\205\227WSC"!\021\021\0213$Bd5BT5BT#13\0242\021\020\000\000\000\000\000\001\020xY\226\231y\227\211y\226xX\206\210gw\020\020\020\021\020\000\000\020\020\000\001\0003$2C"!"\025Su8Su7duT3"!\0212"!e8d\207I\204\230J\205\227Xdt6B3"!"\022!""\021\021\022!C%2C$23\024C2 \000\000\000\000\000\000\020\211y\227\231y\227\231x\207xX\206\210gv\001\000\000\000\000\000\000\001\020\000\000\0003$2C"!C%Su7Su6ST%2C#22\023!D&R\2068d\227It\206Hdd42"\022!\021\020\000"\021\021"\022!\021\023"C#23$CC0\000\000\000\000\000\000\000\210X\207\231y\207\230y\227xX\206\210h\207!!\021\000\000\000\000\000\000\000\000\0003$2D42T5Rd5C2\022\020\021\020\000\000\001\021"\022!"\024Be7c\2077dvGdT3!!\022\021"\022!fGugS2\021\023"3%2D$BD0\021\000\000\000\000\000\000xx\226\231i\227\211x\227xX\206\210h\206"\021\021\021\000\000\000\000\000\021\020\000"\024BC$BD%2C"\021C"\021\021\022!\021\0233\021\021\021\021\002!T'c\207Ju\227HdC"!"\023"3\027u"!\021"\030\206"\022!3\0232D$CD1\021\000\000\000\000\000\000\211y\227\231y\227\231x\226wX\206\210h\206eA\021\000\000\000\000\000\000\000\000\0002%BC$CT$22\023!\021\004Sxb"WH\205#\0232!\022\021C&c\230J\205\250XdC#1T3!\207R!\020\000\001\022\005TS3!3$2e5CT2\021\000\000\000\021\020\000\210y\207\211i\227\231y\227wX\205\210h\207\210q!\000\000\000\000\000\000\000\000\000"\025CD%CT42C1\0214'\206\021\020\0012'\205\207S!v5BC&c\207J\205\250IuT&Sv6Be5S""!3$B3\024BC%Bv6SU32\001\000\000\021\000\000xh\207\230y\227\231y\227gX\206\210h\206\210dC\021\000\000\000\000\000\000\000\0002$BT%BT$12\022!U&T\021\020\000\000\005ceFB\227GSe7c\227J\205\247Ydd6Se'Su7Su42C\0252S%BT&S\2067ST4C\000\000\000\021\021\021\211i\227\231y\227\230x\207xG\206xg\205\210gu\021\021\020\000\001\001\000\000\0003$CT7Se6CC#"D%S3$CfWSd%BeEBv8s\207I\204\250Xtv6Ru'ST42T%2T$2C%Se8d\206GST5S!\021\021\021\003BhY\227\231y\227\231x\227xW\206\211x\206\210h\207"!\020\000\001\021\000\000\000"%SU'cv7dd5BC$2T42T$BS&Ru7c\2069t\227:u\247Zu\206Hdu8d\2067TuFTT6SvGc\2069d\206GST$C3"\021E7v\231y\227\231y\227\231y\227wX\226\210h\206\210h\206e1\020\021\001\021\020\000\000"\025CT7c\207Htv6CC$2C#!2\0242e7c\206Gc\2078t\207J\225\270k\205\2067c\2067S\2069t\227Ie\207Id\227Id\227ItuGST$B3\024B3\(\227\210i\227\231y\227\231\211\227wH\206\210h\226\211h\226\210b"\021\022!\021\020\000"\024CU7d\207It\227HtvFSd8cvIu\226Id\2268c\227Hc\227J\205\271j\205\206GSe6Rv9t\247Jt\226It\227Jt\227Xdv7ST4BT424\)\230\231y\227\231\211\230\231\210\227\211h\226\211h\206\210x\206\210vT"$C!\002\021\021\024BT'dv9t\227It\227It\227It\227It\227It\2066Be7c\227K\205\310k\205\226GTu6Be8c\247Zv\267[u\267Zt\226Id\206FST4BvFCT\)\230\231\211\230\231y\227\231y\227\211X\206\211X\225xX\206xWuT'TD#24$BD&T\2067c\227It\227Yt\247[\204\250Ju\227Idt6Cv7R\227Iu\271jv\227WSu7SD'S\227J\205\247J\205\247Zt\226HTu6ST4Bf7ST9\227\231y\227\231y\227\231y\227\211x\226\211x\226\211g\206\211h\206e7dT$CU4BD&Sv8t\207I\204\227I\204\271[\205\270Z\205\227HcS\027S\206GS\227K\205\311k\205\247XTu7CT&R\2069d\227Jt\227It\206GTu6ST4Be6ST\)\227\231\211\230\231y\227\231y\227\210h\206\210h\206\211h\226\210USeGSd%CT$3D5Su7d\207Ht\207It\250Z\205\250Yt\226GST5Re7c\206J\205\332{\207\227WST423\026ST\(d\226Id\226Id\206Gce5CD$Ce6CgI\227\231y\227\231y\227\231y\227yW\205yX\225\211h\206xVeTFCT7dC#2D5CU&Sv8d\206It\230Zt\247Iu\20552T3!2\0241e8d\247Yd\22642\021\001\0213%BT&S\2059d\206He\206GTe5CD$2C#2\231\211\227\231y\227\231y\227\231y\227\210g\224\210h\206\210h\226\211h\206U7cu7c\206C!D$BU6dv7c\206Hc\2069t\227Hte6ST$2!\021\021\021\0042e6BC!\021"\0232C'Sd31e8d\205GTu5BU5CD32\211y\227\231y\227\231y\227\230y\227\230\211\227\210W\205\210X\206\210h\206\210h\206wURe8du31D%BT&SuGSvHc\206Ht\206XdC&Sd$23\023""\021\021"\022!\021\002!"\0232C\026Bd6CT&SuGTU5CC5CD22\210Y\230\231y\227\231\211\227\231y\227\231y\227\211W\225\211X\225\210h\226\211h\227\210dCU&Su6S34C3\026Se6Sf7c\2067cv5B2\027ce6CD4C3!\021\021\001\021!\022"D4BT5CT%B3&Su7Se5CT5BC"2\211y\227\230y\227\231y\207\230y\207\230y\207\210h\205\210h\226\211x\226\211h\225\210X\206C42S$23$BT&Se6Re&Su7Se5BT%ST6SU5ST32"""3%ST5SeFST4CT4Be6ST5ST4B3"1\231y\227\231y\227\231y\227\231y\227\231y\207\210h\206\210h\226\211h\226\211h\206\211h\226\210tC\021\020\000"\02323%Se6Re5RT6Se42T5SU7cv7dvHt\206GtvHdvGTe6Se%BD31T6Se6SU423!!\231y\207\231y\227\231\211\230\231y\227\231y\227xh\205xh\226\211h\206\211h\226\211h\226xfu"\020\000"#13%Se6Se5SU6TU32D$CU6Se6CT52C#22#"2\022!!\023!3#2D$BU5ST%CT432!!\231i\227\231y\227\231\211\227\231\210\227\231x\207\210g\206\210h\206\210h\206\211h\226\210h\206\211h\206UA\021\000\00323$2U6Se6BC&Se423$BC"\021!\021\0213$2\273xe\272{\247\207VS\230R!\021\022!3$2T6SeESU42"\024T\231y\227\210y\227\231y\227\231y\227\231y\227\210h\225\210g\206\210h\225\211X\226\211h\226\211h\226wb"\000\002"2#2D%Ce6Se6SeERD42\021\022!wXu\251Wt\314\257\333\334\234\267\251h\205wEC!\020\0003\024BU7ce5ST32"\026t\231y\227\231y\227\231y\227\230y\207\231y\210\210h\206\210h\206\210h\206\210h\226\211h\226\211i\226wTT\000\002!"\022!C%SU6Se6Se5SD2!\000\003BU\(evER\272{\227\251i\205\020\000\000\000\000\000\000\000\000"\024Be7Te%CD32\022\030\227\210y\227\231y\227\231\211\230\231y\227\230x\227\211X\205\211X\226\210X\206\210g\206\211h\226\211h\226\210fd""!"\022!3%Se6dfFcvESC!\020\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\021\005CT7Se%BC"""\027\206\230y\207\231y\230\231\211\227\230y\227\231x\207xW\205xX\206\210h\206\210h\226\210h\206\211h\226\210guVA\021"\022!3#2D&Se6cuECC!\000\000\000\000\020\000\000\000\000\000\021\001\000\020\000\000\021\021\021\021\002\021\000\000\000"\025CU6Td423""\021\010\227\210y\227\211y\207\231y\227\231y\227\231x\207\210X\206\210X\205\210h\206\210h\206\210h\226\211h\226\211h\226\210c#"\022!"\0231D%SU6SuFCT0\000\000\001\021\021\022!!\021\021"\021\021\021\001\021!\022!"\021\021\000\000\0003%CT7Td423"!\022\010\207\231y\227\230\211\210\230y\227\231y\207\210y\227\210g\205\210h\206\210h\206\210X\205\210h\206\211h\206\210h\226\210gu\022\022!"\022!3$CU5cf5SvB"\000\001\000!\022!2#22#!2\022!"\022!2\022\0213%SUFCT7TT423""UH\206\230y\227\230y\207\230y\227\231y\227\230x\207\211X\205\211X\206\210h\206\210X\206\210x\206\210h\207\210h\206\210h\206"\022!"\021\021"$CUFTfFSe6U\021\022!2\023"2\02422"!!\023!"\022!"\022!TECe7ST6S3#32"!gI\207\230y\227\231y\230\230\211\227\230x\227\210x\207\210X\206\210X\205\210h\206\210h\206\210h\206\210h\206\210h\206\211g\206xb!"\021\021"\0232U4BfECf7dU3"D#!"\022!"\0242B"\0212\022\021C"!gt1\206FSeGTC32"\022"\210i\207\230y\227\230\211\207\230y\207\230y\207\231\211\207xg\205xg\206xX\206\210h\207\210h\207xh\205\210h\206\210y\207\210tC"\021!\021\0232D$Be5BeGSe7uC9g"\022\021"\0242C"!2\022\021T\)\205\227WCuGTe7cD$C""!\211i\227\230y\207\230x\207\231y\207\210y\227\210x\207xW\205xX\205\210X\206\210h\206\210h\206\210h\226\210h\205\210h\226\210h\2063#""\022!D#2U5SU6TuGc\230iu2\023!3&Sd$22#!fYt\226FTu6Ce7S2$B"""\231y\207\230x\207\230y\207\230y\207\230x\206\210h\206xW\205xW\205\210X\206\210h\206\210h\206\210h\207\210x\207\210h\207\210x\2063#2"\021\0213\024CD&Sf6Te6R\207J\226\250gdT8Tt53\206FR\230jut5Cd5BwFT"\024C2"!U8\207\210y\207\231y\227\230y\207\210x\207\210x\207xW\205xX\206\210h\206\210h\206\210h\206\210h\206\210h\207\210h\206\210h\2073#23!!##B3&TT6TeECd6S\250Zu\250Z\206\230[\226\250Yt\226FBd5CT42\207GTD#2"#2\021\025T\210y\210\230y\207\230y\207\210x\207\210x\207xW\206xW\205xX\206\210h\206\210h\205\210X\226\210h\206\210h\206\210h\207D4CD2""\024C"\025Se5ST6CT6CS'c\227J\206\227J\205\206GCd6CT%CD5R\207ECC2!"\0232\021\021\021VX\207\210x\207\210x\207\210x\207\210x\210xW\205xX\205xW\205xg\205\210g\206\210h\206\210h\207\210h\206\210eT\020\00323#2"$CC$SvFTTDCT52d9d\205HT\205HT\226XTc5CT32T8d\206D1D2!"#2" \000gx\207\210x\207\210x\207\210x\207\210x\207xW\206xW\205xg\205\210g\205xH\205\210h\206\210h\206\210x\206\210b"\000\00223#2"\0222D"!vHteDBD%RT52e6Cd6Sd5BD42"\0232D'duB!D2!3#2" \021gfe\210x\207\210h\206\210x\207\207x\207xW\205xW\205xW\205xW\205\210h\206\210h\206\210x\206\210x\207fa\021\000\002"3$C3!\020D#"U8ueFT3#2C#2C$2C#22#"\021\02323&Se7dT43C2!3#23'\210fvw\210x\207\210x\207\210x\207\207xvxW\205xW\205xg\206xgv\210g\206xh\206\210h\206\210g\206fR"\000\0032"#23"!3#24&de7dd4C3#2"\023"2"""\0233T5Be7d\207gdC#3"\02323#2"\(\210fvgfx\207\207x\206\210h\207\207g\206xW\205xW\205\207g\206xg\206xh\206\210g\206xg\205\210Vegi\231\022\0232#\02323""\021\025S3$Ce7d\206GTdFTd5CT4CD5Cd7duHduEC\022\023"\021\02323#2xvgfvwgwv\207xw\207hv\207xwwX\205wWuwW\205xW\206\210g\206xg\206\210g\206wffgg\210gcB3#2D#""\0232U2"D'dvIu\206VS\206WcuHduGTuGS\206HeT3"D#1"\022""#2\210\226hg\206xgvgww\206whvwhwwW\205wWuwguwWvwgvwX\206\207h\206gfvgvv\211\205d3423#C3!\021C323\025SvHu\206XeeHduGTvHevGdvGTC!\021D1\0213#2#\)\251fvww\207xwwwfgvwgvvgvgWugWuwWuxgvwg\205xg\205xgvfVwgvwgx\230US24#2C2!"\024C\021\0231T8d\206HTuGS\206VUeGT\206WUeET"\0232!\022!3"2y\226xgwxx\226xw\206xftTD2\021\000\005TxGuxGuxg\206wguwWuxgvvfegfwhvwgff\211\227w"#B3#2\021\021!D1\0213$BU6TT5CT5CeETT5CD2!"\022!\022""3\(\230w\206ww\207xx\207\210w\206wguf41\021\000\021\020xW\205xVuwguwWuwVvD1\021\021\025Ugfwx\206\207gvxfh\231\210\22333323!\020"\0231\022\022"C$2D42D323$3T42"\021\021"\021\021"\0232wx\211fvxw\207yx\227xw\206xfvfx\210\233\021!\021wWuwWuwWuwVuC1\021\021\021\020"\025fgw\207xwxwvwffw\211\211\232DC33#2\021\021!"!\020\022\02323#23#22#2!\021\021\021\001\021\021\001\02137\207\211\226ffvwgwxw\206xw\207\210g\206gfw\210\207\202!wFuwGufVdUA\021\021\021\021\001\000\000UFvxw\210hv\207wvwgfvhx\231\232\227xDCC#!\021\021\001\021\000\000\000\021\002!!\021\020\021\000\000\000\000\000\001\000\000\021\0232wy\232fufVfxg\206wg\206xx\227yg\206xfgyfb")
+64
+64
+4
+[1 0 0 -1 0 64]
+ {} false
+3
+ colorimage
+grestore
+%%Trailer
+%%EndDocument
+~
+[1 0 0 1 220 590] 0 0 64 64
+(/private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/patrick.eps)`
+%%BeginDocument: /private/Net/dart/Users/imdat/Mailboxes/Outgoing.mbox/Bilder.attach/patrick.eps
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: vivax.ai    __    /private/Net/dart/Users/imdat/Mailboxes/Active.mbox/Kein_Betreff_3.attach
+%%Creator: Adobe_Illustrator
+%%CreationDate: Tue Jun  2 21:51:36 1992
+%%For: imdat
+%%DocumentFonts: (atend)
+%%Pages: 0 1
+%%BoundingBox: 0 0 64 64
+%%EndComments
+
+%%BeginDocument: /usr/lib/NextStep/printPackage.ps
+%!PS-Adobe-2.0
+%%Title: Printing Package
+%%EndComments
+%Version: 2.0
+%Copyright: 1988, NeXT, Inc.
+
+/__NXdef{1 index where{pop pop pop}{def}ifelse}bind def
+/__NXbdef{1 index where{pop pop pop}{bind def}ifelse}bind def
+/UserObjects 10 array __NXdef
+/defineuserobject{
+	exch dup 1 add dup UserObjects length gt{
+		array dup 0 UserObjects putinterval
+		/UserObjects exch def
+	}{pop}ifelse UserObjects exch 3 -1 roll put
+}__NXbdef
+/undefineuserobject{UserObjects exch null put}__NXbdef
+/execuserobject{UserObjects exch get exec}__NXbdef
+/__NXRectPath{4 2 roll moveto 1 index 0 rlineto
+0 exch rlineto neg 0 rlineto closepath}__NXbdef
+/__NXProcessRectArgs{
+	1 index type /arraytype eq{
+		exch 0 4 2 index length 1 sub{
+			dup 3 add 1 exch{1 index exch get exch}for
+			5 1 roll 5 index exec
+		}for pop pop
+	}{exec}ifelse
+}__NXbdef
+/rectfill{gsave newpath {__NXRectPath fill} __NXProcessRectArgs grestore}__NXbdef
+/rectclip{newpath {__NXRectPath} __NXProcessRectArgs clip newpath}__NXbdef
+/rectstroke{
+	gsave newpath dup type /arraytype eq{dup length 6 eq}{false}ifelse{
+		{gsave __NXRectPath null concat stroke grestore}
+		dup length array cvx copy dup 2 4 -1 roll put __NXProcessRectArgs
+	}{{__NXRectPath stroke} __NXProcessRectArgs}ifelse grestore
+}__NXbdef
+/xyshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index 2 mul 1 add get add exch
+		3 index	3 index 2 mul get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/xshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		exch 3 index 3 index get add exch moveto pop
+	}for pop pop
+}__NXbdef
+/yshow{
+	0 1 3 index length 1 sub{
+		currentpoint 4 index 3 index 1 getinterval show
+		3 index 3 index get add moveto pop
+	}for pop pop
+}__NXbdef
+/arct{arcto pop pop pop pop}__NXbdef
+/setbbox{pop pop pop pop}__NXbdef
+/ucache{}__NXbdef
+/ucachestatus{mark 0 0 0 0 0}__NXbdef
+/setucacheparams{cleartomark}__NXbdef
+/uappend{systemdict begin cvx exec end}__NXbdef
+/ueofill{gsave newpath uappend eofill grestore}__NXbdef
+/ufill{gsave newpath uappend fill grestore}__NXbdef
+/ustroke{
+	gsave newpath dup length 6 eq
+	{exch uappend concat}{uappend}ifelse
+	stroke grestore
+}__NXbdef
+/__NXustrokepathMatrix dup where {pop pop}{matrix def}ifelse
+/ustrokepath{
+	newpath dup length 6 eq{
+		exch uappend __NXustrokepathMatrix currentmatrix exch concat
+		strokepath setmatrix
+	}{uappend strokepath}ifelse
+} __NXbdef
+/upath{
+	[exch {/ucache cvx}if pathbbox /setbbox cvx
+	 {/moveto cvx}{/lineto cvx}{/curveto cvx}{/closepath cvx}pathforall]cvx
+} __NXbdef
+/setstrokeadjust{pop}__NXbdef
+/currentstrokeadjust{false}__NXbdef
+/selectfont{exch findfont exch
+dup type /arraytype eq {makefont}{scalefont}ifelse setfont}__NXbdef
+/_NXCombineArrays{
+	counttomark dup 2 add index dup length 3 -1 roll {
+		2 index length sub dup 4 1 roll 1 index exch 4 -1 roll putinterval exch
+	}repeat pop pop pop
+}__NXbdef
+/setcmykcolor{
+	1.0 exch sub dup dup 6 -1 roll
+	sub dup 0 lt{pop 0}if 5 1 roll
+	4 -1 roll sub dup 0 lt{pop 0}if 3 1 roll
+	exch sub dup 0 lt{pop 0}if setrgbcolor
+}__NXbdef
+/currentcmykcolor{currentrgbcolor 3{1.0 exch sub 3 1 roll}repeat 0}__NXbdef
+/flushgraphics{}def
+/setwindowtype{pop pop}def
+/currentwindowtype{pop 0}def
+/setalpha{pop}def
+/currentalpha{1.0}def
+/hidecursor{}def
+/obscurecursor{}def
+/revealcursor{}def
+/setcursor{4 {pop}repeat}bind def
+/showcursor{}def
+/NextStepEncoding where not{
+/NextStepEncoding StandardEncoding 256 array copy def
+0 [129/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/Ccedilla/Egrave
+/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/Ugrave/Uacute
+/Ucircumflex/Udieresis/Yacute/Thorn/mu/multiply/divide/copyright
+176/registered 181/brokenbar 190/logicalnot 192/onesuperior 201/twosuperior
+204/threesuperior 209/plusminus/onequarter/onehalf/threequarters/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave 226/iacute 228/icircumflex/idieresis/eth
+/ntilde 236/ograve/oacute/ocircumflex/otilde/odieresis 242/ugrave/uacute
+/ucircumflex 246/udieresis/yacute 252/thorn/ydieresis]
+{dup type /nametype eq
+ {NextStepEncoding 2 index 2 index put pop 1 add}{exch pop}ifelse
+}forall pop
+/NextStepEncoding NextStepEncoding readonly def   
+/_NXfstr 128 string dup 0 (_NX) putinterval def   
+/findfont{
+ % Because we can never let NextStepEncoding get into
+ % SharedFontDirectory, we cannot reencode a font to NextStepEncoding
+ % if we are in shared mode.  So if currentshared is true,
+ % we call the normal findfont and return that
+ /currentshared where {pop currentshared} {false} ifelse
+ {//findfont exec}
+ {dup _NXfstr 3 125 getinterval cvs length 3 add _NXfstr 0 3 -1 roll
+  getinterval cvn exch FontDirectory 2 index known 
+  {pop FontDirectory exch get}
+  {//findfont exec dup /Encoding get StandardEncoding eq
+   {	dup length dict exch
+	{1 index /FID ne {2 index 3 1 roll put}{pop pop}ifelse}forall
+	 dup /Encoding NextStepEncoding put definefont
+	}{exch pop} ifelse
+   }ifelse
+ }ifelse
+}bind def
+}{pop}ifelse
+/_NXProcArray 5 array __NXdef
+/_NXChannels 0 __NXdef
+/_NXTotalBytes 0 __NXdef
+/_NXDoImageOp{
+	1 index{dup}{1}ifelse /_NXChannels exch store
+	_NXChannels 2 add 2 roll _NXProcArray 0 _NXChannels getinterval astore pop
+	5 index 4 index mul 2 index{1 sub 8 idiv 1 add mul}{mul 1 sub 8 idiv 1 add}ifelse
+	4 index mul /_NXTotalBytes exch store pop exch pop
+	gsave matrix invertmatrix concat 0.5 setgray 0 0 4 2 roll rectfill grestore
+	{	0 1 _NXChannels 1 sub{
+			_NXProcArray exch get exec
+			length _NXTotalBytes exch sub /_NXTotalBytes exch store}for
+		_NXTotalBytes 0 le{exit}if
+	}loop /_NXProcArray 5 array def
+}__NXbdef
+/colorimage{_NXDoImageOp}__NXbdef
+/alphaimage{1 add _NXDoImageOp}def
+%%EndDocument
+
+gsave
+317 -721 translate
+ /__NXbasematrix matrix currentmatrix def
+grestore
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+0 0 64 64 rectclip
+0 0 64 64 rectclip
+gsave
+<aa8877998866998877999977998877887755775555777755886666555544554444444433332222222211221111111111221111001111111111111111111111111111110011111111111111001100000011001111110011001111110011001100111111001100110011001100111111001100110011111111111111001100111122001111111111111111221122112211222211222211332222444422443333333322665555777755886655997766aa7777997777aa7777998866997777998866999966aa8877998866aa8877887766886666776644775555444433554444332211221111111111221111111111111111111111221111111111221111111100110011111100110011001100110011111111111111001100221111000000110011111100110011111100110011001100110011111100110011111100110011111100111111111100110011111111221111111100221111111111222222222211222211555544664444776644996655887755887777998877aa7777997777aa7777998888999977998877777755887766887766665555444433443333333322222222112211111111111111111111111111111111112211111111111111111111112211111111001111110011111111111111001100110011001100111111001100111111111111111111001100110011001111111111111111110011111111111111001100111111001100111111001111111111111111111111112211222222112211443333444433665555666644887766888866997777998877997777998866aa8877997777998866775544998866886655666644554444333322221122111111221111111100110011111100110011111111111111111100221111111111221111111100110011111100111111111100110011111100110011111100110011001100110011111100221111111111111111111100221111111100111111111100110011111111111111111100110011111111110011111100221111111100221111222211332222333311665533887744997766997766aa7777997766aa7777aa8877998866998877776644997766777755553333333322332222111111111111111111111111111111110011001111111111001100111111111111111111111100221122111111111111111111111111001100110011001100110011001111111111111111111111111111221122112211111111111111111111111100111111111111111111111111111111111111111111001111110011111111111111001111221122112211222222555544886677887777886666887766997777998866998877aa8877998866886655887755553333332222221122111111110011110000110011111100110011111100110011001100221111111100111111111100221122222211221111112211111111111111110011111100110011111111110011111100110011111100111111111100111111111111111111111100221111111111111111111111221111111100110011111100110011111100111111111100111111111111221111112211443322555533997766997755996666997766997777aa8877998877aa8877887755886666333322221111111111111111111111111111001100111111111111111111001100111111112211221111222211222222222211222222222211222222112211221122112211221111112211111111111111110011001100111111001100221111111111111111111100111111111111221122112211111111112211111122111111111111001100111111001111111111112211221111112211111111112200665544776655996666997766aa8877998866aa8866aa8877998866997766775555221111111111221111222211110011111100221111111111110011111100110011111100221111222211331122332211331111333311332211332211442222333311442222333322332222222211111111111100110011111100220011111100110011111100221111111111221111111111221111222211111111111100221111111100111111111100221111111111111111111100221111222211111111222211776644775544996666997755bb7766aa8877887766aa8877777755332222111111111111111111111111111100111111111111110011001111111111111111111111111111221122222211221111333322443322554433553333554422664444775544664433664433332222222211222222111111111111112211111111111111111111111111111111111111221122112211221111111111111111111111111111001100111111111111111111001100111111112211221111112211111111222211332222666655887766997766888866997766998866775566221111221111111111111111111100110011111111110011111100220011111111111111112211331122222211442222444422663333774433774433774422884433885533994444774433663333442222553333332211332222111111221122111111221111111111221111111111221111111111111111222211221111111111110011111100221111111111111111111100110011111100111111111111221122111111221111334422332222555533887766887766998866996666444433221111111100111111001111111111112211111111001100221122444433553333554433553333554422665533665533884444775533885533886633995544996633aa6644885533884444775533774433665533553333332222222222222211221111112211111111112211222222222211222222222211221122222211221111111111111111111111111111111111111111112211111111001111111111112211111111112211333333333333333322666655555533886655555533221122111111111111111100110000111111111111111100221122444422664433664422884433774422995544885533995544996633bb6644aa6633bb6644bb7744bb6655aa6644bb6644885533aa5544996633884433774433553333111111332222443322442222222211331111222211332222332211332222332211332222222211221111111100110011111100221111111100111111111100221111111100110011111100111111112211332222333311665555221111112211221111111111111111001111111111111111111111001100111111333322554433665533774433885533885533886644aa6655aa6655bb6655aa6655bb6655bb7755cc7755bb7755bb6666996655aa6655996644bb6655995533663333553333332222333322553322553322552233333322332211333322332222333322442222332222221111222211221111111111111122112211111111001100111111112211111111112211110011111111111111333333554444445533444422442222222211111111111100110011000000111111111100110011222211443322665533774433775533885533996633bb6655aa6644bb6655bb7744cc6655cc7755bb6655bb7744cc7755aa6655cc6666bb7744aa6644aa6644995544553322442222444422664433553333884444774433442222443311552222332211442222332211442222333322332222111111220011111100111111001100110011111100110011111100110011111100111111001100221111334422776655554444444422221111112211111111001111111111001111111111112211443322444422664433665522885533886633996644aa7744bb7755aa7744bb7755bb7755cc7766cc8855cc7755bb7755cc7766bb7744bb7755aa7755bb7766996644885544554411775533775533553333665533664433553322775544775533663333443322443322444422443322222211222222112211111111001100111111001100111111001100111111001100111111001100110011112200554433888855554433332222111100221111111100111111111100220011111111222211443311663322664422774433774433884433885533995544aa6644bb6655bb6644cc7755cc7744dd6655cc7744bb6644cc7755cc6655cc7755dd6655bb6644bb5544995533995544885533883333885533884433885533884433774433994444774433662233553322553333553322552222442222331111111100221111222211111111111100110011111100110011001100110000111100111111445533776655442233112211111111111111110011001100222222111111111111222211553322554422774433885533995533996633aa5544bb6644bb6655bb6655bb6655bb6644bb6655bb7755bb6655bb7744cc6666cc7755cc7766bb7755cc7766bb7744bb6644aa6644995544aa6644995544995544995555aa6644884433774433773333885533774433664422553322443322443322222222111111001100332222111111111111111111110011001100110011001111110011001111444444777766998877664455221111110011111100110011111111111111111100332222554422553333554422774422664422774433775522995533aa6644bb6644cc7744cc6655bb7744bb6655bb7744cc6655cc7755cc7755cc8844cc7755cc7755dd7766bb7744cc6644bb6644bb5544aa5544aa4433995533995544995533994433774422773333664422773333664422552233443311331111221111111111112211110011111100111111001100110011000000110011001100110011112211776655997777887766221122001100111111001111221122001111111111333322664433664433664433775533775533886633996644aa7744bb7755996633bb7755cc8855cc7766bb7755bb6655bb7755cc7766cc7755cc7766aa7744cc7755cc8855cc7766bb7755cc7755bb6655bb6655aa6644aa6644996644995544885533774433664433774433664433663333554422553322333322221111111100111111001111111111001100111111001100110011001111111111001100222211666644aa8866886677221111221111111100111111112211110011111100553322665522663322553322774433553322552222664422884444aa6644bb6655aa6644cc6655bb7744cc6655cc6655dd7755cc7744cc6644cc7755cc7755cc7755cc7755cc7755cc7755bb6644cc6655bb6655bb6655aa6633bb5544aa6644aa6644886633884433774433774444664433773333664433442222111111110011222211110011111100110000001100110011111100110011111100111111333322887755aa8877777755221122111111111111001100110011001100222211444422664433554422553333222211221111111111111111112211443333775544995544885544bb6666bb7766cc6666cc7755cc7766cc7766cc7777bb7766cc7777bb7755cc7766cc7755bb6655bb7755cc6655aa6644aa5555aa6644aa5544996644995544885533884444774433774433665533664433553333221122111111111111001100110011001111110011001100110011111111111111001100666666887777aa8877bb8877222211221122111111110011111100110011222211663333664422552222332211221111111111221111111100110011111100221111222211442222665533995544aa6644bb6655bb7744cc7766cc7755cc6655cc7755cc6655cc7755cc7766bb6644bb5544aa6633bb5544aa6644bb5544aa6633aa5544aa5533994433885533884433884433774433664422663333442222111111111111110011001100110011001100110011111100110011111100332222888877996677aa8877aa9966997777222211111111111111111111001100332222443322663333443322331122222211222222444422554433554433221111111111111111112211222222665533885544aa6644bb6655bb6644cc6655bb6644cc6666cc7755dd7766cc7755bb5544bb7755aa5544bb6644bb6655aa6644aa5544aa6644aa5544995544995544885544884444775533774433554433553333111111110011001111110011001100000011001111111111112211111111556644998877997777998877aa8877aa9977775555111111111111111100110011222211443322554422552222222211443322444411884433774433884444775533442222222211222222222211552222775533995533996633cc6655bb6644bb5544bb6644cc6655dd7755cc6644bb6644bb5555aa6644aa5544884433773333774433994444885533994444885533884444774422773333664422663333443322331111111100110011001100110011001100110011111100111111333311998866997755aa7777aa8888aa9977aa8888aa8877886677112211111111001100332222333322553322332211554433555533775544885533885544664433553333443322442222332222331122222222443333665533775544997744bb6655885533884433885533884444774433553322443322442222333322332222332211442222222211554433443322443322665533774444664433664433554422553333222211110011001100110011001100110011001100110011111111667766777766997777998877aa8877aa8877aa8877aa8877999966886666221122111111112200442222553322442222443322664433664433774444663322552222332222442233332211221111332211332222332211664433775533995533bb6644aa4444442211553322443322331122221111111111111100220011111111221111111111221111222211331122222211442222553322663333664422663333553333331111111100110011000000110011111100110011001100554444888866997777997777aa7788998877aa9977aa8877999977aa8877aa8877332222001111111111333322443333333322553333554422553333553322442222444433332222333322442233443333332222112211332222333322775544886633cc7755bb7755aa6644443311332233222222111111111111111111112211111111112211221122223311332222223322222222222211443322443322553333554433553333222211111111001111111111001111000011001100110000446633997777997777aa7788998877aa8866aa8877aa8866aa8877aa8866bb8877443322221111111100443333443322553322553322553333553322663322442211332211998855cc9977ddaa88ee99aa996666442222221111332222665533995533cc8855cc6655aa6644884444442222331111111100221111111100332222333322332222111111221111332211553322443322443333332211332222444422553322443322220011111100110011111111110011001100110000001100776655887766aa7777997777aa7777aa8888aa9977aa8888998877aa8877665544442222222222111111334422443333554433663333553322553333332222332222666644aa7777bb9988ffffeeffeedd553333332211332222222211332222886633cc7755cc8855aa5555774433442222222211221122223322554444999988eeddccbbaa99553333111111111111222211333322443322553333443322443333333322443333112211111111111111111111111111221111111111111111889977998877997777997788998877998866aa8888aa8877aa8877aa9966442222221111331122111100443333554422664422664422552222664433663333443311774433996655aa7777bb7777552233111111221122112200554433554422885544bb7755dd6655aa5544662233664433995555664433774433aa7755cc7777cc8888552244111111331122222222331122332211552222553322553333553322552222443322221111111100110011333322442222443322442222111111776666997766aa7777997777aa7777aa8877999966aa8877999977aa9977554433332222333322111111334422554433665533885544775544884444775533773333554433664433997744aa6666443333443333444422886655664433664433886644bb5555cc6655994444664422775544aa6644aa5533663322aa6655aa7755bb7777554433222222223322553333554433553333553322664433664422663333554422442222111100111111112211443333221111111111333322666655998877aa7788aa8877997777998877aa8877aa8888aa8877aa8877aa7777552233443322552233332211332211444422774433886644995544885533884444775533885544885533995533775522774433775533884433774433664433554411995533bb7744bb5544995533884433775544885555886633884444995544994444775544663333664433774444664433885533995544884444885533884444774433663333443322221111111100443333332211442222553322552222998877aa7777997777aa7788998877aa7788aa8877999977aa8888aa9977aa7777442222552222664433442233222211553333665533885544886644995555885544884433775533884444775533884444885544995544886644885544775522774433886644bb6655bb6644994444775533885544885544aa6666996655884444774433884444885544884444775533774444775544995544996644995544775533774433554433553333111111111111333322442222553322773333663322996666998877997777998877997788998888aa8866aa8877aa8866bb8866aa7755662222664433663333332222221122444422774433885533aa5544aa6644aa5544995533aa5544aa6655bb5555aa6644bb5555aa6633bb5544995533884444774433aa5544cc7755bb4455994444994444885533994433aa6644aa5555aa6655aa6655996655aa5544996644aa5544995544aa5544aa5544aa5555995544994444774433553333443333221111111100442222775544773333884433773333775544aa7788998877aa7777998866aa7788aa8877aa9977aa8877aa8866cc8877774433664433663333331122112211443322555522885533996633aa5544aa6644bb6655bb6644bb5544bb7744bb6655aa6644bb6655aa5555884444775533884433996644cc6655bb6655aa5555774433884444885544aa5555bb6655bb6666aa7755bb6655aa6644aa6655bb6655bb5555aa6644aa5544995544aa5544885533774444554422443322222211111111444422774444664433994444774433774444998877997777998877997777888877aa8866bb8866aa8866bb8877bb8877884444885544662233442211332222444422663322885533995544aa6644bb5544cc6644cc5555bb6655cc6666cc6655cc6655bb6644aa5544884433774433996633bb5555cc6655cc5555aa5544883344885544994433995533cc6655cc6655dd6666bb6644cc6655bb6655cc5555bb6655bb5555aa5544aa5555885533884444664433553333443322221111111100221111444422774433773322995555996655aa7777998877aa7788998877aa7788aa8888998877aa8877999977aa7766665533884444664422664444112211443333665533885544886644aa6655aa7744bb6655bb6655cc6655bb7755cc6666bb6655cc5555aa5544884433775533996655bb7755dd7766cc7766bb5566995555884433775533995544bb6655cc6666cc6655cc6655cc6655cc6666bb6655bb5555bb5555aa5544885544995544885544663333444422443333222211554444443322442222664433884433664422aa7777998877aa7777997766aa7788998877aa9977aa8877aa8877aa8877997755884433664422884433664444331111444422664433665533995544aa6644bb6655bb7755cc6655bb6644dd6655cc7744dd6655cc6655aa4444774422774444996644bb6655ee8866ee7766bb6655aa4455774433774433995544cc6655dd7755dd6655cc7755dd6666cc6655cc5555bb5544bb5555aa6644aa4455995544884444663322663333443322221111444433884455663333773344663322884444997766aa7777aa7777aa7777998877aa7788aa8888999977aa8888aa9977995555885544884444774433663333222211443333555522885544996644bb6666bb6655cc6655bb7755cc7766cc7766dd7766cc7755cc6666884433884444664433885544996644bb6666bb7755aa5544884433774433775533995544bb7755dd7777dd7766dd7766cc7766cc6666cc7766cc6666bb7755bb6655995544885544774433553333444433443333222211554433775533884444774433774444886655aa8888998877aa7777998866aa8877998877aa8877aa8877aa8866aa8877aa7766994455995533aa4444553322331111333322663322885544995544aa6644cc6655cc6655cc6666bb6644dd6655cc6655dd6666aa6644883333553322332222443311774433995544994444774433442222332211663333885533cc6655bb6655dd6666cc7755dd6666cc7755bb6655bb7755bb5555aa6644995544885544884444553322553322443322221111443322884444773322994444884433996666997777aa7788997777aa7788aa8877aa7777aa8888998877aa8877aa9977aa7788775544885544996644995544442222553333554433885544886644aa5555aa6644bb6655bb6655bb6655cc6655cc5555bb6655994455663322331111111111110011333322664433553322552233111111110011222222553322bb7755cc5555cc6655dd6666cc7755dd6666cc6655cc6666bb6644aa5555995544884444664433553333444433442233333322332211664433774444885544994455997766aa7788998888997777998866997788998888998866aa8877998877aa8888aa8877664444775533995544885533663333443322554433775533995544995533aa5544aa6644bb5555bb5544bb5544aa5544cc5555994444662233553333663333443322221111443322552222222211443333554433552222553322aa6644bb6644bb4444bb6644cc6655bb6655cc6655bb6644bb5555aa5544994444885533663333443322442222443322442233665522884433884433884444664422996666997777aa7777998866aa8877998877aa7788aa8877998866aa8877998866aa8888aa8877774433885533884444554433443322444422664433775544885544886644aa5555995544995544884433995533996633994433775533553333443322553322222211221122222211443333443322552222553322885544995544bb6655bb6655994444995544aa5555aa6655bb5555996644995544885544774444554433443322333322443322444422774444885544994455774444aa7777998866aa7777998877aa7788997788aa7788997777aa8877aa8877998866aa8877aa8866bb8888aa7766663333664422663333443311553333664433774444885533994444884433883333553311774433774433994444885533884433664422663333553333552222222211332222555522664433774433994444884433aa4444aa5544bb5544774422884433995522994433995533aa4444884433884444664433663333443322442222443322664433663333884433884433663322aa8877aa7777998877aa7777aa7777aa7788997777aa7788aa8877998866998877998877aa8888999977aa8877bb8877442233333322443333334422554433665533884444885544884433443311664444665533774433664433774444774433663333443311664444554433664433554422664433775533774444664433884433885533994444884433994444663333663333885544884444885544995544774433663333554433553333333322332222444433111122444433442211998866aa7788aa7777aa7788998877aa7788998877aa7788997777aa8877aa7777aa8877aa8877aa8877aa7777aa8877aa7777776644996666333311443333554422774444774433884433774433884433664433663322664422773333664433773333664422773333774433773333775533773333774433884433774422773333774422884444885544883344884433884444663322884433884433884444885533773333664433553333333322442222333322442233443322774444997777aa7777aa8866aa7777aa7777aa7777997777aa7777997777aa7777aa8877aa8877aa8877998866aa8877aa8877aa8877998877886677887755333322333311443322554422774433775533884444775533773333332211332222444422775544774433774444885533995544996655aa6655aa6655995555886644885544775533774433664433774444664422664422776633885544774433995544885533774433664433663333333322443322333322332222112211555544887766997788998877997777998877aa7788998877aa7788998877997788998877998877aa8877998866aa7777aa8877aa8877998877aa7777998877997777443322442222333311443333554422995533995533995544774433884444331111220011222211331111221100331111332211552222553322773333663322662222663322774433664422552233332211331111222211663333885533aa5544aa5544994433774433663333442211442222332211332222333311665544665544776655887766aa7777aa7777aa7788998866aa7777997777aa6688997777aa7777aa8877998877aa8877998877aa8877998877aa8877aa9977aa7777aa8888442233333322333322333322553333885533bb6655aa6644aa5555996644aa5555996655773344664444774455774444995566996655aa6666996655996666775555775555555544554444444433775555996655aa5555995533aa5544bb6644aa4455885544663322554433553333333322442222333322332222333333776655555533997766997766aa7788998877aa7788997777998888998877997777997777998866aa7777aa8877aa7777aa8866aa7777aa8866aa8877998877bb7788553322332222333322332222443322664433886633994433995533aa5544aa6644aa4444884433994444885533994444995544aa5555aa5544bb4455aa5544aa4444995544994433885533884444995544aa5544995544aa5544aa6644bb5544884433773322553322552222443322442222332211442222222211332222555544775555775544996677997777aa7777997766aa7777997777aa7777997777aa7777997777998877aa8877998866998877998877aa8877998877aa7777998877774444222211332222223322332222444411664433775533885544885533aa5544995544884444775533774433885533884444775533884444775533885533886633885544886644995544885533995544aa6644aa5544995544aa5544995544663322554422553333443322443322223311332222333322221111334422554433444433887766887777997788997777aa7788997777997777998877997777997777998877aa7777998866aa7766aa8866aa7777aa8877aa7777aa8877aa7777554433442222222222332222333311442222554422774444775533885533885533994433885533994433775533884444774433774433774433663333775533884444885544994444995533aa5544995544aa4444995533883333885533884433554422553333443322442222443311442211442211332222111100221111222211443333887766aa7777997766aa6677997777aa7788aa7777aa7777997777997777aa7788998877aa7777aa8877aa7777998877aa7777998866aa7788998888553344333333332222222211332222333311443322554422663333775533884444774433995544995544994444995533994444774433774433774433884444885544bb5555aa5544aa5555884433994444995544994444774433884444664433553333443322553322443322332222333322553333332222222222334433333333556644776666887766aa7777997777aa7788997777aa7788997777aa7788997777998877aa7777aa8866aa7777aa7777aa7777aa7777aa7777997766aa7777664444331122222211332222222211332222333311553322554422664433664422884433995533994444995544bb5555995544aa5555885544aa5555995544aa5544aa5544bb4455aa5544883333774433773333774433774444775533774433553322553333443322442222332222442222332222221111111111222222555544664444997766997777997777aa7777997777997777997777aa7788997777aa6677998877998877998888998877998877998877998888998877997777aa8877886666333333221122222211221122222211332222333322443322444422553333664433774433775522885544996644995544996644884444996655995555885544995555aa6655995544885533773344774444663333554433552222554433553322443322442222222222333333222222332222111111222222333333665555997766aa7777997766997777997777997788997777997777998877997777998877aa8866aa8866998866997766998866aa7777998877aa7777aa8866aa7766997766775555222211221111222211331111332211332211333322553322664433774444775533994444884433aa5544aa6644bb5544aa5544994444996633aa5544aa5544994444885544884444774433774444554422663322553322663333553322553333442222442222332222331122222211111111444444886666886666996666997766997777997777997777997766997777887777996677997766aa7777aa7777997766997788998877aa7777997766aa7777998877aa7788997777aa7777887766775566112211222222222211332222222211333333333322664444554422774444664444775544886644aa6666995555884455774433884444996655995555996644884444664433774433665522663333444422664433443322553322443322332222222222221122222211221111223311886666997777aa7788997777aa7788997777997788997777aa7777997777997788997777997788998888997766aa7777997766997777998866aa7777998877997777998877aa7777775555221111111100332222111111221111222211331111221111332222332222442222443322774444664422885544885544884444775533885544775533995555995544884433774433663333554422664433554422442222332211442222442222331122222211220011111100221111111100887777997777aa6688997777aa6677997777aa7777997777aa6677996677aa6677997777aa6688997777996688aa7777998877997777998877997777998877aa7777997777775566111111111111001111111111222222221122111111111111112211221111112211332222444433443322554433774444664433885544775544774444664433774444775544774444776644664433554433553333444422443322332222222222222222222222112211221111111100222222334433777788998877996677997777997788997777aa7788997777aa7777997777aa7788997766997777997788997788997777998866997766997755aa7766997755996666111111110011111100110011001100110011000000332222333311220011111100110011111100221111221111332222333311553333443322663333664433662222553322553333553322773333553322663322553322663322443322443333222211221122112211111111111100220011111100221111222211110000111100554444887766996688997777aa6677997777aa7788997777aa6677997777aa6688997777aa6688997777996677aa7777997777aa7777997766553344001100111111001100111111111111110011001100110011222222332222222211221111111111110011111111111111112211221122222211332222333322442222443322442222222222442222333333443322554433552233332211221111112211221111111111111111111111111111111111111111111111221122111111110011001100000011001100554444776666996688997777997788887777997788997777996677997777996688997777997766886666332222110011111100110011111100110011111100110011111111110011001100332211443322332222222211221111111100110011001100110011111100111111111100221111221111221111111111221111221111221111222211220011221111221111111100110011111100110011001100110011111100111111112211221122221111110011001100110011000000110011001100110000443322996677996677996677996666aa7777997777996677887777996677665555111111111111001100111111001100111111001100000011001111111111001100111111223311443322333322332222222211221122111111111111001111110011001100000011001100111111001100110011001111110011001100110011001100110011001100110011111111111111001100111111001100111111111111221122222222221122001100110011001111110011001100111111001100111111001100775555887777996688997777996677887777997788887777111100110011111100110011111100110011111100110011111100110011111100110011111100221111443322552222443322332222222211221111111100110011001100110000111100110011001100110000111100110011001100110000111100110011001100110011111100110011111100110011111100111111112211331122332222332222111100110000111100111111001100110011001100110011111100110011001100111111111100442233665555996666886655995566>
+64
+64
+8
+[1 0 0 -1 0 64]
+ {} false
+3
+ colorimage
+grestore
+%%Trailer
+%%EndDocument
+~
+%%PageTrailer
+%%Trailer
+Adobe_IllustratorA_AI3 /terminate get exec
+
+Adobe_typography_AI3 /terminate get exec
+
+
+Adobe_customcolor /terminate get exec
+
+Adobe_cshow /terminate get exec
+
+Adobe_cmykcolor /terminate get exec
+
+Adobe_packedarray /terminate get exec
+
+%%EOF

@@ -1,0 +1,512 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\ftech Symbol;\f2\fmodern Ohlfs;}
+\paperw15480
+\paperh14060
+\margl120
+\margr120
+\f0\b0\i0\ul0\ql\fs24\fi0\li0\gray0\up0\dn0 Custom-Cell-Class for NXBrowser Objects.\
+\
+
+\pard\tx3120\tx3620\tx4120\fs16\li2620 \
+
+\fs28 \
+
+\fs16 \
+
+\fs28 \
+
+\fs16 \
+
+\pard\b\li1100 \
+\
+\
+\
+
+\fs36 ColumnBrowserCell\
+
+\fs16 \
+
+\pard\tx7140\b0\fs28\li2100 INHERITS FROM	NXBrowserCell : Cell : Object\
+
+\fs16 \
+
+\fs28 DECLARED IN	dart/ColumnBrowserCell.h\
+
+\fs16 \
+\
+\
+
+\fs28 CLASS DESCRIPTION\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\fs28\li2620 ColumnBrowserCell is a more sophisticated BrowserCell than NXBrowserCell. It supports multi-column cell-contents with some special formats. Currently supported are int, double and string values. You can specify the char-length and the alignment for each column of the cell. If the value to be displayed doesn't fit in a particular column it will be truncated and is the subclass of Cell used to display data in the column Matrices of NXBrowser.  Many of NXBrowserCell's methods are designed to interact with NXBrowser and NXBrowser's delegate.  The delegate implements methods for loading the Cells in NXBrowser by setting their values and status.  If you need access to a specific NXBrowserCell, you can use the NXBrowser method g
+\b etLoadedCellAtRow:inColumn:
+\b0 .  \
+
+\fs16 \
+
+\fs28 You may find it useful to subclass NXBrowserCell to alter its behavior and to enable it to work with and display the type of data you wish to represent.  Use NXBrowser's 
+\b setCellClass
+\b0  or 
+\b setCellPrototype: 
+\b0 methods to use your subclass.  \
+
+\fs16 \
+
+\fs28 See also: NXBrowser\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+\
+
+\fs28 INSTANCE VARIABLES\
+
+\fs16 \
+
+\pard\tx7140\tx10180\tx10680\i\fs28\fi-4540\li7140 Inherited from Object	
+\i0 Class	isa;\
+
+\fs16 \
+
+\i\fs28 Inherited from Cell	
+\i0 char	*contents; \
+
+\pard\tx10180\tx10680\fi-520\li7660 id	support;\
+struct _cFlags1	cFlags1; \
+struct _cFlags2	cFlags2;\
+
+\pard\tx7140\fs16\li2100 \
+\
+\
+
+\fs28 METHOD TYPES\
+
+\fs16 \
+
+\pard\tx7140\tx10180\tx10680\fs28\fi-4540\li7140 Creating an NXBrowserCell	± init\
+
+\pard\tx10180\tx10680\fi-520\li7660 ± initTextCell:\
+
+\pard\tx7140\tx10180\tx10680\fs16\fi-4540\li7140 \
+
+\fs28 Determining Icons	
+\f1 + 
+\f0 branchIcon\
+
+\pard\tx10180\tx10680\f1\fi-520\li7660 + 
+\f0 branchIconH\
+
+\pard\tx7140\tx10180\tx10680\fs16\fi-4540\li7140 \
+
+\fs28 Determining Component Sizes	
+\f1 - 
+\f0 calcCellSize:inRect:\
+
+\fs16 \
+
+\fs28 Displaying	
+\f1 - 
+\f0 drawInside:inView:\
+
+\pard\tx10180\tx10680\f1\fi-520\li7660 - 
+\f0 drawSelf: inView:\
+
+\pard\tx7140\tx10180\tx10680\fs16\fi-4540\li7140 \
+
+\fs28 Archiving	
+\f1 - 
+\f0 awake\
+
+\pard\tx10180\tx10680\f1\fi-520\li7660 - 
+\f0 read: \
+
+\f1 - 
+\f0 write:\
+
+\pard\tx7140\tx10180\tx10680\fs16\fi-4540\li7140 \
+
+\fs28 Highlighting Behavior	
+\f1 - 
+\f0 highlight:inView: lit:\
+
+\fs16 \
+
+\fs28 Placing in Browser Hierarchy	
+\f1 - 
+\f0 isLeaf\
+
+\pard\tx10180\tx10680\f1\fi-520\li7660 - 
+\f0 setLeaf:\
+
+\pard\tx7140\tx10180\tx10680\fs16\fi-4540\li7140 \
+
+\fs28 Determining Loaded Status	
+\f1 - 
+\f0 isLoaded\
+
+\pard\tx10180\tx10680\f1\fi-520\li7660 - 
+\f0 setLoaded:\
+
+\pard\tx7140\tx10180\tx10680\fs16\fi-4540\li7140 \
+
+\fs28 Determining Reset Status	
+\f1 - 
+\f0 reset\
+
+\fs16 \
+
+\fs28 Modifying Graphic Attributes	
+\f1 - 
+\f0 isOpaque\
+
+\pard\tx7140\fs16\li2100 \
+\
+\
+
+\fs28 CLASS METHODS\
+
+\fs16 \
+
+\b \
+
+\fs28 branchIcon\
+
+\pard\b0\fi-1020\li3620 + 
+\b branchIcon\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Returns the id of the NXImage object ªNXMenuArrow.º  This is the icon displayed to indicate a branch node in an NXBrowserCell.   Override this method if you want to display a different branch icon.  \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± isBranch
+\b0 , 
+\b ± setBranch\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 branchIconH\
+
+\pard\b0\fi-1020\li3620 + 
+\b branchIconH\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Returns the id of the NXImage object ªNXMenuArrowH.º  This is the highlighted icon displayed to indicate a branch node in an NXBrowserCell.   Override this method if you want to display a different branch icon. \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± isBranch
+\b0 , 
+\b ± setBranch\
+
+\fs16 \
+
+\pard\tx7140\b0\li2100 \
+\
+
+\fs28 INSTANCE METHODS\
+
+\fs16 \
+
+\b \
+
+\fs28 awake\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b awake\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 You do not invoke this method; it is invoked by the kit to complete initialization during unarchiving.  Override this method if you subclass NXBrowserCell.\
+
+\fs16 \
+
+\pard\tx7140\b\li2100 \
+
+\fs28 calcCellSize:inRect:\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b calcCellSize:
+\b0 (NXSize *)
+\i theSize
+\i0  
+\b inRect:
+\b0 (const NXRect *)
+\i aRect\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 Calculates the minimum width and height required for displaying the NXBrowserCell in a given rectangle.  Makes sure 
+\i theSize
+\i0  remains large enough to accommodate the branch arrow icon.  If it isn't possible for the NXBrowserCell to fit int 
+\i aRect
+\i0 , the width and/or height returned in 
+\i theSize 
+\i0 could be bigger than those of the rectangle.  The computation is done by trying to size the NXBrowserCell so that it fits in the rectangle argument (by wrapping the text for instance).  If a choice must be made between extending the width or height of 
+\i aRect
+\i0  to fit the text, the height will be extended.  Returns 
+\b self
+\b0  and, by reference, the minimum size for the NXBrowserCell.\
+
+\fs16 \
+
+\pard\tx7140\b\li2100 \
+
+\fs28 drawInside:inView:\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b drawInside:
+\b0 (const NXRect *)
+\i cellFrame
+\i0  
+\b inView:
+\b0\i controlView\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 Draws the inside of the NXBrowserCell (i.e., it is the same as 
+\b drawSelf:inView:
+\b0  except that it does not draw the bezel or border if there is one).  Returns 
+\b self
+\b0 .\
+
+\fs16 \
+
+\pard\tx7140\b\li2100 \
+
+\fs28 drawSelf:inView:\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b drawSelf:
+\b0 (const NXRect *)
+\i cellFrame
+\i0  
+\b inView:
+\b0\i controlView\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 Draws the NXBrowserCell, including the bezel or border. 
+\b  
+\b0 Returns 
+\b self
+\b0 .\
+
+\fs16 \
+
+\fs28 See also:  
+\b ± drawInside:inView:\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 highlight:inView:lit:\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b highlight:
+\b0 (const NXRect *)
+\i cellFrame
+\i0  
+\b inView:
+\b0\i controlView
+\i0  
+\b lit:
+\b0 (BOOL)lit\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\fs28\li2620 Sets the highlighted state to 
+\i lit
+\i0  and redraws the NXBrowserCell. Returns 
+\b self
+\b0 .   \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± reset\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 init\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b init\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Initializes and returns the receiver, a new NXBrowserCell instance, by invoking the 
+\b initTextCell:
+\b0  method.  Sets the NXBrowserCell's string value to ªBrowserItemº and returns 
+\b self
+\b0 .  \
+
+\fs16 \
+
+\pard\tx7140\b\li2100 \
+
+\fs28 initTextCell:\
+
+\pard\b0\fi-1020\li3620 ± 
+\b initTextCell:
+\b0 (const char *)
+\i aString\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 Initializes the receiver, a new NXBrowserCell instance, by sending the message 
+\b [super
+\b0  
+\b initTextCell:
+\b0\i aString
+\b\i0 ]
+\b0 .  Sets the NXBrowserCell so it doesn't wrap text.  Returns 
+\b self
+\b0 .   This method is the designated initializer for the NXBrowserCell class.  Override this method if you create a subclass of NXBrowserCell that performs its own initialization.  \
+
+\fs16 \
+
+\pard\tx7140\b\li2100 \
+
+\fs28 isLeaf\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0 (BOOL)
+\b isLeaf\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Determines whether the entry in the receiver represents a leaf node (such as a file) or branch node (such as a directory).  This method is invoked by NXBrowser to check whether to display the branch icon in the Cell and, when an NXBrowserCell is selected, whether to load a column to the right of the column containing the receiving Cell.  Returns YES
+\b  
+\b0 if the cell represents a leaf, NO if the cell represents a branch.  \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± setLeaf:\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 isLoaded\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0 (BOOL)
+\b isLoaded\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Returns YES if the NXBrowserCell is loaded, NO if it isn't.  Used by NXBrowser to determine if a particular Cell is loaded in a column.  When an NXBrowserCell is created, this value is YES.  NXBrowser and its delegate change the value returned by this method using the 
+\b setLoaded: 
+\b0 method to reflect the current status of the cell.  \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± setLoaded:\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 isOpaque\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0 (BOOL)
+\b isOpaque\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Returns YES if the NXBrowserCell is opaque (i.e., it touches every pixel in its bounds).  \
+
+\fs16 \
+
+\pard\tx7140\b\li2100 \
+
+\fs28 reset\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b reset\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Sets the NXBrowserCell's state to 0, sets the highlighted flag to NO, and returns 
+\b self
+\b0 .  \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± highlight:inView:lit\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 setLeaf:\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b setLeaf:
+\b0 (BOOL)
+\i flag\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 Invoked by NXBrowser's delegate when it loads an NXBrowserCell.  When 
+\i flag
+\i0  is YES, the NXBrowserCell represents a leaf node; it will display without the branch icon.  When 
+\i flag
+\i0  is NO, the NXBrowserCell represents a branch node; it will display with the branch icon.  \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± branchIcon
+\b0 , 
+\b ± branchIconH
+\b0 , 
+\b ± isLeaf\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 setLoaded:\
+
+\pard\f1\b0\fi-1020\li3620 - 
+\f0\b setLoaded:
+\b0 (BOOL)
+\i flag\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 Sets the loaded status of the NXBrowser cell to 
+\i flag
+\i0 .  This method is invoked by NXBrowser or its delegate to set the status of the NXBrowserCell.  The delegate should send the 
+\b setLoaded:
+\b0  message with YES as the argument when it loads the cell.  \
+
+\fs16 \
+
+\fs28 See also: 
+\b ± isLoaded
+\b0 , ªMETHODS IMPLEMENTED BY THE DELEGATEº (NXBrowser)\
+
+\fs16 \
+
+\fs28 \
+
+\fs16 \
+
+}

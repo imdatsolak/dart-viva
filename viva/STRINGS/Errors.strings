@@ -1,0 +1,246 @@
+/* Error Codes for the ErrMgr 																		*/
+/* The Format is always: 1. Line: "KEY-TITLE" = "aTitle";											*/
+/*						 2. Line: "KEY"		  = "aString representing the error/message";			*/
+/*						 3. Line: "KEY EXP"	  = "aString explaining the error/message";				*/
+/*	You don't need to have 3rd lines always, ...													*/
+
+"DISCARD CHANGES-TITLE"					=	"…nderungen verwerfen?";
+"DISCARD CHANGES"						=	"Mðchten Sie die …nderungen, die Sie seit der letzten Sicherung gemacht haben, tatsÙchlich verwerfen?";
+"DISCARD CHANGES EXP"					=	"ERKLAERUNG";
+
+"ErrorOnBackup-TITLE"					=	"Datensicherung fehlerhaft¼";
+"ErrorOnBackup"							=	"Die Datensicherung konnte nicht durchgeföhrt werden¼ Bitte vergewissern Sie sich, daû kein anderer Anwender z.Z. viva! benutzt.";
+
+"RestoreDB-TITLE"						=	"Daten zuröcklesen?";
+"RestoreDB"								=	"Sind Sie sicher, daû die Daten in der Datenbank durch eine evtl. Ùltere Version ersetzt werden sollen?";
+
+"RestoringDB-TITLE"						=	"Datenrestauration beginnt¼";
+"RestoringDB"							=	"Die Restauration der Daten wird jetzt beginnen. Sollten Sie sich nicht sicher sein, daû die Daten in der Datenbank öberschrieben werden kðnnen, klicken Sie auf »Abbrechen«";
+
+"ErrorOnRestore-TITLE"					=	"Datenrestauration fehlerhaft¼";
+"ErrorOnRestore"						=	"Die Restauration konnte nicht durchgeföhrt werden¼ Bitte vergewissern Sie sich, daû kein anderer Anwender z.Z. viva! benutzt.";
+
+"SEND_INVALID_PORT-TITLE"				=	"Send Port Invalid?!";
+"SEND_INVALID_PORT"						=	"Fatal:»vivaserverd« was killed. Please re-run it on your Server. Terminating!";
+
+"DatabaseFull-TITLE"					=	"Datenbank voll!";
+"DatabaseFull" 							=	"Ihre Viva!2-Datenbank ist voll! Bitte machen Sie eine Datensicherung, damit die Transaktions-Mitschnitte wieder gelðscht werden kðnnen!";
+
+"Can not detect hostname-TITLE"			=	"Hostname detection error!";
+"Can not detect hostname"				=	"Fatal: Could not detect my hostname¼ Terminating¼";
+
+"Can not create speaker-TITLE"			=	"Speaker creation error!";
+"Can not create speaker"				=	"Fatal: Could not create speaker to »vivaserverd«¼ Terminating¼";
+
+"Can not open sendport-TITLE"			=	"Sendport error!";
+"Can not open sendport"					=	"Fatal: Could not open sendport to »vivaserverd«. Please run »vivaserverd«€on your Server before starting viva!";
+
+"Cannot run twice-TITLE"				=	"Fehler!";
+"Cannot run twice"						=	"Es lÙuft schon ein viva! auf diesem NeXT.\nViva! kann nur einmal auf jedem NeXT gestartet werden!";
+
+"ReallyChangePL-TITLE"					=	"Achtung!";
+"ReallyChangePL"						=	"Die …nderung des Stöcklistenschalters wird erst nach Speicherung des Artikels wirksam. Sind Sie sicher, daû Sie den Schalterzustand Ùndern mðchten?";
+"ReallyChangePL_EXP"					=	"ERKLAERUNG";
+
+"viva! 2.0 didn't beep yet!-TITLE"		=	"…tsch!";
+"viva! 2.0 didn't beep yet!"			=	"viva!2 hat noch nicht gepiept. Sie mössen sich das eingebildet haben¼";
+
+
+"ArticleAlreadyDelivered-TITLE"			=	"Achtung!";
+"ArticleAlreadyDelivered"				=	"Einige Artikel sind bereits geliefert. Bitte wÙhlen Sie nur solche Artikel, die kein ªLº oder ªRLº Symbol haben!";
+
+"ArticleAlreadyInInvoice-TITLE"			=	"Achtung!";
+"ArticleAlreadyInInvoice"				=	"Einige Artikel sind bereits in Rechnung gestellt. Bitte wÙhlen Sie nur solche Artikel, die kein ªRº oder ªRLº Symbol haben!";
+
+"ArticleNotIntStore-TITLE"				=	"Achtung!";
+"ArticleNotIntStore"					=	"Einige Artikel sind nicht im Lager vorhanden. Bitte klicken Sie auf ªErklÙrenº, um die Liste dieser Artikel zu sehen...";
+"ArticleNotIntStore_EXP"				=	"Folgende Artikel sind nicht im Lager:\n";
+
+"DocumentDeleted-TITLE"					=	"Achtung!";
+"DocumentDeleted"						=	"Dieses Dokument wurde gerade gelðscht. Es wird vom Bildschirm entfernt.";
+
+"ErrorOnIncoming-TITLE"					=	"Einbuch-Fehler!";
+"ErrorOnIncoming"						=	"Fehler beim Einbuchen der Artikel. Falls beim nÙchsten Versuch dieser Fehler nochmal auftreten sollte, benachrichtigen Sie den System-Administrator.";
+
+"ErrorOnOutgoing-TITLE"					=	"Ausbuch-Fehler!";
+"ErrorOnOutgoing"						=	"Fehler beim Ausbuchen der Artikel. Falls beim nÙchsten Versuch dieser Fehler nochmal auftreten sollte, benachrichtigen Sie den System-Administrator.";
+
+"ErrorOnDSCreation-TITLE"				=	"Fehler!";
+"ErrorOnDSCreation"						=	"Allgemeiner Fehler bei der Erstellung des Lieferscheins. Bitte versuchen Sie es nochmal und benachrichtigen ggf. Ihren Systemadministrator.";
+
+"ErrorOnInvoiceCreation-TITLE"			=	"Fehler!";
+"ErrorOnInvoiceCreation"				=	"Allgemeiner Fehler bei der Erstellung der Rechnung. Bitte versuchen Sie es nochmal und benachrichtigen ggf. Ihren Systemadministrator.";
+
+"ErrorOnInvoiceCancel-TITLE"			=	"Fehler!";
+"ErrorOnInvoiceCancel"					=	"Allgemeiner Fehler bei der Stornierung der Rechnung. Bitte versuchen Sie es nochmal und benachrichtigen ggf. Ihren Systemadministrator.";
+
+"NoCustomerSelected-TITLE"				=	"Achtung!";
+"NoCustomerSelected"					=	"Sie haben keinen Kunden ausgewÙhlt. Bitte ªziehenº€Sie einen Kunden in dieses Dokument, bevor Sie die Aktion wiederholen.";
+
+"NoArticlesSelected-TITLE"				=	"Achtung!";
+"NoArticlesSelected"					=	"Sie haben keine(n) Artikel aus der obigen Liste ausgewÙhlt. Bitte wÙhlen Sie mindestens einen Artikel, bevor Sie diese Aktion wiederholen.";
+
+"CancelDSWithOutbooked-TITLE"			=	"Achtung!";
+"CancelDSWithOutbooked"					=	"Wohin sollen die Artikel, die in diesem Lieferschein sind und ausgebucht waren, wieder zuröckgebucht werden?";
+"CancelDS_EXP"							=	"Wenn Sie diesen Lieferschein stornieren, mössen die Artikel, die ausgeliefert wurden, in ein Lager zuröckgebucht werden. Sie haben hierbei die Auswahl zwischen dem Originallager und einem Lager, welches Sie in den Grundeinstellungen zu ªLieferscheineº ausgewÙhlt haben.\n\nSollte das Originallager nicht mehr vorhanden sein, wÙhlen Sie bitte das Grundeinstellungslager. Sie kðnnen die Artikel dann spÙter wieder in die entsprechenden Lager umbuchen!\n";
+
+"CancelDS-TITLE"						=	"Achtung!";
+"CancelDS"								=	"Sind Sie sicher, daû Sie diesen Lieferschein stornieren wollen.";
+
+"MissingCounts-TITLE"					=	"Achtung!";
+"MissingCounts"							=	"MissingCounts";
+"MissingCountsEXP"						=	"MissingCountsEXP";
+
+"PwChanged-TITLE"						=	"Achtung!";
+"PwChanged"								=	"Das Kennwort wurde geÙndert.";
+
+"PwNotChanged-TITLE"					=	"Achtung!";
+"PwNotChanged"							=	"Das Kennwort wurde NICHT geÙndert.";
+
+"ReallyInterrupt-TITLE"					=	"Achtung!";
+"ReallyInterrupt"						=	"Sind sicher, daû Sie die Arbeit mit viva!2 unterbrechen und sich abmelden wollen?";
+
+"UmbuchingComplete-TITLE"				=	"";
+"UmbuchingComplete"						=	"Umbuchungsvorgang wurde fehlerfrei abgeschlossen. Das Umbuchungsfenster wird jetzt geschlossen.";
+
+"DeleteSubCondition-TITLE"				=	"Achtung!";
+"DeleteSubCondition"					=	"Mðchten Sie den ausgewÙhlten Konditionseintrag wirklich lðschen?";
+
+"DeletePayment-TITLE"					=	"Achtung!";
+"DeletePayment"							=	"Mðchten Sie die ausgewÙhlte Zahlung wirklich lðschen?";
+
+"NewReminder-TITLE"						=	"Achtung!";
+"NewReminder"							=	"Mðchten Sie wirklich eine neue Mahnung erstellen?";
+
+"CancelInvoice-TITLE"					=	"Achtung!";
+"CancelInvoice"							=	"Mðchten Sie diese Rechnung wirklich stornieren?";
+
+"ReallyDelete-TITLE"					=	"Achtung!" ;
+"ReallyDelete" 							=	"Mðchten Sie dieses Dokument wirklich lðschen?" ;
+"DeleteExp"								=	"ERKLAERUNG";
+
+"ReallyDeleteSelection-TITLE"			=	"Achtung!";
+"ReallyDeleteSelection"					=	"Mðchten Sie den ausgewÙhlten Eintrag wirklich lðschen?";
+"DeleteSelectionExp"					=	"ERKLAERUNG";
+
+"DBDEAD-TITLE"							=	"DB-Con. Death...";
+"DBDEAD"								=	"Die Verbindung zur Datenbank ist unterbrochen. Sie mössen sich in viva!2 neu anmelden, damit eine neue Verbindung aufgebaut werden kann!";
+/* Button titles for the ErrMgr */
+
+"DoDelete"								=	"Lðschen";
+"DoCancel"								=	"Storno";
+"Remind"								=	"Mahnen";
+"YES"									=	"Ja";
+"NO"									=	"Nein";
+"CANCEL"								=	"Abbrechen";
+"EH_Explain"							=	"ErklÙren";
+"OK"									=	"OK";
+"OriginalStore"							=	"Orig.";
+"DefaultStore"							=	"Voreing.";
+
+/* Beeps */
+
+"CouldNotAccesAnyVariables-TITLE"		=	"Achtung!";
+"CouldNotAccesAnyVariables"				=	"Es wurden keine Textbausteine gefunden, weil der Zugriff auf die Datenbank fehlgeschlagen ist!";
+
+"ReadOnlyDocument-TITLE"				=	"Achtung!";
+"ReadOnlyDocument"						=	"Das Dokument ist schreibgeschötzt! Sie kðnnen keine EintrÙge ðffnen!";
+
+"noMatches-TITLE"						=	"Hinweis";
+"noMatches"								=	"Keiner der EintrÙge in der Liste beginnt mit dem von Ihnen eingetippten Buchstaben!";
+
+"CommandShitV not possible-TITLE"		=	"Achtung!";
+"CommandShitV not possible"				=	"Sie kðnnen in dieser Grundeinstellung ein Layout nicht durch Command-V einfögen. Sie mössen das Layout in das entsprechende Rechteck ziehen.";
+
+"YouCannotDeleteProtectedCells-TITLE"	=	"Achtung!";
+"YouCannotDeleteProtectedCells"			=	"Sie kðnnen keine geschötzten Felder im Ausdruck lðschen! Geschötzte Felder sind dadurch gekennzeichnet daû Sie den Inhalt nicht auswÙhlen kðnnen.";
+
+"WrongPreferences-TITLE"				=	"Achtung!";
+"WrongPreferences"						=	"Zu dem von Ihnen ausgewÙhlten Knopf in den Grundeinstellungen existiert keine Grundeinstellung!";
+
+"PwDoubleCheckWrong-TITLE"				=	"Achtung!";
+"PwDoubleCheckWrong"					=	"Sie haben Ihr Kennwort nicht richtig bestÙtigt!";
+
+"ItemExists-TITLE"						=	"Achtung!";
+"ItemExists"							=	"Es existiert bereits ein Dokument mit der eingegebenen Nummer. Bitte wÙhlen Sie eine andere aus!";
+
+"ErrorWhileUpdating-TITLE"				=	"Warnung!";
+"ErrorWhileUpdating"					=	"Die Daten konnten nicht gespeichert werden. Bitte versuchen Sie es nochmal!";
+
+"ErrorWhileInserting-TITLE"				=	"Warnung!";
+"ErrorWhileInserting"					=	"Die Daten konnten nicht eingefögt werden. Bitte versuchen Sie es nochmal!";
+
+"CouldNotOpenItem-TITLE"				=	"Achtung!";
+"CouldNotOpenItem"						=	"Auswahl konnte nicht geðffnet werden. Wahrscheinlich existiert es nicht mehr. Bitte klicken Sie ggf. auf den ªUpdateº-Knopf.";
+
+"FEHLER BEIM AUSBUCHEN-TITLE"			=	"Achtung!";
+"FEHLER BEIM AUSBUCHEN"					=	"Allgemeiner Fehler beim Ausbuchen aus dem/den Lager/n. Bitte öberpröfen Sie alle Einstellung im Fenster und in den ªGrundeinstellungenº.";
+
+"FEHLER BEIM STORNIEREN-TITLE"			=	"Achtung!";
+"FEHLER BEIM STORNIEREN"				=	"Das Dokument ist bereits storniert. Bitte ðffnen Sie es neu!";
+
+"EmptyItem-TITLE"						=	"Achtung!";
+"EmptyItem"								=	"Die einzufögende Auswahl war leer. Bitte wÙhlen Sie es nochmal aus und versuchen es nochmal einzufögen!";
+
+"ArticleWithoutLagerhaltung-TITLE"		=	"Achtung!";
+"ArticleWithoutLagerhaltung"			=	"Der/Die Artikel hat/haben keine Lagerhaltung. Deshalb kðnnen Sie es/sie nicht in das Lager ªhineinziehenº!";
+
+"Nothing selected-TITLE"				=	"Achtung";
+"Nothing selected"						=	"Sie haben nichts in der Liste ausgewÙhlt. Bitte wÙhlen Sie erst etwas aus, bevor Sie exportieren kðnnen!";
+
+"CouldNotSavePreferences-TITLE"			=	"Achtung!";
+"CouldNotSavePreferences"				=	"Die Grundeinstellungen konnten nicht gespeichert werden.";
+
+"NothingSelectedInPB-TITLE"				=	"Achtung!";
+"NothingSelectedInPB"					=	"Sie haben in der viva!2-Ablage nichts ausgewÙhlt. Zum Lðschen mössen Sie einen Eintrag auswÙhlen!";
+
+"NoCustomer-TITLE"						=	"Achtung!";
+"NoCustomer"							=	"Sie mössen zuerst einen Kunden in das Dokument hineinziehen, bevor Sie eine Adresse einsetzen kðnnen!";
+
+"CannotDropMyselfIntoMeAsStueckliste-TITLE"	=	"Achtung!";
+"CannotDropMyselfIntoMeAsStueckliste"		=	"Sie kðnnen eine Stöckliste nicht in sich selbst einfögen!";
+
+"CannotDropStuecklistIntoStueckliste-TITLE"	=	"Achtung!";
+"CannotDropStuecklistIntoStueckliste"		=	"Sie kðnnen keine Stöckliste in eine andere Stöckliste einfögen! Bitte wandeln Sie es erst in einen ªnormalenº Artikel.";
+
+"CouldNotAccesAnyZugriffe-TITLE"		=	"Achtung!";
+"CouldNotAccesAnyZugriffe"				=	"Es wurden keine Zugriffsrechte gefunden, weil der Zugriff auf die Datenbank fehlgeschlagen ist!";
+
+
+"ErrorOnGarbageCollection-TITLE"		=	"Achtung!";
+"ErrorOnGarbageCollection"				=	"Fehler bei der Möllabfuhr. Bitte wenden Sie sich an Ihren nÙchsten Möll- oder Umweltbeauftragten...";
+
+"FinishedUmbuchen-TITLE"				=	"Achtung!";
+"FinishedUmbuchen"						=	"Sind Sie sicher, daû Sie mit Umbuchungsvorbereitung fertig sind?";
+
+"maxangebot-TITLE"		=	"Achtung!";
+"maxangebot"			=	"Die Startnummer för Angebote, die Sie eingegeben haben, ist kleiner als die aktuell grðûte Angebotsnummer. Die Einstellung wird NICHT öbernommen!";
+
+"maxauftrag-TITLE"		=	"Achtung!";
+"maxauftrag"			=	"Die Startnummer för AuftrÙge, die Sie eingegeben haben, ist kleiner als die aktuell grðûte Auftragsnummer. Die Einstellung wird NICHT öbernommen!";
+
+"maxbestellung-TITLE"	=	"Achtung!";
+"maxbestellung"			=	"Die Startnummer för Bestellungen, die Sie eingegeben haben, ist kleiner als die aktuell grðûte Bestellungsnummer. Die Einstellung wird NICHT öbernommen!";
+
+"maxlieferschein-TITLE"	=	"Achtung!";
+"maxlieferschein"			=	"Die Startnummer för Lieferscheine, die Sie eingegeben haben, ist kleiner als die aktuell grðûte Liferscheinnummer. Die Einstellung wird NICHT öbernommen!";
+
+"maxrechnung-TITLE"		=	"Achtung!";
+"maxrechnung"			=	"Die Startnummer för Rechnungen, die Sie eingegeben haben, ist kleiner als die aktuell grðûte Rechnungsnummer. Die Einstellung wird NICHT öbernommen!";
+
+
+"MissingDB-TITLE"		=	"Datenbankfehler!";
+"MissingDB"				=	"Die viva! Datenbank ist noch nicht installiert. Bitte vergleichen Sie ggf. die /usr/sybase/interfaces-Datei.\nMðchten Sie eine neue viva! Datenbank installieren?";
+ 
+"CreateDB-TITLE"		=	"Datenbank anlegen";
+"CreateDB"				=	"Es wird eine neue Datenbank angelegt. Bitte vergewissern Sie sich, daû auf dem Rechner, auf dem Sybase(tm) lÙuft mindestens 75MB Festplattenspeicher frei sind...";
+
+"DBCreated-TITLE"		=	"Achtung!";
+"DBCreated"				=	"Die viva!2-Datenbank wurde angelegt. Sie sollten erst mit den mitgelieferten Beispieldaten etwas experimentieren, bevor Sie richtige Daten benutzen¼";
+
+"CouldNotInsertSupplier-TITLE"		=	"Achtung";
+"CouldNotInsertSupplier"			=	"Lieferant konnte nicht eingefögt werden. Bitte öberpröfen Sie die Fehlermeldung in der Console!";
+
+"SortByHandPlease-TITLE"			=	"Achtung";
+"SortByHandPlease"					=	"Sie kðnnen hier nur manuell sortieren. Dadurch geben Sie auch die PrioritÙt der Lieferanten an. Automatisches Sortieren ist dadurch sinnlos!";
+"SortByHandPleaseExp"				=	"Das Sortieren durch Klicken auf die Titel-Zeile ist hierbei ausgeschaltet. Da in dieser Liste auch die PrioritÙt vergeben wird, mössen Sie die Liste manuell sortieren.\nDies machen Sie, indem Sie die ªControlº-Taste gedröckt halten und einen Eintrag (Zeile) mit der Maus an die gewönschte Zeile bewegen. Es ist das gleiche Verfahren, welches Sie in Angeboten u.a. verwenden, um die Reihenfolge der Posten zu Ùndern.\nviva!2 wird dann die betreffenden Zeilen neu sortieren bzw. durchnumerieren.\nAlle neu hinzugefögten Zeilen bekommen die PrioritÙt 10000 (sehr niedrig). Die hðchste PrioritÙt hat die erste Zeile (1).";

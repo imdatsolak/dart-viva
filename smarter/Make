@@ -1,0 +1,7 @@
+make
+cp SmarterFields.h $prgdir/include/smartkit
+cp SmarterTFCell.h $prgdir/include/smartkit
+ar r obj/libSmarter.a obj/SmarterFields.o obj/SmarterTFCell.o obj/Julian.o
+ranlib obj/libSmarter.a
+cp obj/libSmarter.a $prgdir/lib/smartlib
+cp SmarterPalettes.palette /Net/dart/Users/Develop/Palettes

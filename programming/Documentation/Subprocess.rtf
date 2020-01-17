@@ -1,0 +1,465 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\fmodern Courier;\f2\ftech Symbol;\f3\fmodern Ohlfs;}
+\paperw12580
+\paperh12200
+\margl120
+\margr120
+{\colortbl\red0\green0\blue0;}
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\f0\b0\i0\ul0\fs24 Subprozesse aus NeXT Step Applikationen verwalten  Version 1.0  \
+
+\b\fs16\li200 \
+\
+\
+
+\fs36 Subprocess\
+
+\fs16 \
+
+\pard\tx6240\b0\fs30\li1200 INHERITS FROM	Object\
+
+\fs16 \
+
+\fs30 REQUIRES HEADER FILES	Subprocess.h\
+\
+DEFINED IN	NextDeveloper/Examples/Subprocess,\
+	release 2.0\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\li1200 \
+\
+\
+
+\fs30 CLASS DESCRIPTION\
+
+\fs16 \
+
+\fs30\li1660 Subprocess facilitates the management of concurrent, asynchronous UNIX processes within a NeXTstep application.  Methods are provided for the creation, termination and communication with the underlying UNIX process.  The UNIX subprocess communicates with its parent NeXTstep application through delegation.  Three delegate methods provide notification of pending output, termination and errors from the UNIX subprocess.  It is the responsibility of the Subprocess instantiator to implement the three delegate methods and decide what to do with the resulting data.  In addition to providing a controlled NeXTstep interface to standard UNIX utilities (i.e., 
+\f1\fs24 ls, find, man,rdist
+\f0\fs30 ), the Subprocess can also provide, on request, the environment necessary for UNIX processes requiring pseudo terminal (or 
+\i pty
+\i0 ) support.  Some UNIX applications that require pty support include 
+\f1\fs24 ftp, gdb, sh, csh, kermit,
+\f0\fs30  and 
+\f1\fs24 tip
+\f0\fs30 .\
+
+\fs16\li1700 \
+
+\li1200 \
+\
+
+\fs30 INSTANCE VARIABLES\
+
+\fs16 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\i\fs30\fi-4540\li6240 Inherited from Object
+\i0 	Class	isa;\
+
+\fs16 \
+
+\i\fs30 Declared in Subprocess
+\i0 	id		delegate;\
+	FILE	*fpToChild;\
+	
+\fc0 int		fromChild;\
+	int		childPid;\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\fi-4540\li6240 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 delegate 	The object that receives notification messages from the Subprocess.\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\fi-4540\li6240 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 fpToChild 	File pointer to the standard input of the child subprocess.\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\fi-4540\li6240 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 fromChild 	File descriptor from the standard output of the child subprocess.\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\fi-4540\li6240 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 childPid 	The process id number of the child subprocess.\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs16\fi-4540\li6240 \
+
+\fi0\li1200 \
+\
+
+\fs30 METHOD TYPES\
+
+\fs16 \
+
+\pard\tx6240\tx6740\tx9260\tx9760\fs30\fi-4540\li6240 Initializing a Subprocess	
+\f2 - 
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\f0\li1200 init
+\pard\tx6240\tx6740\tx9260\tx9760\fi-4540\li6240 :\
+
+\f2 	- 
+\f0 init:withDelegate:andPtySupport:andStdError:\
+
+\fs16 \
+
+\fs30 Terminating a Subprocess	
+\f2 - 
+\f0 terminate:\
+
+\fs16 \
+
+\fs30 Sending Data to a Subprocess	
+\f2 - 
+\f0 send: \
+
+\f2 	- 
+\f0 send:withNewline:\
+
+\f2 	- 
+\f0 terminateInput\
+
+\fs16 \
+
+\fs30 Assigning a Delegate	
+\f2 - 
+\f0 setDelegate: \
+
+\f2 	- 
+\f0 delegate \
+
+\fs16 \
+
+\fs30 Messages Implemented by the Delegate\
+	
+\f2 - 
+\f0 subprocessDone\
+
+\f2 	- 
+\f0 subprocessError: \
+
+\f2 	- 
+\f0 subprocessOutput: \
+
+\fs16 \
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\li1200 \
+\
+
+\fs30 INSTANCE METHODS\
+
+\fs16 \
+
+\b \
+
+\fs30 init
+\fs32 :\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li1200 init
+\fi-1020\li2720 :
+\b0 (const char *)
+\i subprocessString
+\i0 \
+
+\fi0\li0 \
+
+\li1700 Spawns the subprocess as specified in 
+\i subprocessString
+\i0 .  This method applies the 
+\b init:withDelegate:andPtySupport:andStdError:
+\b0  method with no delegate, no pseudo terminal support, and requests that standard error for the subprocess be returned with the standard output buffer
+\fs32 .
+\fs16 \
+
+\fs30 \
+See also:  
+\f2\fi-1020\li2720 -
+\f0\fi0\li1700  
+\b\li1200 init:withDelegate:andPtySupport:andStdError
+\li1700 :, 
+\b0 ± 
+\b terminate:
+\b0 \
+
+\b\fs16\fi-1020\li2720 \
+
+\b0\fs30\fi0\li1200 \
+
+\b init:withDelegate:andPtySupport:andStdError
+\fs32 :\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li1200 init
+\fi-1020\li2720 :
+\b0 (const char *)
+\i subprocessString
+\i0 \
+    
+\b withDelegate:
+\b0\i theDelegate
+\i0 \
+    
+\b andPtySupport:
+\b0 (BOOL)
+\i wantsPty
+\i0 \
+    
+\b andStdErr:
+\b0 (BOOL)
+\i wantsStdErr
+\i0 ;
+\f2 \
+
+\f0\fi0\li0 \
+
+\li1700 Spawns the subprocess as specified in 
+\i subprocessString
+\i0  as a separate UNIX process and attaches the subprocess' standard input and standard output to the Subprocess instance for future operations.  If 
+\i wantsStdErr
+\i0  is YES, then the subprocess' standard error will be returned with the standard output buffer.  Set 
+\i wantsPty
+\i0  to YES if the UNIX subprocess requires pseudo terminal support (see the UNIX manual page 
+\i pty(4)
+\i0  for more information on pseudo terminals).  
+\i TheDelegate
+\i0  should be able to respond to any of the three methods described below.\
+\
+See also:  
+\f2\fi-1020\li2720 -
+\f0\fi0\li1700  
+\b\li1200 init:, 
+\b0\li1700 ± 
+\b terminate:
+\b0 \
+
+\b\fs16\fi-1020\li2720 \
+
+\b0\fs30\fi0\li1200 \
+\
+INSTANCE METHODS\
+
+\fs16 \
+
+\b \
+
+\fs32 delegate\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li0 delegate
+\b0\i\fi-1020\li2720 \
+
+\fs16 \
+
+\i0\fs30\fi0\li1700 Returns the Subprocess object's delegate.\
+\
+See also:  ± 
+\b setDelegate:
+\b0 \
+
+\fs16 \
+
+\b\li1200 \
+
+\fs32 send:withNewline:\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0 (BOOL)
+\b\fi0\li0 send:
+\b0 (const char *)
+\i string
+\i0  
+\b withNewline:
+\b0 (BOOL)
+\i wantNewline
+\i0\fi-1020\li2720 \
+
+\b\fs16 \
+
+\b0\fs30\fi0\li1700 Sends 
+\i string
+\i0  to the UNIX subprocess.  If 
+\i\li0 wantNewline
+\i0\li1700  is YES, a newline is also sent to the subprocess. 
+\fs16 \
+
+\fs30 \
+See also:  ± 
+\b send:
+\b0 \
+
+\b\fs16\li1200 \
+\
+
+\fs32 send:\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li0 send:
+\b0 (const char *)
+\i string
+\i0\fi-1020\li2720 \
+
+\fs16 \
+
+\fs30\fi0\li1700 Sends 
+\i string
+\i0  to the UNIX subprocess automatically appending a newline.  This method applies the 
+\b\fs32 send:withNewline:
+\b0  method.
+\fs16 \
+
+\fs30 \
+See also:  ± 
+\b send:withNewline:
+\b0 \
+
+\b\fs16\li1200 \
+\
+
+\fs32 setDelegate:\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b setDelegate:
+\b0\i anObject\
+
+\fs16 \
+
+\i0\fs30\fi0\li1700 Makes 
+\i anObject
+\i0  the Subprocess' delegate.  The delegate should be able to (but is not necessarily required to) respond to the messages 
+\b subprocessDone
+\b0 , 
+\b subprocessError:
+\b0 , and
+\f2  
+\f0\b subprocessOutput:
+\b0 .  See methods implemented by the delegate below.\
+\
+See also:  ± 
+\b delegate:
+\b0 \
+
+\fs16 \
+
+\b\li1200 \
+
+\fs32 terminate:\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li0 terminate:
+\b0\i sender
+\i0\fi-1020\li2720 \
+
+\fs16 \
+
+\fs30\fi0\li1700 Forces the subprocess to terminate gracefully.  Closes all communication connections to the subprocess and sends a terminate signal (SIGTERM) to the subprocess.  Sending this message implies sending the 
+\b terminateInput
+\b0  message.\
+\
+You should terminate a subprocess instance before your application terminates.  One way would be to override the Application object's delegate 
+\b appWillTerminate:
+\b0  method with an intervening message to terminate the subprocess object.\
+\
+Sending 
+\b\li0 terminate:
+\b0\li1700  multiple times will not cause 
+\li0\fc0 undesirable
+\li1700  effects.\
+\
+See also:  ± 
+\b\fs32\li1200 terminateInput, subprocessDone:
+\b0\fs30\li1700 \
+
+\fs16 \
+
+\b\li1200 \
+
+\fs32 terminateInput\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li0 terminateInput
+\b0\i\fi-1020\li2720 \
+
+\fs16 \
+
+\i0\fs30\fi0\li1700 Closes the standard input communication connection to the subprocess, which effectively sends an end-of-file (EOF) to the subprocess.\
+
+\fs16 \
+
+\b\li1200 \
+\
+
+\b0\fs30 METHODS IMPLEMENTED BY THE DELEGATE\
+
+\fs16 \
+
+\b \
+
+\fs32 subprocessDone:\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b subprocessDone
+\b0\i \
+
+\fs16 \
+
+\i0\fs30\fi0\li1700 Sent to the delegate, if any, when the subprocess has terminated.  You will have to decide whether termination of the subprocess warrants the termination of your application.  Implies that the actions of sending a 
+\b terminate:
+\b0  message has completed.\
+\
+See also:  ± 
+\b terminate:
+\b0 \
+
+\fs16 \
+
+\b\li1200 \
+
+\fs32 subprocessError:\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li0 subprocessOutput:
+\b0 (const char *)
+\i errorString
+\i0 ;
+\fi-1020\li2720 \
+
+\fs16 \
+
+\fs30\fi0\li1700 Sent to the delegate, if any, when a fatal error occurs during the management of the subprocess.  If a fatal error occurs, it is usually during subprocess creation.  It is up to the delegate to decide if an error warrants termination of the application. Possible errors include, but are not limited to\
+\
+	± "
+\li0 Error grabbing ptys for subprocess."
+\li1700 \
+	± 
+\li0 "Error starting UNIX pipes to subprocess."
+\li1700 \
+	± 
+\li0 "Error starting UNIX vfork of subprocess."
+\li1700 \
+
+\fs16 \
+
+\b\li1200 \
+
+\fs32 subprocessOutput:\
+
+\f2\b0\fs30\fi-1020\li2720 - 
+\f0\b\fi0\li0 subprocessOutput:
+\b0 (char *)
+\i buffer
+\i0 ;
+\fi-1020\li2720 \
+
+\fs16 \
+
+\fs30\fi0\li1700 Sent to the delegate, if any, when there is output data available from the subprocess.  
+\i Buffer
+\i0  is only valid until the next time a 
+\b subprocessOutput: 
+\b0 message is sent, so make a copy of 
+\i buffer
+\i0  if future processing is necessary.  You should choose carefully when deciding whether or not to send a 
+\b send:
+\b0  message to the subprocess in this delegate method implementation.  Sending a message may create a deadlock situation in your application. \
+
+\fs16 \
+\
+
+\b\li1200 \
+
+}

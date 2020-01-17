@@ -1,0 +1,222 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f4\fswiss Helvetica;\f2\ftech Symbol;\f3\fmodern Ohlfs;}
+\paperw14960
+\paperh13400
+\margl120
+\margr120
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\f0\b0\i0\ul0\fs24 List-Subclass with Quicksort-Method Version 1.0 by stk  \
+
+\pard \
+
+\pard\tx3120\tx3620\tx4120\fs16\li2620 \
+
+\fs28 \
+
+\fs16 \
+
+\fs28 \
+
+\fs16 \
+
+\fs28 \
+
+\fs16 \
+
+\pard\b\li1100 \
+\
+\
+\
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs36\li200 	SortList
+\pard\f4\li1100  \
+
+\fs16 \
+
+\pard\tx7140\f0\b0\fs28\li2100 INHERITS FROM	
+\fs30 List:Object
+\fs28 \
+\
+DECLARED IN	objc/
+\fs30 SortList.h\
+\
+DEFINED IN	LocalLibrary/dART/Programming/source/SortList,\
+	by stk
+\fs28 \
+
+\fs16 \
+\
+\
+
+\fs28 CLASS DESCRIPTION\
+
+\fs16 \
+
+\pard\tx960\tx1920\tx2880\tx3840\tx4800\tx5760\tx6720\tx7680\tx8640\tx9600\fs30\li2600 SortList adds sorting facility to the List class provided by NeXT. Objects contained in the SortList are sorted using quicksort algorithm. The sort order is defined by the objects themselves. SortList send a 
+\b compare:
+\b0\i anObj
+\i0  message to the objects where 
+\i anObj
+\i0  contains the object to compare with. Therefore all objects in the SortList have to be able to compare with each other. See description of OBJECT METHODS.\
+\
+
+\pard\tx7140\fs16\li2100 \
+\
+
+\fs28 INSTANCE VARIABLES\
+
+\fs16 \
+
+\pard\tx7140\tx10180\tx10680\i\fs28\fi-4540\li7140 Inherited from Object
+\i0 	Class	isa;\
+
+\fs16 \
+
+\i\fs28 Inherited from List
+\i0 	id	*dataPtr;\
+
+\pard\tx10180\tx10680\fi-520\li7660 unsigned int	numElements;\
+unsigned int	maxElements;
+\pard\tx7140\fs16\li2100 \
+\
+\
+
+\fs28 METHOD TYPES\
+
+\fs16 \
+
+\pard\tx7140\tx10180\tx10680\fs28\fi-4540\li7140 Manipulating objects by index	
+\f2 - 
+\f0 swapObjectAt:withObjectAt:\
+
+\fs16 \
+
+\fs28 Sorting SortLists	
+\f2 - 
+\f0 sort\
+	
+\f2 - 
+\f0 quickSortFrom:to:\
+
+\pard\tx7140\fs16\li2100 \
+\
+\
+
+\fs28 INSTANCE METHODS\
+
+\fs16 \
+
+\b \
+
+\fs28 sort\
+
+\pard\f2\b0\fi-1020\li3620 - 
+\f0\b sort\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Sorts the objects in the SortList in respect of the order defined by the result of the object's compare: method. See description of compare: in paragraph OBJECT METHODS.\
+
+\fs16 \
+
+\fs28 See also:  
+\f2 - 
+\f0\b quickSortFrom:to:, compare:(
+\b0 OBJECT METHOD)
+\b \
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 quickSortFrom:to:\
+
+\pard\f2\b0\fi-1020\li3620 - 
+\f0\b quickSortFrom:
+\b0 (int)
+\i begin
+\b\i0  to:
+\b0 (int)
+\i end
+\b\i0 \
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\b0\fs28\li2620 Sorts the objects stored in the SortList from index 
+\i begin
+\i0  to index 
+\i end
+\i0  using the quicksort algorithm. Usually you don't send this method directly. The SortList 
+\b sort
+\b0  method sends it recursivly. Compare the description of the quicksort algorithm in computer science literature.\
+
+\fs16 \
+
+\fs28 See also:  
+\f2 - 
+\f0\b sort\
+
+\fs16 \
+
+\pard\tx7140\li2100 \
+
+\fs28 swapObjectAt:withObjectAt:\
+
+\pard\f2\b0\fi-1020\li3620 - 
+\f0\b swapObjectAt:
+\b0 (int)
+\i anIndex1
+\b\i0  withObjectAt:
+\b0 (int)
+\i anIndex2\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 Swap the object at index 
+\i anIndex1
+\i0  with the object at index 
+\i anIndex2
+\i0 . Usually this method is of litte use for you, the 
+\b quicksortFrom:to:
+\b0  method uses it to perform the sorting.
+\fs16 \
+
+\pard\tx7140\b\li2100 \
+\
+\
+
+\b0\fs28 OBJECT METHODS\
+
+\fs16 \
+
+\b \
+
+\fs28 compare:\
+
+\pard\f2\b0\fi-1020\li3620 - 
+\f0 (int)
+\b compare:
+\b0\i anObject\
+
+\fs16 \
+
+\pard\tx3120\tx3620\tx4120\i0\fs28\li2620 When an object receive a 
+\b compare:
+\b0  message it should compare itself with the object contained in parameter 
+\i anObject
+\i0 . Accordingly to the compare result it should return:\
+	<0	if the receiver is less than 
+\i anObject
+\i0 \
+	0	if the receiver is equal to 
+\i anObject
+\i0 \
+	>0	if the receiver is greater than 
+\i anObject
+\i0 \
+
+\b\fs16 \
+
+\b0\fs28 \
+
+\fs16 \
+
+}

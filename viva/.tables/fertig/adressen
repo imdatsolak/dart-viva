@@ -1,0 +1,25 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\fmodern Ohlfs;}
+\paperw6140
+\paperh4800
+\margl80
+\margr120
+\pard\tx2160\tx5060\tx5360\tx5360\tx6720\tx8060\tx9400\tx10740\tx12080\tx13440\f0\b\i0\ul\fs32 class
+\b0\ul0 	char(2)\
+
+\b\ul id
+\b0\ul0 	varchar(30) (varchar(50)?)\
+name1	varchar(50)	"\
+name2	varchar(50)	"\
+name3	varchar(50)	"\
+strasse	varchar(50)	"\
+plzort	varchar(60)	"\
+
+\b\ul\gray333 landnr	int\
+
+\b0\ul0\gray0 tel	varchar(25)	"\
+fax	varchar(25)	"\
+telex	varchar(25)	"\
+email	varchar(50)	"\
+\
+
+}

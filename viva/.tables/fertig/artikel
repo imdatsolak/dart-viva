@@ -1,0 +1,35 @@
+{\rtf0\ansi{\fonttbl\f0\fnil Times-Roman;\f1\fmodern Ohlfs;}
+\paperw4900
+\paperh7480
+\margl120
+\margr120
+{\colortbl\red0\green0\blue0;}
+\pard\tx2880\tx4640\tx5180\tx5360\tx6720\tx8060\tx9400\tx10740\tx12080\tx13440\f0\b\i0\ul\fs32 nr	varchar(30)\
+
+\b0\ul0 name	varchar(50)\
+beschreibung	text\
+
+\b\ul\gray333 kategorie	int\
+
+\b0\ul0\gray0 lieferbar	int\
+lagerhaltung	int\
+mindestbestand	int\
+
+\b\ul\gray333 mwstsatz	int\
+
+\b0\ul0\gray0 vk	float\
+ek	float\
+
+\b\ul\gray333 betreuernr	int\
+mengeneinheit	int\
+
+\b0\ul0\gray0 stueckliste	int\
+bestelldauer	int\
+gewicht	int\
+
+\b\ul\gray333 konditionen	varchar(30)\
+
+\b0\ul0\gray0\fc0 adacta	tinyint\
+\
+
+}

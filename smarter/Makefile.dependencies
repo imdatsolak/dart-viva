@@ -1,0 +1,4 @@
+SmarterFields.o : SmarterFields.m SmarterFields.h SmarterTFCell.h 
+SmarterFieldsInspector.o : SmarterFieldsInspector.m \
+  SmarterFieldsInspector.h SmarterFields.h SmarterTFCell.h 
+SmarterTFCell.o : SmarterTFCell.m SmarterTFCell.h 

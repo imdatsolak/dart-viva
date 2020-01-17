@@ -1,0 +1,6 @@
+cd vivaserverd
+rm vivaserverd
+make
+cd ..
+make archive
+

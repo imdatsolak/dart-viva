@@ -1,0 +1,14 @@
+- netGetHostName:(char **)hname andId:(char **)hid;
+- netHereIam:(char *)me;
+- netCheckinHost:(char *)host password:(char *)password ok:(int *)ok;
+- netCheckUserCount:(int *)ok;
+- netIsDemo:(int *)flag;
+- netIsExpired:(int *)flag date:(int)date;
+- netByeBye:(char *)host;
+- netAddedHost:(char *)host class:(char *)className identity:(char *)identity;
+- netChangedHost:(char *)host class:(char *)className identity:(char *)identity;
+- netDeletedHost:(char *)host class:(char *)className identity:(char *)identity;
+- netLockHost:(char *)host class:(char *)class identity:(char *)identity ok:(int *)ok;
+- netUnlockHost:(char *)host class:(char *)class identity:(char *)identity;
+- AreYouStillAlive;
+

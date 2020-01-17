@@ -1,0 +1,143 @@
+{\rtf0\ansi{\fonttbl\f0\fswiss Helvetica;\f1\ftech Symbol;\f2\fnil HelveticaCyrillic-Upright;\f3\fnil Futura-Condensed;\f4\fmodern Courier;\f5\fmodern Ohlfs;}
+\paperw12200
+\paperh13060
+\margl120
+\margr2560
+{\colortbl\red0\green0\blue0;}
+\pard\tx440\tx900\tx1360\tx1820\tx2280\tx2740\tx3200\tx3660\tx4120\tx4580\f0\b0\i0\ul0\qc\fs72 viva!2
+\f1\fs48 a
+\f2 2
+\f3 \
+
+\f0\fs36 Copyright 
+\f1 ã
+\f0  1992 by d'ART Software GmbH\
+
+\b\fs28 Installationsanweisungen
+\b0\fs36 \
+
+\f3\ql\fs28 \
+
+\f0\b 1. Installieren von viva!2a2\
+
+\b0\fi20\li720 Bitte melden Sie sich als ªrootº auf Ihrem NeXT an.\
+Sorgen Sie daför, daû auf der Lokalen Festplatte Ihres Rechners mindestens 10MB frei sind.\
+Nachdem Sie die Diskette ªviva2 alphaº in das Diskettenlaufwerk eingelegt haben, erscheint diese im Workspace Manager.\
+Bitte klicken Sie das Disketten-Symbol einmal an. Das Inhaltsverzeichnis der Diskette erschein dann im ºFile Viewerº (Datei-šbersicht). In diesem Verzeichnis finden Sie den Eintrag ª
+\f4\fs24 DoubleClick_Me_First
+\f0\fs28 º. Bitte föhren Sie auf diese Datei einen Doppelklick aus.\
+Dieses Script installiert dann das Komplette viva!2a2 in das Verzeichnis /tmp. Das neu installierte viva!2a2 ist als Viva2.app ersichtlich. \
+Sollten wÙhrend der Installation Fehler auftreten, sehen Sie bitte in den Dateien /tmp/Install_Errors und ~/InstallViva2.log nach. Falls Sie nicht weiterkommen, haben Sie bitte diese Dateien griffbereit, wenn Sie bei d'ART Software GmbH Kiel anrufen.\
+
+\f3 \
+
+\f0\b\fi0\li0\fc0 2. Weitere Installationsschritte\
+
+\b0\fi20\li720 Nachdem Sie die oben erwÙhnten Schritte abgeschlossen haben, mössen Sie noch folgendes machen:\
+a) –ffnen Sie das Verzeichnis /tmp/Viva2.app als Ordner (Command-Shift-O im Workspace-Manager).\
+b) föhren Sie einen Doppel-Klick auf die Datei .NetConfig.strings aus ± 
+\i Bitte bedenken Sie, daû Sie diese Datei nur dann sehen, wenn Sie Unix-Expert sind
+\i0  ±\
+Diese Datei sieht wie folgt aus:\
+\
+
+\fs24 		"LISTENERNAME"	=	"viva2";\
+		"PASSWORD"		=	"....";\
+		"SENDNAME"		=	"vivaNetDaemon2";\
+		"SERVERNAME"	=	"dart";\
+		"COMPANY"		=	"Unknown";\
+		"QUERYTIMEOUT"	=	"10";\
+
+\pard\tx1040\tx2100\tx3160\tx4220\tx5280\tx6320\tx7380\tx8440\tx9500\tx10560\fs28\fc0 \
+
+\pard\tx440\tx900\tx1360\tx1820\tx2280\tx2740\tx3200\tx3660\tx4120\tx4580\fi20\li720\fc0 Bitte Ùndern Sie das Feld mit dem Namen ºSERVERNAMEº so, daû dort der Name Ihres Servers steht\
+
+\fs24 		z.B.: \
+			"SERVERNAME"	= "cassiopea";\
+		\
+
+\fs28 Bitte vergessen Sie das ª;º (Semikolon) am Ende der Zeile nicht!\
+\
+c) Sichern Sie diese Datei.\
+\
+d) šberpröfen Sie hiernach, ob die geÙnderte Datei /tmp/Viva2.app/.NetConfig.strings Leseberechtigung för alle und Schreibberechtigung för den ªOwnerº hat. Korrigieren Sie dies ggf.\
+e) Kopieren Sie das Verzeichnis /tmp/Viva2.app nach /LocalApps/Demos (oder ein anderes Verzeichnis, auf die jeder Anwender Zugriff hat).\
+
+\f3 \
+
+\f0\b\fi0\li0 3. Starten des vivaserverd\
+
+\b0\fi20\li720 Bitte fögen Sie in die
+\fs24  /etc/rc.local
+\fs28  Datei ihres Servers, dessen Namen Sie unter Punkt 2 als SERVERNAME eingetragen haben folgendes ein:\
+\
+
+\fs24 <pfad>/Viva2.app/vivaserverd /vivaserverd -r viva2 -l vivaNetDaemon2 &\
+
+\pard\tx1040\tx2100\tx3160\tx4220\tx5280\tx6320\tx7380\tx8440\tx9500\tx10560\fs28\fc0 \
+
+\pard\tx440\tx900\tx1360\tx1820\tx2280\tx2740\tx3200\tx3660\tx4120\tx4580\fi20\li720\fc0 Wobei <pfad> der Pfad ist, unter dem Sie Viva2.app kopiert haben.\
+Starten Sie das Programm /NextApps/Terminal auf Ihren Server. Tippen Sie hier bitte folgendes ein:\
+\
+
+\fs24 <pfad>/Viva2.app/vivaserverd/vivaserverd -r viva2 -l vivaNetDaemon2 -v -d10 &\
+\
+
+\fs28 Vergessen Sie bitte das ª&º (Kaufmannsund) nicht. Es sollte folgende Meldung auf dem Bildschirm erscheinen:\
+\
+
+\fs24 [1] <n>\
+myHost> \
+viva2serverd\
+        DEMO_RELEASE:       NO\
+        VALID_UNTIL:        -1522198198\
+        NUMBER_OF_LICENCES  2\
+\
+DebugLevel: 10\
+dartnetd: my hostname is "<servername>"\
+dartnetd: localport is "vivaNetDaemon2"\
+dartnetd: remoteport is "viva2"\
+
+\fs28 \
+Sollte dies nicht der Fall sein, öberpröfen Sie bitte den Pfad, den Sie angegeben haben.\
+\
+
+\b\fi0\li0 4. Abschlieûende Arbeiten\
+
+\b0\fi20\li720 Starten Sie viva!2a2 durch einen Doppelklick auf Viva2.app.\
+Melden Sie sich als ªsaº in viva!2a2 an. \
+Hierbei gibt es zwei Mðglichkeiten, wie viva!2a2 reagiert:\
+	1) Sie werden anstandslos angemeldet\
+	2) viva!2a2 macht Sie darauf aufmerksam, daû Sie keine viva!2 Datenbank installiert haben.\
+	\
+Falls erstere der Fall sein sollte, heiût es, daû Sie schon eine viva!2a2-Version bekommen und installiert haben. Deshalb brauchen Sie sich keine Gedanken machen. Sie kðnnen weiterarbeiten.\
+\
+Meldet viva!2a2 jedoch, daû Sie keine Datenbank haben, so haben Sie die Mðglichkeit, diese jetzt einzurichten. Klicken Sie bitte im auftauchenden Fenster auf JA.\
+\
+viva!2a2 wird jetzt die Datenbank installieren. Danach kðnnen Sie mit viva!2a2 arbeiten.\
+\
+
+\b Achtung: Obwohl viva!2a2 meldet, daû Sie mindestens 75MB auf Ihrer Festplatte frei haben mössen, ist dies för die alpha-Version nicht richtig. Sie benðtigen etwa 20-30MB auf Ihrer Festplatte in der alpha-Version!\
+
+\b0 \
+WÙhlen Sie ªGrundeinstellungenº aus dem Hauptmenö ªInfoº.\
+WÙhlen Sie jeweils die Grundeinstellungen för ªAngeboteº,ªAuftrÙgeº,ªBestellungenº,ªLieferscheineº und ªRechnungenº.\
+Schauen Sie sich diese Grundeinstellungen an und Ùndern Sie ggf. einige Einstellungen.\
+WÙhlen Sie ªExportierenº in den Grundeinstellungen. Sie sollten ein PopUp-Menö mit zwei EintrÙgen finden: ªFrei¼º und ªWriteNowº. WÙhlen Sie WriteNow (siehe hierzu die ErklÙrung unter Exportieren).\
+Sichern Sie die Grundeinstellungen durch Command-s oder durch Klicken auf den Menöeintrag ªSichernº€im Menö ªDokumentº.\
+\
+Beenden Sie viva!2a2\
+\
+Ab jetzt sollten Sie in der Lage sein, viva!2a2 zu benutzen.\
+
+\f3 \
+
+\f0\b\fi0\li0 5. Exportieren\
+
+\b0\fi20\li720 <description forthcoming>\
+
+\pard\tx1040\tx2100\tx3160\tx4220\tx5280\tx6320\tx7380\tx8440\tx9500\tx10560\fc0 \
+\
+P.S.: Bitte beachten Sie das Dokument BugReport.wn auf der viva!2 alpha Diskette.\
+
+}

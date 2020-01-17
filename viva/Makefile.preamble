@@ -1,0 +1,69 @@
+LDFLAGS = -L/Net/dart/Users/Develop/Programming/lib/smartlib
+ARCHIVE=viva.tar
+PREPAREVIVA=prepareviva
+FINALOWNER=root
+FINALGROUP=dart
+
+default: $(NAME)
+
+both: $(NAME) vivaserverd
+
+vivaserverd:
+	cd vivaserverd; make -M$(MFLAGS)	
+
+archive: $(PREPAREVIVA) .vivastripped .vsdstripped $(ARCHIVE)
+
+.vivastripped:	Viva
+	strip -A -S Viva
+	touch .vivastripped
+
+.vsdstripped: Viva
+	strip vivaserverd/vivaserverd
+	touch .vsdstripped
+	
+ARCHIVEFILES=.NetConfig.strings \
+	German.lproj/*.nib \
+	German.lproj/*.dsqldmp \
+	German.lproj/TIFFS/* \
+	German.lproj/STRINGS/* \
+	German.lproj/EXTENDS/* \
+	vivaserverd/vivaserverd \
+	Viva
+
+$(ARCHIVE): $(ARCHIVEFILES)
+	tar cfv $(ARCHIVE) $(ARCHIVEFILES)
+
+$(PREPAREVIVA): Makefile.preamble
+	@echo "#!/bin/sh" >$(PREPAREVIVA)
+	@echo "echo Viva2 post-install script" >>$(PREPAREVIVA)
+	@echo "" >>$(PREPAREVIVA)
+	@echo "# owner of Viva2 files" >>$(PREPAREVIVA)
+	@echo "OWNER=$(FINALOWNER)" >>$(PREPAREVIVA)
+	@echo echo owner of Viva2 files: "$$"OWNER >>$(PREPAREVIVA)
+	@echo "" >>$(PREPAREVIVA)
+	@echo "# group of Viva2 files" >>$(PREPAREVIVA)
+	@echo "GROUP=$(FINALGROUP)" >>$(PREPAREVIVA)
+	@echo echo group of Viva2 files: "$$"GROUP >>$(PREPAREVIVA)
+	@echo "" >>$(PREPAREVIVA)
+	@echo "# adjust owner and group" >>$(PREPAREVIVA)
+	@echo "echo adjust owner and group" >>$(PREPAREVIVA)
+	@echo chown -R "$$"OWNER."$$"GROUP . >>$(PREPAREVIVA)
+	@echo "" >>$(PREPAREVIVA)
+	@echo "# adjust file permissions" >>$(PREPAREVIVA)
+	@echo "echo adjust file permissions" >>$(PREPAREVIVA)
+	@echo "chmod 644 .NetConfig.strings" >>$(PREPAREVIVA)
+	@echo "chmod 555 *.lproj" >>$(PREPAREVIVA)
+	@echo "chmod 444 *.lproj/*.dsqldmp" >>$(PREPAREVIVA)
+	@echo "chmod 444 *.lproj/*.nib" >>$(PREPAREVIVA)
+	@echo "chmod 555 *.lproj/TIFFS" >>$(PREPAREVIVA)
+	@echo "chmod 444 *.lproj/TIFFS/*" >>$(PREPAREVIVA)
+	@echo "chmod 555 *.lproj/STRINGS" >>$(PREPAREVIVA)
+	@echo "chmod 444 *.lproj/STRINGS/*" >>$(PREPAREVIVA)
+	@echo "chmod 555 *.lproj/EXTENDS" >>$(PREPAREVIVA)
+	@echo "chmod 444 *.lproj/EXTENDS/*" >>$(PREPAREVIVA)
+	@echo "chmod 555 vivaserverd/vivaserverd" >>$(PREPAREVIVA)
+	@echo "chmod 555 Viva2" >>$(PREPAREVIVA)
+	@echo "" >>$(PREPAREVIVA)
+	@echo "echo done" >>$(PREPAREVIVA)
+	@echo "# done" >>$(PREPAREVIVA)
+	@echo "" >>$(PREPAREVIVA)

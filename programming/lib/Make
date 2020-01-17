@@ -1,0 +1,13 @@
+#!/bin/sh
+
+myDir=`pwd`
+
+for name in ../source/*
+do	cd $name
+	make
+	cd $myDir
+done
+
+# ar r libdART.a *.o *.nib
+ar r libdART.a *.o
+ranlib -s libdART.a

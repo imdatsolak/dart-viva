@@ -1,0 +1,62 @@
+use viva2DB
+go
+delete from variablen
+go
+
+/* Kunden */
+insert into variablen values( "AdrName1" ,"@*@adressen@AddressList@objectAt:0@AddressItem@name1",1,0,0,0)
+insert into variablen values( "AdrName2" ,"@*@adressen@AddressList@objectAt:0@AddressItem@name2",1,0,0,0)
+insert into variablen values( "AdrName3" ,"@*@adressen@AddressList@objectAt:0@AddressItem@name3",1,0,0,0)
+insert into variablen values( "AdrStrasse" ,"@*@adressen@AddressList@objectAt:0@AddressItem@strasse",1,0,0,0)
+insert into variablen values( "AdrPlzOrt" ,"@*@adressen@AddressList@objectAt:0@AddressItem@plzort",1,0,0,0)
+insert into variablen values( "AdrLand" ,"@*@adressen@AddressList@objectAt:0@AddressItem@landStr",1,0,0,0)
+insert into variablen values( "AdrTel" ,"@*@adressen@AddressList@objectAt:0@AddressItem@tel",1,0,0,0)
+insert into variablen values( "AdrFax" ,"@*@adressen@AddressList@objectAt:0@AddressItem@fax",1,0,0,0)
+insert into variablen values( "AdrTelex" ,"@*@adressen@AddressList@objectAt:0@AddressItem@telex",1,0,0,0)
+insert into variablen values( "AdrEmail" ,"@*@adressen@AddressList@objectAt:0@AddressItem@email",1,0,0,0)
+
+insert into variablen values( "_Nr" ,"@*@nr",1,0,0,0)
+insert into variablen values( "_Datum" ,"@*@datum",1,0,0,0)
+insert into variablen values( "_Pos" ,"@*@position",1,0,0,0)
+insert into variablen values( "_Beschr." ,"@*@beschreibung",1,0,0,0)
+insert into variablen values( "_Vk" ,"@*@vk",1,0,0,0)
+insert into variablen values( "_MwSt" ,"@*@mwst",1,0,0,0)
+insert into variablen values( "_Anz" ,"@*@anzahl",1,0,0,0)
+insert into variablen values( "_ME" ,"@*@mengeneinheitstr",1,0,0,0)
+insert into variablen values( "_Rab" ,"@*@rabatt",1,0,0,0)
+insert into variablen values( "_Skonto" ,"@*@skontoprozent",1,0,0,0)
+insert into variablen values( "_SkontoTage" ,"@*@skontotage",1,0,0,0)
+insert into variablen values( "_NettoTage" ,"@*@zahlungsziel",1,0,0,0)
+
+insert into variablen values( "ArtListBegin" ,"@*@artikel",1,1,1,0)
+insert into variablen values( "ArtListEnde" ,"@*@artikel",1,1,2,0)
+insert into variablen values( "ArtNr" ,"@AuftragsArtikelItem@nr",1,1,0,0)
+insert into variablen values( "ArtPos" ,"@AuftragsArtikelItem@position",1,0,0,0)
+insert into variablen values( "ArtBeschr." ,"@AuftragsArtikelItem@beschreibung",1,0,0,0)
+insert into variablen values( "ArtVk" ,"@AuftragsArtikelItem@vk",1,1,0,0)
+insert into variablen values( "ArtMwSt" ,"@AuftragsArtikelItem@mwst",1,1,0,0)
+insert into variablen values( "ArtAnz" ,"@AuftragsArtikelItem@anzahl",1,1,0,0)
+insert into variablen values( "ArtME" ,"@AuftragsArtikelItem@mengeneinheitstr",1,0,0,0)
+insert into variablen values( "ArtRab" ,"@AuftragsArtikelItem@rabatt",1,0,0,0)
+insert into variablen values( "ArtNPreis" ,"@AuftragsArtikelItem@copyNettoPreis",1,1,0,0)
+insert into variablen values( "ArtBPreis" ,"@AuftragsArtikelItem@copyBruttoPreis",1,1,0,0)
+
+/* Document stuff (Angebot etc.) */
+insert into variablen values( "KundenNr" ,"@*@kundennr",1,0,0,0)
+insert into variablen values( "KundenName" ,"@KundeItem@kname",1,0,0,0)
+insert into variablen values( "GesamtNetto" ,"@*@copyNettoPreis",1,0,0,0)
+insert into variablen values( "GesamtBrutto" ,"@*@copyBruttoPreis",1,0,0,0)
+insert into variablen values( "GesamtMwSt" ,"@*@copyMwst",1,0,0,0)
+
+insert into variablen values( "Auf-Nr." ,"@AuftragItem@nr",1,1,0,0)
+insert into variablen values( "Auf-Datum" ,"@AuftragItem@datum",1,0,0,0)
+
+insert into variablen values( "RechNetto" ,"@RechnungItem@netto",1,0,0,0)
+insert into variablen values( "RechMwSt" ,"@RechnungItem@mwst",1,0,0,0)
+insert into variablen values( "RechBrutto" ,"@RechnungItem@copyBrutto",1,0,0,0)
+go
+quit
+
+
+
+

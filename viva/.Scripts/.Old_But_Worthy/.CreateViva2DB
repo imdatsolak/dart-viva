@@ -1,0 +1,37 @@
+PHYSDATABASENAME="Viva2Database"
+PHYSDATABASEVDEVNO=6
+PHYSDATABASESIZE=25000				
+TRANSLOGNAME="Viva2Transaction"
+TRANSLOGVDEVNO=7
+TRANSLOGSIZE=5000				
+PHYSDATABASEPATH="/usr/sybase/database"
+
+VIVADATABASENAME="viva2DB"
+
+dbsize=`echo "$PHYSDATABASESIZE 2 * p q" | dc`
+trasize=`echo "$TRANSLOGSIZE 2 * p q" | dc`
+echo 'Geben Sie jetzt das Passwort fuer den'
+echo '"sa"-User der Sybase-Datenbank ein.'
+echo 'Vorsicht, das Passwort ist beim Eingeben sichtbar.'
+echo -n 'Passwort:'
+password=`./readpw`
+/usr/sybase/bin/isql -Usa -P$password <<ENDE
+DISK INIT
+NAME = "$PHYSDATABASENAME",
+PHYSNAME = "$PHYSDATABASEPATH/$PHYSDATABASENAME",
+VDEVNO = $PHYSDATABASEVDEVNO,
+SIZE = $PHYSDATABASESIZE
+go
+
+DISK INIT
+NAME = "$TRANSLOGNAME",
+PHYSNAME = "$PHYSDATABASEPATH/$TRANSLOGNAME",
+VDEVNO = $TRANSLOGVDEVNO,
+SIZE = $TRANSLOGSIZE
+go
+
+create database $VIVADATABASENAME
+on $PHYSDATABASENAME=$dbsize
+log on $TRANSLOGNAME=$trasize
+go
+ENDE
