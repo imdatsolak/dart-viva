@@ -1,6 +1,8 @@
 Copyright (c) 1992 d'ART Computer GmbH
 All Rights Reserved.
 
-This work may be free in the meantime. Please contact former d'ART, now ePages GmbH (http://www.epages.com/) if you want to use the source code for anything else than for educational purposes.
+This work may be free in the meantime. Please contact former d'ART, now
+ePages GmbH (http://www.epages.com/) if you want to use the source code
+for anything else than for educational purposes.
 
 Imdat, January 2020
